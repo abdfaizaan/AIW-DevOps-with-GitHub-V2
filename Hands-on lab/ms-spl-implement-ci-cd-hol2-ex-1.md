@@ -164,11 +164,10 @@ In this task, you will use Dependabot to track the versions of the packages we u
 1. Pull the latest changes from your GitHub repository to your local GitHub folder. Navigate back to the visual studio code, and in the terminal run the below commands:
 
    ```pwsh
-   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files  # This path may vary depending on how
-                                                            # you set up your lab files repository
+   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files
    git pull
    ```
-   
+  
 ### Task 4: Explore Secret Scanning (READ-ONLY)   
 
 In this task, you'll explore about how secret scanning works and see how it generates alerts. GitHub scans repositories for known types of secrets, to prevent fraudulent use of secrets that were committed accidentally.
@@ -179,9 +178,9 @@ In this task, you'll explore about how secret scanning works and see how it gene
 
    ![](media/2dg110.png)
     
-1. Select **Code security (1)** from the sidebar and make sure **Secret scanning is enabled (2)**.
+1. Select **Code security** from the sidebar and make sure **Secret scanning** and **Push protection** is **enabled**.
 
-   ![](media/2dg111.png)   
+   ![](media/2dg111a.png)   
     
 1. Navigate back to **Code (1)** and click on **src (2)** folder.
 
@@ -193,22 +192,26 @@ In this task, you'll explore about how secret scanning works and see how it gene
    
 1. Add new file with name **build.docker-compose.yml (1)** name, add the code mentioned below **commit** the file. Here, you'll expose the **application ID** of a service principal.
 
+   >**Note:** Replace your `<Application ID>` and `<Secret Key>` in the code.
+
    ```
    version: "3.4"
    services:
    api:
       build: ./ContosoTraders.Ui.Website/
-      app id: 36540dcd-7bc3-4e16-90ca-4decb9ff8c36
-      app secret: i1R8Q~Hn8dHn86VlWE7xJtLR4FKTIcQBXcebqcv4
+      app id: <Application ID>
+      app secret: <Secret Key>
    web:
       build: ./ContosoTraders.Api.Products
    ```
    
-   ![](media/2dg115.png)   
-   
-1. Select **Security (1)** tab and click on **Secret scanning (2)** from the sidebar. Here, you'll notice that an alert is generated reffering to the same **Application ID** which was exposed in `build.docker-compose.yml` file. This is how Secret scanning feature works and generates alerts to notify you.
+   ![](media/2dg115.png)
 
-   ![](media/2dg116.png) 
+   > **Note:** If a pop-up appears, select **It's used in tests** and recommit the changes.
+   
+1. Go to the **Security tab (1)** and click on **Secret scanning (2)** in the sidebar. In the filter options, change the status to **Closed (3)**. Here, you'll notice that an alert is generated reffering to the same **Application Secret** which was exposed in `build.docker-compose.yml` file. This is how Secret scanning feature works and generates alerts to notify you.
+
+   ![](media/2dg116a.png) 
    
 ## Summary 
 

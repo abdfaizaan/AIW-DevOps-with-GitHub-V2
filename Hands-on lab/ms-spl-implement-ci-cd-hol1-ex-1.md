@@ -368,8 +368,8 @@ In this exercise, you will build automation in GitHub for updating and republish
    - Select the **Codespace** ***(2)*** tab
 
       ![](media/ex2-kc-codespace.png)
-
-      >**Note:** Select **Allow**, on the **Visual studio** pop-up.
+ 
+      >**Note:** If prompted to **install** an extension, please proceed with the installation and **Allow** any **Visual Studio** pop-ups that appear.
 
       > It will redirect you to the new tab of the browser. On the **Select user to authorize Visual Studio Code** page select **Continue**. On the pop-up select **Open**.
    
