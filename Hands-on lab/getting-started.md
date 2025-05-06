@@ -47,31 +47,31 @@ Welcome to your Devops-with-Github  Workshop! We've prepared a seamless environm
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-   ![](media/dev(2).png)
+   ![](media/lab-05.png)
 
 ## Exploring Your Lab Resources
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-   ![](media/environment.png)
+   ![](media/lab-01.png)
 
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-   ![](media/GS8.png)
+   ![](media/lab-02.png)
 
 ## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-   ![](media/resources-vm-manage.png)
+   ![](media/lab-03.png)
 
 ## Lab Validation
 
 1. After completing the task, hit the **Validate** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
 
-   ![](media/new-get-start-25-5.png)
+   ![](media/lab-04.png)
 
 ## Lab Guide Zoom In/Zoom Out
  
@@ -128,6 +128,6 @@ Learner Support Contacts:
      
 Now, click on **Next** from the lower right corner to move on to the next page.
 
-   ![](media/num.png)
+   ![](media/lab-06.png)
 
 ## Happy Learning!!
