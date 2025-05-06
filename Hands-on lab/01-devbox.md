@@ -22,7 +22,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 
    ![](media/ex1-t1.png)
 
-1. Now on the left-hand side blade click on **Dev Centers** **(1)** under Configure and then click on **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
+1. Now on the left-hand side blade click on **Dev centers** **(1)** under Configure and then click on **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
    ![](media/new-devops-github-lab01-1.png)
 
@@ -33,12 +33,12 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 1. Now under the Create dev box definition window, add the below details and then click on **Create** **(6)**.
 
    - Name: **devboxdef-01** **(1)**
-   - Image: From the drop-down select **Windows 11 Enterprise + Microsoft 365 Apps 21H2 | Hibernate supported** **(2)**
+   - Image: From the drop-down select **Windows 11 Enterprise + Microsoft 365 Apps 22H2 | Hibernate supported** **(2)**
    - Image version: **Latest** **(3)**
    - Compute: **8vCPU, 32 GB RAM** **(4)**
    - Storage: **1024 GB SSD** **(5)**
 
-       ![](media/devbox.png)
+       ![](media/lab-07.png)
 
 1. Click on refresh to verify if the definition has been created.
 
@@ -55,7 +55,7 @@ In this task, you'll create a Dev box definition. Dev box definitions define the
 
 In this task, you'll configure the network connection using Dev Center. Network connections determine the region into which dev boxes are deployed and allow them to be connected to your existing virtual networks.
 
-1. Navigate back to the **Microsoft dev box**, and then click on **Dev center** **(1)** and then click on the **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
+1. Navigate back to the **Microsoft dev box**, and then click on **Dev centers** **(1)** and then click on the **devcenter-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
    ![](media/new-devops-github-lab01-1.png)
 
