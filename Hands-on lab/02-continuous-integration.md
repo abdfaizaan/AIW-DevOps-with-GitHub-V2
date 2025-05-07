@@ -184,9 +184,15 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
 1. In a new browser tab open `https://www.github.com/login`. From **Environment** page **(1)**, navigate to **License** **(2)** tab and **copy** **(3)** the credentials. Use the same username and password to login into GitHub.
 
+   ![](media/gh1.png)
+
 1. For **Device Verification Code**, use the same credentials as in the previous step, open `http://outlook.office.com/` in a private window, and enter the same username and password used for GitHub Account login. Copy the verification code and Paste code it in Device verification.
 
    ![](media/2dgn154.png)
+
+   >**Note:** If you receive the prompt to enable 2FA then click on **Remind Me Tomorrow**
+
+   ![](media/gh2.png)
 
 1. In the upper-right corner, expand the user **drop-down menu** **(1)** and select **Your repositories** **(2)**.
 
@@ -196,7 +202,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![The `New Repository` creation form in GitHub.](media/ex2-t3-3-git.png "New Repository Creation Form")
 
-1. On the **Create a new repository** screen, name the repository `aiw-devops-with-github-lab-files` **(1)**, select **Public** **(2)** and click on **Create repository** **(3)** button.
+1. On the **Create a new repository** screen, name the repository **aiw-devops-with-github-lab-files-<inject key="DeploymentID" enableCopy="false" />(1)**, select **Public** **(2)** and click on **Create repository** **(3)** button.
 
       ![The `New Repository` creation form in GitHub.](media/new-devops-github-lab02-5.png "New Repository Creation Form")
 
@@ -234,7 +240,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![Quick setup screen is displayed with the copy button next to the GitHub URL textbox selected.](media/2dg4.png "Quick setup screen")
 
-1. In the Visual Studio Code, run the below commands in the terminal to set your **username** and **email**, which Git uses for commits. Make sure to replace GitHub account email and username.
+1. In the Visual Studio Code, run the below commands in the terminal to set your **username** and **email**, which Git uses for commits. **Make sure to replace GitHub account email and username.** 
 
    ```pwsh
    cd C:\Workspaces\lab\aiw-devops-with-github-lab-files
@@ -317,7 +323,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 
      ![](media/2dgn123.png)
 
-     > **Note**: Replace `{your_password}` with the ODL User Azure Password. Go to **Environment (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
+     > **Note**: Replace `{your_password}` with the ODL User Azure Password: **<inject key="AzureAdUserPassword"></inject>**
 
      ![](media/new-devops-github-lab02-8.png)
 
@@ -412,10 +418,25 @@ In this exercise, you will build automation in GitHub for updating and republish
  > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab.
  > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
- > - **Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your GitHub User Name. Provide your **GitHub User Name** which looks like **github-cloudlabsuser-xxxx**.
+ > - **Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your GitHub User Name. Provide your **GitHub User Name** which looks like **github-cloudlabsuser-xxx**.
 
    <validation step="5ec6c860-8c11-4e67-bd4a-136794c0569c" />
-   
+
+>**Note:** If your validation gets failed with error
+   **The Request Returned 404** then follow below steps and click on validate button again.
+
+   - At top right corner click on your profile and verify if username is added.
+
+      ![](media/ged.png)
+
+   - If the username is not already set, click on Edit Profile and update the username to match the organization name, using the format github-cloudlabsuser-xxx (replace xxx with the same suffix as the organization's name).
+
+      ![](media/editprofile.png)
+
+   - Save the changes and click on validate button now.
+
+      ![](media/uname.png)
+
 ## Task 5: Editing the GitHub Workflow File using Codespace
 
 The last task automated building and updating only one of the Docker images. In this task, we will update the workflow file with a more appropriate workflow for the structure of our repository. This task will end with a file named `docker-publish.yml` that will rebuild and publish Docker images as their respective code is updated.

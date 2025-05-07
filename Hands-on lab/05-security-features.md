@@ -19,9 +19,9 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
 **Note**: To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to public.
 
-1. Select the **settings** **(1)** tab from the GitHub browser tab. Click on **Code security** **(2)** under the security side blade.
+1. Select the **settings** **(1)** tab from the GitHub browser tab. Click on **Advance Security** **(2)** under the security side blade.
 
-   ![](media/2dgn168-1.png)
+   ![](media/gh4.png)
 
 1. Click on **Set up** **(1)** button to enable **CodeQL analysis** and select the **Advanced** **(2)** option for creating a CodeQL Analysis YAML file.
 
@@ -119,12 +119,14 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
 In this task, you will use Dependabot to track the versions of the packages we use in our GitHub repository and create pull requests to update packages for us.
 
-1. In your lab files GitHub repository, navigate to the **Settings** **(1)** tab and select the **Code security** **(2)** under Security from side blade. Make sure **Dependabot alerts** is **Enabled** **(3)**, if not click on **Enable** to Enable Dependabot alerts. Click on **Enable** **(4)** to Enable Dependabot security updates.
+1. In your lab files GitHub repository, navigate to the **Settings** **(1)** tab and select the **Advance Security** **(2)** under Security from side blade. Make sure **Dependabot alerts** is **Enabled** **(3)**, if not click on **Enable** to Enable Dependabot alerts. Click on **Enable** **(4)** to Enable Dependabot security updates.
 
    > **Note**: Enabling the `Dependabot security updates` will also automatically enable `Dependency graph` and `Dependabot alerts`.
 
-   ![The GitHub Repository Security Overview tab.](media/ex5-t3-enabledb-1.png "GitHub Repository Security Overview")
+   ![The GitHub Repository Security Overview tab.](media/gh4.png "GitHub Repository Security Overview")
 
+   ![](media/gh6.png)
+   
    > **Note**: The alerts for the repository may take some time to appear. The rest of the steps for this task rely on the alerts to be present. You can continue with the next exercise as this is an independent task and doesn't affect the lab. Please visit this task later and complete the task.
 
 1. To observe Dependabot issues, navigate to the **Security** **(1)** tab and select the **View Dependabot alerts** **(2)** link.
