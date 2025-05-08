@@ -114,7 +114,7 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
 
 1. Navigate to **Azure Boards**. Open the **work item** **(1)** created in the earlier step.
 
-   ![](media/ex4-open-wi.png)
+   ![](media/gh5.png)
 
 1. Navigate back to the GitHub browser tab and select **Pull requests** tab.
 
@@ -136,13 +136,9 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
 
 In this task, you'll set up an Azure test plan and perform manual testing for the application.
 
-1. From the Azure DevOps tab, select **Test plans** from the side blade.
+1. From the Azure DevOps tab, select **Test plans** from the side blade, From the Test plans tab, click on **+ New Test Plan**
 
-   ![](media/2dg71.png)
-
-1. From the Test plans tab, click on **+ New Test Plan**
-
-   ![](media/2dg72.png)
+   ![](media/tp.png)
 
 1. In the New Test Plan tab, provide the following details and click on **Create** **(4)**.
 

@@ -123,9 +123,9 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
      ![](media/E5T1S10.png)
 
-1. On the **Permissions** page, leave the default selection and select **Next: Experiment designer >**.
+1. On the **Permissions** page, select **Assign experiment permission manually** and select **Next: Experiment designer >**.
 
-   ![](media/E5T1S11.png)
+   ![](media/perm.png)
 
 1. On the **Experiment designer** page select **+ Add action (1)** and choose **Add fault (2)**.
 
