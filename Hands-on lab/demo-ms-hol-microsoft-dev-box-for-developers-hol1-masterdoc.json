@@ -1,0 +1,15 @@
+[ {
+    "Name": "Microsoft Dev Box for Developers",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/Guided-Lab/Hands-on%20lab/demo-Gettingstarteddev.md",
+        "Order": 1
+      },
+       {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/AIW-DevOps-with-GitHub-V2/Guided-Lab/Hands-on%20lab/demo-ms-hol-microsoft-dev-box-for-developers-hol1-ex1.md",
+        "Order": 2
+      }   
+    ]
+  } ]
+  
