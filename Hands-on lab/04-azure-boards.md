@@ -165,11 +165,8 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
    - Name: **Validate the web app** **(1)**
    - Steps:
      - 1. Actions: **Access the Contoso Traders app** **(2)** Expected result: **Succeeded** **(3)**
-     - 2. Actions: **Access the Laptop page** **(4)** Expected result: **Succeeded** **(5)**
-     - 3. Actions: **Access the Controllers page** **(6)** Expected result: **Succeeded** **(7)**
-     - 4. Actions: **Access the Desktop page** **(8)** Expected result: **Succeeded** **(9)**
 
-     ![](media/ex4-validate-webapp.png)
+     ![](media/testplan01.png)
 
 1. From the Test plans tab, navigate to **Execute** **(1)** tab, select the **validate the web app** **(2)** test point and click on **Run for web application** **(3)**.
 
@@ -177,7 +174,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
 1. A web-based runner will be opened. Manual testing of the web app can be performed. Keep this page open, we will use the runner in upcoming steps.
 
-   ![](media/ex4-view-webapp.png)
+   ![](media/testplan02.png)
 
 1. Navigate to Azure Portal, and click on Resource groups from the Navigate panel to see the resource groups.
 
@@ -195,11 +192,11 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/2dgn128.png)
 
-1. Verify the availability of the web app, Laptops page, Controllers page, and Desktops page. Simultaneously using the runner page, perform the testing by marking the steps according to the availability of the web pages and click on **Save & close** **(1)**.
+1. Verify the availability of the web app, Simultaneously using the runner page, perform the testing by marking the steps according to the availability of the web app and click on **Save & close** **(1)**.
 
-   ![](media/2dgn167.png)
+   ![](media/2dgn162.png)
 
-   ![](media/ex4-save&close.png)
+   ![](media/testplan03.png)
 
 1. From the execute tab, Verify the **outcome** of the manual testing. The outcome will be in a passed state if the web app worked as expected and vice versa.
 
