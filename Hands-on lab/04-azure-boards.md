@@ -116,6 +116,14 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
 
    ![](media/gh5.png)
 
+1. Under the **Development** select the **Pull Request**.
+
+   ![](media/pr.png)
+
+1. On the Add Link window select your **GitHub Repository** and the **Pull Request** and click on **Add Link**.
+
+   ![](media/pr2.png)
+
 1. Navigate back to the GitHub browser tab and select **Pull requests** tab.
 
    ![](media/ex4-github-pr.png)
