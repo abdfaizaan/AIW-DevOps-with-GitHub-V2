@@ -74,11 +74,10 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    
 1. Run the below command to set secret path.
 
-
    ```pwsh
    dotnet user-secrets set "KeyVaultEndpoint" "https://contosotraderskv<inject key="DeploymentID" />.vault.azure.net/"
    ```  
-   
+
    ![](media/upd-2dgn49.png)
    
 1. Run the below mentioned command to build and host the carts locally.
@@ -115,11 +114,13 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
   
    ![](media/upd-2dgn52.png)     
    
-1. Run `dotnet user-secrets set "KeyVaultEndpoint" "https://contosotraderskv<SUFFIX>.vault.azure.net/"` command to set secret path.
+1. Run the below command to set secret path.
+
+   ```pwsh
+   cd dotnet user-secrets set "KeyVaultEndpoint" "https://contosotraderskv<inject key="DeploymentID" />.vault.azure.net/
+   ```
 
    ![](media/upd-2dgn53.png)
-   
-   >**Note**: Replace `<SUUFIX>` with **<inject key="DeploymentID" />** before running the command.
    
 1. Run the below mentioned command to build and host the carts locally.
 
@@ -186,15 +187,18 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
 1. In a new browser tab open ```https://www.github.com/login```. From Environment details page ***(1)***, navigate to **License** ***(2)*** tab and **copy** ***(3)*** the crentials. Use the same username and password to login into GitHub.
 
-   ![](media/credlo.png) 
+   ![](media/credloupd.png) 
    
-1. For **Device Verification Code**, use the same credentials as in the previous step, open `http://outlook.office.com/` in a private window and enter the same username and password used for GitHub Account login. Copy the verification code and Paste code it in Device verification.
+1. For **Device Verification Code**, use the same credentials as in the previous step, open `http://outlook.office.com/` in a **InPrivate window** and enter the same username and password used for GitHub Account login. Copy the verification code and Paste code it in Device verification and click on **Verify**.
 
    ![](media/2dgn154.png) 
-    
-1. In the upper-right corner, expand the user **drop-down menu** ***(1)*** and select **Your repositories** ***(2)***.
+   > **Note:** If you see **Two-factor authentication (2FA) is required for your GitHub account** page next, click on **Remind me tomorrow**
+      ![The `New Repository` creation form in GitHub.](media/2fagit.png "New Repository Creation Form")
 
-   ![The `New Repository` creation form in GitHub.](media/2dg1.png "New Repository Creation Form")
+
+1. In the upper-right corner, click on the user **menu** and select **Your repositories**.
+
+   ![The `New Repository` creation form in GitHub.](media/2dg1upd.png "New Repository Creation Form")
 
 1. Next to the search criteria, locate and select the **New** button.
 
@@ -202,13 +206,13 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
 1. On the **Create a new repository** screen, name the repository ```aiw-devops-with-github-lab-files``` ***(1)***, select **Public** ***(2)*** and click on **Create repository** ***(3)***  button.
 
-   ![The `New Repository` creation form in GitHub.](media/2dgn91.png "New Repository Creation Form")
+   ![The `New Repository` creation form in GitHub.](media/2dgn91upd.png "New Repository Creation Form")
    
    >**Note**: If you observe any repository existing with the same name, please make sure you delete the Repo and create a new one. Please follow the step 6 to step 10. Else, skip to step 11.
 
-1. In the upper-right corner, expand the user **drop-down menu** ***(1)*** and select **Your repositories** ***(2)***.
+1. In the upper-right corner, click on the user **menu** and select **Your repositories**.
 
-   ![The `New Repository` creation form in GitHub.](media/2dg1.png "New Repository Creation Form")
+   ![The `New Repository` creation form in GitHub.](media/2dg1upd.png "New Repository Creation Form")
 
 1. Using the search bar, search for ```aiw-devops-with-github-lab-files``` **(1)** and select to open it.
 
@@ -263,11 +267,11 @@ In this task, you will create an account in [GitHub](https://github.com) and use
       git push -u origin<Unique-ID> main
       ```
      
-   - If you are asked authenticate your GitHub account. Select **1. web browser** and you will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize GitCredentialManager** to provide access
+   - If you are asked authenticate your GitHub account. Select **1. web browser** and you will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize git-ecosystem** to provide access
 
        ![](media/ghlogin.png)
 
-       ![](media/2dgn158.png)
+       ![](media/2dgn158upd.png)
 
  - After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
    
@@ -356,7 +360,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 1. From your GitHub repository, select **Actions** ***(1)*** tab. Select the **contoso-traders-app-deployment** ***(2)*** workflow from the side blade, Click on the  **drop-down** ***(3)*** next Run workflow button, and select **Run workflow** ***(4)***.
 
    ![](media/2dgn159.png)
-   
+
 1. Navigate back to Actions tab and select the **contoso-traders-app-deployment** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application.
 
    ![](media/2dgn124.png)
@@ -430,10 +434,15 @@ The last task automated building and updating only one of the Docker images. In 
 
    ![](media/codespace1.png)
 
+      >**Note:** If prompted to **install** an extension, please proceed with the installation and **Allow** any **Visual Studio** pop-ups that appear.
+
+      > You will be redirected to a new browser tab. On the Select user to authorize Visual Studio Code page, click Continue. When prompted, select Open in the pop-up window. Then, choose your GitHub account and click Continue.
+      
 1. From the explorer side blade, navigate to **.github (1)** > **workflows** **(2)** and select **contoso-traders-provisioning-deployment.yml** **(3)** file.
 
    ![](media/contosoprovision.png) 
-   
+
+
 1. Remove the commands from line 7 to 14 from the workflow file and save the file.
 
    ![](media/2dgn163.png) 

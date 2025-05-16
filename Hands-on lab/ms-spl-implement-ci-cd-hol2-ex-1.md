@@ -19,9 +19,9 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
 **Note**: To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to the public.
    
-1. Select the **settings** ***(1)*** tab from the GitHub browser tab. Click on **code security** ***(2)*** under security side blade.
+1. Select the **settings** ***(1)*** tab from the GitHub browser tab. Click on **Advanced security** ***(2)*** under security side blade.
 
-   ![](media/settings.png)  
+   ![](media/settingsupd.png)  
    
 1. Click on **Set up** **(1)** button to enable CodeQL analysis and select the **Advanced** **(2)** option for creating a CodeQL Analysis YAML file.
 
@@ -37,7 +37,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
     
    ![](media/ex5-codeql-actions.png) 
 
-1. In code scanning alerts, click on **set up code scanning (1)** if it is not enabled.
+1. Click on **Security** and under code scanning alerts, click on **set up code scanning (1)** if it is not enabled.
 
    ![](media/set_up_code_scanning.png) 
    
@@ -45,7 +45,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
    
    ![](media/ex5-codescanning-viewalerts.png)
   
-1. You will be navigated to **Code scanning (1)** section. You'll be able visualize that the **No new code scanning alerts**.
+1. You will be navigated to **Code scanning (1)** section. You may see **No new code scanning alerts**.
    
    ![](media/codescanning.png)
     
@@ -100,7 +100,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    
 1. In the Affected products section, provide the following details and click on **Create draft security advisory** ***(7)***   
  
-   - Ecosystem: **composer** ***(1)***
+   - Ecosystem: **Composer** ***(1)***
    - Package name: **aiw-devops-with-github-lab-files/src/TailwindTraders.Ui.Website/src/App.js** ***(2)***
    - Affected version: **<1.2** ***(3)***
    - Patched version: **1.2** ***(4)***
@@ -127,11 +127,11 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
 In this task, you will use Dependabot to track the versions of the packages we use in our GitHub repository and create pull requests to update packages for us.
 
-1. In your lab files GitHub repository, navigate to the **Settings** ***(1)*** tab and select the **code security** ***(2)*** under Security from side blade. Make sure **Dependabot alerts** is **Enabled** ***(3)***, if not click on **Enable** to Enable Dependabot alerts. Click on **Enable** ***(4)*** to Enable Dependabot security updates.
+1. In your lab files GitHub repository, navigate to the **Settings** tab and select the **Advanced security** ***(2)*** under Security from side blade. Make sure **Dependabot alerts** is **Enabled** ***(3)***, if not click on **Enable** to Enable Dependabot alerts. Click on **Enable** ***(4)*** to Enable Dependabot security updates.
 
    > **Note**: Enabling the `Dependabot security updates` will also automatically enable `Dependency graph` and `Dependabot alerts`.
 
-   ![The GitHub Repository Security Overview tab.](media/deploy-01-1.png "GitHub Repository Security Overview")
+   ![The GitHub Repository Security Overview tab.](media/deploy-01upd1.png "GitHub Repository Security Overview")
 
    > **Note**: The alerts for the repository may take some time to appear. The rest of the steps for this task rely on the alerts to be present.
 
