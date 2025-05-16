@@ -26,6 +26,7 @@ By the end of this lab, you will be able to:
 ## Architecture
 In this hands-on lab, you'll explore the integration of Continuous Integration (CI) and Continuous Deployment (CD) processes using GitHub Actions, along with implementing advanced security features provided by GitHub.
 ## Architecture Diagram
+
    ![](media/Newiage_action.png)
 
 ## Explanation of Components
@@ -46,7 +47,7 @@ Welcome to your Implement Dev Box workshop! We've prepared a seamless environmen
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-   ![](media/dev(2).png)
+   ![](media/devupd.png)
 
 ### Virtual Machine & Lab Guide
  
@@ -56,19 +57,19 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
-   ![](media/environment.png) 
+   ![](media/environmentupd.png) 
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
 
-   ![](media/POWER(1).png) 
+   ![](media/split.png) 
    
 ## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-   ![](media/resources-vm-manage.png) 
+   ![](media/resources-vm-manageupd.png) 
 
 ## Lab Guide Zoom In/Zoom Out
 

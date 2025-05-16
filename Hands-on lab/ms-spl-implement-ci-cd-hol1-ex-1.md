@@ -26,9 +26,9 @@ In this task, you'll access and explore the code repository of the web app using
 
     ![](media/open_fold-1.jpg)
 
-1. In the **Open Folder** tab, navigate to the following path `C:\Workspaces\lab\aiw-devops-with-github-lab-files` to open your local GitHub repository and click on **Select Folder**.
+1. In the **Open Folder** tab, navigate to the following path `C:\Workspaces\lab\aiw-devops-with-github-lab-files` (1) to open your local GitHub repository and click on **Select Folder (2)**.
 
-   ![](media/2dgn1.png)
+   ![](media/2dgn1upd.png)
     
 1. You may receive a prompt: Do you trust the authors of the files in this folder? select the **checkbox** **(1)** the box and click on **Yes, I trust the authors** **(2)**.
 
@@ -52,7 +52,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    
 1. Navigate to **Environment Details** **(1)**, click on **Service Principal Details** **(2)** and copy the **Application Id(Client Id)**, **Secret Key (Client Secret)**, and **Tenant Id (Directory ID)**.   
    
-   ![](media/ex2-t2-3upd.png)
+   ![](media/ex2-t2-3upd1.png)
    
 1. Update the **Application Id(Client Id)**, **client Secret**, and **tenant Id** in the command mentioned below. Run it in the terminal.
 
@@ -72,10 +72,13 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    
    ![](media/upd-2dgn48.png)   
    
-1. Run `dotnet user-secrets set "KeyVaultEndpoint" "https://contosotraderskv<SUFFIX>.vault.azure.net/"` command to set secret path.
+1. Run the below command to set secret path.
 
-   >**Note**: Replace `<SUFFIX>` with **<inject key="DeploymentID" />** before running the command.
 
+   ```pwsh
+   dotnet user-secrets set "KeyVaultEndpoint" "https://contosotraderskv<inject key="DeploymentID" />.vault.azure.net/"
+   ```  
+   
    ![](media/upd-2dgn49.png)
    
 1. Run the below mentioned command to build and host the carts locally.
