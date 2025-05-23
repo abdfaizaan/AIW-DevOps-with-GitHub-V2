@@ -98,7 +98,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
 
    ![](media/upd-2dgn51.png)     
    
-   > **Note:** * If you are not able to access the application, click on **Advanced** under Your connection isn't private.
+   > **Note:** If you are not able to access the application, click on **Advanced** under Your connection isn't private.
 
    ![](media/localhost1.png) 
    
@@ -279,15 +279,15 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![](media/error_1.jpg)
 
-(i). Scroll up within the terminal to locate the highlighted link. Click on the link.
+(i) Scroll up within the terminal to locate the highlighted link. Click on the link.
 
    ![](media/errorlo.png)
 
-(ii)choose the **It's used in tests**(1) option. Then, select **Allow me to expose this secret**(2) to proceed.
+(ii) Choose the **It's used in tests**(1) option. Then, select **Allow me to expose this secret**(2) to proceed.
 
    ![](media/error1lo.png)   
 
-(iii). After completing the previous step, navigate back to VS Code and rerun step-15 to finish the push process. 
+(iii) After completing the previous step, navigate back to VS Code and rerun step-15 to finish the push process. 
 
 ### Task 4: Build and push using GitHub Actions
 
@@ -371,7 +371,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    
 1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** ***(3)***.
 
-   - click on **Code** ***(1)***, 
+   - Click on **Code** ***(1)***, 
    - Select the **Codespace** ***(2)*** tab
 
       ![](media/ex2-kc-codespace.png)
