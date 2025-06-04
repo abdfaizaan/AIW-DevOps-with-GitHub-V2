@@ -1,4 +1,4 @@
-# Devops with Github 
+# Devops with GitHub 
 
 ### Overall Estimated Duration: 8 Hours
 
