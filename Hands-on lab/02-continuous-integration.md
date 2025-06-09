@@ -57,7 +57,7 @@ In this task, You will set up the local infrastructure using Dotnet. You'll be w
 1. Update the **Application Id(Client Id)**, **(Secret Key)client Secret**, and **tenant Id** in the command mentioned below. Run it in the terminal.
 
    ```pwsh
-   az login --service-principal -u <inject key="GET-SERVICEPRINCIPAL-APPLICATION-ID" enableCopy="true" /> -p <inject key="GET-SERVICEPRINCIPAL-SECRET" enableCopy="true" /> --tenant <inject key="GET-TENANT-ID" enableCopy="true" />
+   az login --service-principal -u <inject key="GET-SERVICEPRINCIPAL-APPLICATION-ID" enableCopy="false" /> -p <inject key="GET-SERVICEPRINCIPAL-SECRET" enableCopy="false" /> --tenant <inject key="GET-TENANT-ID" enableCopy="false" />
    ```
 
    ![](media/2dgn47.png)
