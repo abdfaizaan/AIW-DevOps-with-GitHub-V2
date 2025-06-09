@@ -1,4 +1,4 @@
-# Exercise 5: Monitoring and Load Testing
+# Exercise 4: Monitoring and Load Testing
 
 ### Estimated Duration: 100 minutes
 
