@@ -420,7 +420,7 @@ In this exercise, you will build automation in GitHub for updating and republish
  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
  > - **Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your GitHub User Name. Provide your **GitHub User Name** which looks like **github-cloudlabsuser-xxx**.
 
-   <validation step="5ec6c860-8c11-4e67-bd4a-136794c0569c" />
+   <validation step="4f20a33d-35ef-40a7-b9df-f4072265acaa" />
 
 >**Note:** If your validation gets failed with error
    **The Request Returned 404** then follow below steps and click on validate button again.
