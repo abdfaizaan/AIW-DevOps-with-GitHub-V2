@@ -4,13 +4,12 @@
 
 ## Overview
 
-In this lab, you'll explore Microsoft Dev Box, a service that provides self-service access to high-performance, preconfigured cloud-based workstations. You will configure a dev box environment, set up local infrastructure using .NET, and work with the application's carts, products, and UI components. The infrastructure will be deployed to the cloud using GitHub Actions, with automation for updating and republishing workflows. You’ll explore Azure Boards, Test Plans, and GitHub Enterprise security features such as Code scanning, CodeQL alerts, and Dependabots. Additionally, the lab covers implementing monitoring, logging, Azure load testing, and Azure Chaos Studio to improve application resilience and performance.
+In this lab, you'll will set up local infrastructure using .NET, and work with the application's carts, products, and UI components. The infrastructure will be deployed to the cloud using GitHub Actions, with automation for updating and republishing workflows. You’ll explore Azure Boards, Test Plans, and GitHub Enterprise security features such as Code scanning, CodeQL alerts, and Dependabots. Additionally, the lab covers implementing monitoring, logging, Azure load testing, and Azure Chaos Studio to improve application resilience and performance.
 
 ## Objectives
 
 Set up Dev Box, CI/CD with GitHub, integrate Azure Boards, enable GitHub security, run load tests, explore Chaos Studio and monitor performance.
 
-- **Implement Dev Box**: Configure a development environment by creating a Dev Box definition, establish a network connection, set up a Dev Box pool, and finally creating and connecting to a Dev Box using the Microsoft Dev Box portal.
 - **Continuous Integration and Continuous Deployment**: You will be able to access the lab files, set up the local infrastructure, create a project repository, build and push the code using GitHub Actions, and edit the GitHub workflow file within Codespaces.
 - **Azure Boards and Test Plans**: Connect Azure Boards with GitHub to enhance project tracking, and link GitHub pull requests to Boards items, enabling seamless integration between code development and project management workflows.
 - **Explore GitHub's advanced security features**: Enable code scanning with CodeQL alerts, configure repository security advisories, utilize Dependabot for dependency management, and explore secret scanning to enhance repository security.
@@ -25,7 +24,7 @@ Participants should have basic knowledge and understanding of the following:
 
 ## Architecture
 
-In this lab, the architecture flow begins with configuring a Microsoft Dev Box environment, providing cloud-based workstations for development. Local infrastructure is set up using .NET, focusing on managing application components such as carts, products, and the UI. GitHub Actions automate the deployment of this infrastructure to the cloud, streamlining update and republishing workflows. Next, you'll explore Azure Boards for project management, Test Plans for testing workflows, and GitHub Enterprise security features like Code scanning, CodeQL alerts, and Dependabot for vulnerability detection. Finally, you’ll implement monitoring and logging, conduct Azure Load Testing for performance benchmarking, and explore Azure Chaos Studio to simulate failures and improve the system's resilience.
+In this lab, the architecture flow begins with local infrastructure is set up using .NET, focusing on managing application components such as carts, products, and the UI. GitHub Actions automate the deployment of this infrastructure to the cloud, streamlining update and republishing workflows. Next, you'll explore Azure Boards for project management, Test Plans for testing workflows, and GitHub Enterprise security features like Code scanning, CodeQL alerts, and Dependabot for vulnerability detection. Finally, you’ll implement monitoring and logging, conduct Azure Load Testing for performance benchmarking, and explore Azure Chaos Studio to simulate failures and improve the system's resilience.
 
 ## Architecture Diagram
 
