@@ -1,4 +1,4 @@
-# Exercise 2: Continuous Integration and Continuous Deployment
+# Exercise 1: Continuous Integration and Continuous Deployment
 
 ### Estimated Duration: 120 minutes
 
