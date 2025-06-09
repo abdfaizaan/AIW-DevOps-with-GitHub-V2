@@ -1,4 +1,4 @@
-# Exercise 3: Azure Boards and Test Plans
+# Exercise 2: Azure Boards and Test Plans
 
 ### Estimated Duration: 100 minutes
 
