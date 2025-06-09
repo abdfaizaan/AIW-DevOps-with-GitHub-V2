@@ -78,7 +78,7 @@ In this task, you'll create an Azure Load Testing instance and run a test using 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
-   <validation step="1f1d2169-2995-41aa-a56e-bcc46e4dd1d0" />
+   <validation step="d553ecad-c385-4148-ba65-fbce5cb985ad" />
 
 ## Task 3: Explore Chaos Studio
 
@@ -193,7 +193,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
-   <validation step="1b6dbacd-1be8-459a-89f7-436848c7b9bc" />
+   <validation step="7042c8dd-d5f9-4300-92a9-6d1e0ae9a1c4" />
    
 ## Summary
 
