@@ -34,27 +34,27 @@ In this task, you'll access and explore the code repository of the web app using
 
    ![](media/new-devops-github-lab02-2.png)
 
-1. You'll be to see the lab files in Visual Studio code and explore the code files.
+1. You'll see the lab files in Visual Studio Code and explore the code files.
 
    ![](media/devops1.4.png)
 
 ## Task 2: Set up Local Infrastructure
 
-In this task, You will set up the local infrastructure using Dotnet. You'll be working with three docker images: fabrikam-init, fabrikam-api, and fabrikam-web.
+In this task, you will set up the local infrastructure using DOTNET. You'll be working with three docker images: fabrikam-init, fabrikam-api, and fabrikam-web.
 
 1. Open a **New Terminal** in the Visual Studio Code by selecting click on **menu (1)**, click on **Terminal (2)** and then on **New Terminal (3)**.
 
    ![](media/ex2-t2.png "New Repository Creation Form")
 
-1. Click on the **drop-down** **(1)** button next to PowerShell and select **Command Prompt** **(2)** from the list. A new command Prompt terminal will be opened.
+1. Click on the **drop-down** **(1)** button next to PowerShell and select **Command Prompt** **(2)** from the list. A new Command Prompt terminal will be opened.
 
    ![](media/2dgn45.png)
 
-1. Navigate to **Environment** **(1)**, click on **Service Principal Details** **(2)** and copy the **Application Id(Client Id)**, **Secret Key (Client Secret)**, and **Tenant Id (Directory ID)**.
+1. Navigate to **Environment** **(1)**, click on **Service Principal Details** **(2)** to get the **Application Id(Client Id)**, **Secret Key (Client Secret)**, and **Tenant Id (Directory ID)**.
 
    ![](media/ex2-t2-3.png)
 
-1. Update the **Application Id(Client Id)**, **(Secret Key)client Secret**, and **tenant Id** in the command mentioned below. Run it in the terminal.
+1. The **Application Id(Client Id)**, **(Secret Key)client Secret**, and **tenant Id** are already injected in the command mentioned below. Verify the values once and run it in the terminal.
 
    ```pwsh
    az login --service-principal -u <inject key="AppID" enableCopy="false" /> -p <inject key="AppSecret" enableCopy="false" /> --tenant <inject key="TenantID" enableCopy="false" />
@@ -62,7 +62,7 @@ In this task, You will set up the local infrastructure using Dotnet. You'll be w
 
    ![](media/2dgn47.png)
 
-1. Run the below mentioned command to navigate to `ContosoTraders.Api.Products` folder.
+1. Run the below-mentioned command to navigate to `ContosoTraders.Api.Products` folder.
 
    ```pwsh
    cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\ContosoTraders.Api.Products
@@ -70,7 +70,7 @@ In this task, You will set up the local infrastructure using Dotnet. You'll be w
 
    ![](media/upd-2dgn48.png)
 
-1. Run the below mentioned command to set secret path.
+1. Run the below-mentioned command to set the secret path.
 
    ```
    dotnet user-secrets set "KeyVaultEndpoint" "https://contosotraderskv<SUFFIX>.vault.azure.net/"
@@ -80,7 +80,7 @@ In this task, You will set up the local infrastructure using Dotnet. You'll be w
 
    ![](media/upd-2dgn49.png)
 
-1. Run the below mentioned command to build and host the carts locally.
+1. Run the below-mentioned command to build and host the carts locally.
 
    ```pwsh
    dotnet build
@@ -89,9 +89,9 @@ In this task, You will set up the local infrastructure using Dotnet. You'll be w
 
    ![](media/2dg122.jpg)
 
-   > **Note**: Please wait for 2 - 3 minutes for build to complete.
+   > **Note**: Please wait for 2 - 3 minutes for the build to complete.
 
-1. Keep the terminal running. Open a new browser tab and try accessing the application using localhost port. You'll be able to see the output similar to screenshot mentioned below.
+1. Keep the terminal running. Open a new browser tab and try accessing the application using localhost port. You'll be able to see the output similar to the screenshot mentioned below.
 
    ```pwsh
    https://localhost:62300/swagger
@@ -107,7 +107,7 @@ In this task, You will set up the local infrastructure using Dotnet. You'll be w
 
    ![](media/localhost2.png)
 
-1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**. Run the below mentioned command to navigate to `ContosoTraders.Api.Carts` folder.
+1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**. Run the below-mentioned command to navigate to `ContosoTraders.Api.Carts` folder.
 
    ```pwsh
    cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\ContosoTraders.Api.Carts
@@ -115,7 +115,7 @@ In this task, You will set up the local infrastructure using Dotnet. You'll be w
 
    ![](media/upd-2dgn52.png)
 
-1. Run the below mentioned command to set secret path.
+1. Run the below-mentioned command to set the secret path.
 
    ```
    dotnet user-secrets set "KeyVaultEndpoint" "https://contosotraderskv<SUFFIX>.vault.azure.net/"
@@ -125,7 +125,7 @@ In this task, You will set up the local infrastructure using Dotnet. You'll be w
 
    ![](media/upd-2dgn53.png)
 
-1. Run the below mentioned command to build and host the carts locally.
+1. Run the below-mentioned command to build and host the carts locally.
 
    ```pwsh
    dotnet build && dotnet run --no-build
@@ -133,9 +133,9 @@ In this task, You will set up the local infrastructure using Dotnet. You'll be w
 
    ![](media/2dg123.jpg)
 
-   > **Note**: Please wait for 2 - 3 minutes for build to complete.
+   > **Note**: Please wait for 2 - 3 minutes for the build to complete.
 
-1. Keep the terminal running. Open a new browser tab and try accessing the application using localhost port. You'll be able to see the output similar to screenshot mentioned below.
+1. Keep the terminal running. Open a new browser tab and try accessing the application using localhost port. You'll be able to see the output similar to the screenshot mentioned below.
 
    ```pwsh
    https://localhost:62400/swagger
@@ -149,7 +149,7 @@ In this task, You will set up the local infrastructure using Dotnet. You'll be w
 
    ![](media/dglt6.1.jpg)
 
-1. Run the below mentioned command to navigate to `ContosoTraders.Ui.Website` folder.
+1. Run the below-mentioned command to navigate to `ContosoTraders.Ui.Website` folder.
 
    ```pwsh
    cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\ContosoTraders.Ui.Website
@@ -157,7 +157,7 @@ In this task, You will set up the local infrastructure using Dotnet. You'll be w
 
    ![](media/upd-2dgn54.png)
 
-1. Run the below mentioned command to install npm.
+1. Run the below-mentioned command to install npm.
 
    ```pwsh
    npm ci
@@ -165,9 +165,9 @@ In this task, You will set up the local infrastructure using Dotnet. You'll be w
 
    ![](media/2dg124.jpg)
 
-   > **Note**: Please wait until the installation completes. It will take around 10 - 15 minutes when you run npm install for the first time. In case the execution is stuck, please use **ctrl + C** to stop the execution and retry step again.
+   > **Note**: Please wait until the installation completes. It will take around 10 - 15 minutes when you run npm install for the first time. In case the execution is stuck, please use **ctrl + C** to stop the execution and retry the step.
 
-1. Now run the below mentioned command to run UI of the application. This will automatically open a browser tab where you'll see the complete application running
+1. Now run the following command to run the UI of the application. This will automatically open a browser tab where you'll see the complete application running
 
    ```pwsh
    npm run start
@@ -179,7 +179,7 @@ In this task, You will set up the local infrastructure using Dotnet. You'll be w
 
 ## Task 3: Create the Project Repo
 
-In this task, you'll access the GitHub enterprise account and create a new repository to store the infrastructure.
+In this task, you'll access the GitHub Enterprise account and create a new repository to store the infrastructure.
 
 In this task, you will create an account in [GitHub](https://github.com) and use `git` to add lab files to a new repository.
 
@@ -376,9 +376,9 @@ In this exercise, you will build automation in GitHub for updating and republish
    - click on **Code** **(1)**,
    - Select the **Codespace** **(2)** tab
 
-     ![](media/ex2-kc-codespace.png)
+     ![](media/create-codespaces-1006.png)
 
-1. Run the below mentioned commands in the **Terminal**. You'll set node version to node 14.
+1. Run the below-mentioned commands in the **Terminal**. You'll set the node version to node 14.
 
       ```pwsh
       cd src
@@ -415,29 +415,6 @@ In this exercise, you will build automation in GitHub for updating and republish
 
     ![](media/2dgn162.png)
 
->**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
- > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab.
- > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
- > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
- > - **Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your GitHub User Name. Provide your **GitHub User Name** which looks like **github-cloudlabsuser-xxx**.
-
-   <validation step="4f20a33d-35ef-40a7-b9df-f4072265acaa" />
-
->**Note:** If your validation gets failed with error
-   **The Request Returned 404** then follow below steps and click on validate button again.
-
-   - At top right corner click on your profile and verify if username is added.
-
-      ![](media/ged.png)
-
-   - If the username is not already set, click on Edit Profile and update the username to match the organization name, using the format github-cloudlabsuser-xxx (replace xxx with the same suffix as the organization's name).
-
-      ![](media/editprofile.png)
-
-   - Save the changes and click on validate button now.
-
-      ![](media/uname.png)
-
 ## Task 5: Editing the GitHub Workflow File using Codespace
 
 The last task automated building and updating only one of the Docker images. In this task, we will update the workflow file with a more appropriate workflow for the structure of our repository. This task will end with a file named `docker-publish.yml` that will rebuild and publish Docker images as their respective code is updated.
@@ -447,15 +424,15 @@ The last task automated building and updating only one of the Docker images. In 
    - Click on **Code** **(1)**,
    - Select the **Codespace** **(2)** tab
 
-     ![](media/ex2-kc-codespace.png)
+     ![](media/create-codespaces-1006.png)
  
-     > **Note**: In case you had created codespace in previous task. Click on **+** button to create new codespace.
+     > **Note**: In case you had created a codespace in the previous task. Click on the **+** button to create a new codespace.
 
 2. You'll be redirected to a new codespace tab in the browser. Please wait until the codespace is configured.
 
    ![](media/2dg33.png)
 
-3. In the Visual Studio Code tab, Select **Open** to allow Github codespaces extension to open the URL.
+3. In the Visual Studio Code tab, select **Open** to allow GitHub Codespaces extension to open the URL.
 
    ![](media/2dg33at.png)
 
@@ -465,11 +442,11 @@ The last task automated building and updating only one of the Docker images. In 
 
     ![](media/contosoprovision.png)
 
-5. Remove the commands from line 7 to 14 from the workflow file and save this file by using **Ctrl+S**.
+5. Remove the commands from lines 7 to 14 from the workflow file and save this file by using **Ctrl+S**.
 
     ![](media/2dgn163.png)
 
-6. Using the terminal from codespace, run the following commands to commit this change to your repo and to push the change to GitHub.
+6. Using the terminal from Codespace, run the following commands to commit this change to your repo and to push the change to GitHub.
 
     ```pwsh
     git add .
@@ -481,7 +458,7 @@ The last task automated building and updating only one of the Docker images. In 
 
    > **Note**: This will update the workflow and will **not** run the "Update the ... Docker image" jobs.
 
-7. Navigate back to the GitHub browser, select the **Actions** **(1)** tab and review the **workflow** **(2)** created automatically for the changes made.
+7. Navigate back to the GitHub browser, select the **Actions** **(1)** tab, and review the **workflow** **(2)** created automatically for the changes made.
 
     ![](media/2dgn164.png)
 
@@ -491,4 +468,4 @@ The last task automated building and updating only one of the Docker images. In 
 
 In this exercise, you hosted the application locally, deployed the application to Azure using GitHub Actions, and explored Codespace.
 
-### You have successfully completed the lab. Click on **Next >>** to procced with next exercise.
+### You have successfully completed the lab. Click on **Next >>** to proceed with the next exercise.
