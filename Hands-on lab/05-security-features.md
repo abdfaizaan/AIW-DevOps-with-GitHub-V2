@@ -1,4 +1,4 @@
-# Exercise 4: Explore GitHub's advanced security features
+# Exercise 3: Explore GitHub's advanced security features
 
 ### Estimted Duration: 80 minutes
 
