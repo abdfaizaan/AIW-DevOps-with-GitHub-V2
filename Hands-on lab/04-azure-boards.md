@@ -227,7 +227,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
  > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
  > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
-   <validation step="33638c78-3fac-4987-accd-3df1a2e578f2" />
+   <validation step="dd7cf1fd-17af-495f-affa-9affe5b1e9de" />
 
 ## Summary
 
