@@ -72,13 +72,6 @@ In this task, you'll create an Azure Load Testing instance and run a test using 
 
    **Note**: In case, the test fails due to `The test was stopped due to a high error rate. Check your script and try again. In case the issue persists, raise a ticket with a support error`. This is expected as sometimes the load on the application exceeds the defined throughput.
 
->**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
- 
-> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
-
-   <validation step="d553ecad-c385-4148-ba65-fbce5cb985ad" />
 
 ## Task 3: Explore Chaos Studio
 
@@ -186,14 +179,6 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 1. On the **Details** preview page select **Action (1)** and view the complete detail of the run on **Fault details** under **Successful targets (2)**.
 
    ![](media/giub11.png)
-
->**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
- 
-> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
-
-   <validation step="7042c8dd-d5f9-4300-92a9-6d1e0ae9a1c4" />
    
 ## Summary
 
