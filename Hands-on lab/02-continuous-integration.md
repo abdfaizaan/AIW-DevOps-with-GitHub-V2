@@ -397,7 +397,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 
     ![](media/2dgn161.png)
 
-1. Navigate to Azure Portal, click on Resource groups from the Navigate panel to see the resource groups.
+1. Navigate to the Azure Portal, click on Resource groups from the Navigate panel to see the resource groups.
 
     ![](media/2dgn9.png)
 
@@ -405,6 +405,18 @@ In this exercise, you will build automation in GitHub for updating and republish
 
     ![](media/2dgn135.png)
 
+1. Search for **ui2 (1)** and select **contosotradersui2<inject key="DeploymentID" enableCopy="false" /> (2)** storage account from the list.
+
+    ![](media/strui2.png)
+
+1. On the storage account page, go to **Static website (1)** under Data Management, enable the feature by selecting **Enabled (2)**, set **index.html (3)** as the index document name, and click **Save (4)** to apply the changes.
+
+     ![](media/strui2-1.png)
+
+1. Navigate back to the **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
+
+    ![](media/2dgn135.png)
+   
 1. Select **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
 
     ![](media/2dgn127.png)
