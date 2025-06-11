@@ -4,7 +4,7 @@
 
 ## Overview
 
-In this lab, you'll will set up local infrastructure using .NET, and work with the application's carts, products, and UI components. The infrastructure will be deployed to the cloud using GitHub Actions, with automation for updating and republishing workflows. You’ll explore Azure Boards, Test Plans, and GitHub Enterprise security features such as Code scanning, CodeQL alerts, and Dependabots. Additionally, the lab covers implementing monitoring, logging, Azure load testing, and Azure Chaos Studio to improve application resilience and performance.
+In this lab, you'll set up local infrastructure using .NET, and work with the application's carts, products, and UI components. The infrastructure will be deployed to the cloud using GitHub Actions, with automation for updating and republishing workflows. You’ll explore Azure Boards, Test Plans, and GitHub Enterprise security features such as Code scanning, CodeQL alerts, and Dependabots. Additionally, the lab covers implementing monitoring, logging, Azure load testing, and Azure Chaos Studio to improve application resilience and performance.
 
 ## Objectives
 
@@ -18,8 +18,6 @@ Set up Dev Box, CI/CD with GitHub, integrate Azure Boards, enable GitHub securit
 ## Prerequisites
 
 Participants should have basic knowledge and understanding of the following:
-
-- Familiarity with Microsoft Dev Box
 - Basic Scripting and Automation
 
 ## Architecture
@@ -68,25 +66,25 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 ## Lab Validation
 
-1. After completing the task, hit the **Validate** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
+1. After completing the task, hit the **Validate** button under the Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
 
    ![](media/lab-04.png)
 
 ## Lab Guide Zoom In/Zoom Out
  
-1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+1. To adjust the zoom level for the environment page, click the **A↕: 100%** icon located next to the timer in the lab environment.
 
      ![](media/new-get-start-25-6.png)
 
 ## Let's Get Started with Azure Portal
 
-1. In the JumpVM, click on the Azure portal shortcut of the Microsoft Edge browser which is created on the desktop.
+1. In the JumpVM, click on the Azure portal shortcut of the Microsoft Edge browser, which is created on the desktop.
 
       ![](media/GS1.png)
 
-   > **Note**: If you see any PowerShell windows running in your VM, please do not close that as it's setting up some configurations inside the environment.
+   > **Note**: If you see any PowerShell windows running in your VM, please do not close them as it's setting up some configurations inside the environment.
 
-1. On the **Sign in to Microsoft Azure** tab you will see the login screen, in that enter the following email/username, and click on **Next**.
+1. On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter the following email/username and click **Next**.
 
    - **Email/Username**: <inject key="AzureAdUserEmail"></inject>
 
@@ -104,15 +102,15 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
     >**Note:** Do not enable MFA, select **Ask Later**.
 
-1. First-time users are often prompted to Stay Signed In, if you see any such pop-up, click on **Yes**.
+1. First-time users are often prompted to Stay Signed In. If you see any such pop-up, click on **Yes**.
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
-1. Now you will see Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
+1. Now you will see the Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
 
    ![](media/select-rg.png "Resource groups")
 
-1. Confirm that you have all resource group is present as shown below.
+1. Confirm that you have all the resource groups present as shown below.
 
    ![](media/rgdn-new.png "Resource groups")
 
