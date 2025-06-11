@@ -24,19 +24,19 @@ In this lab, you will perform:
 
 1. In the first graph, you can see the number of failed requests for the Application access.
 
-   ![](media/upd-ex6-t1-failedrequests.png)
+   ![](media/E4T1S3.png)
 
 1. In the next graph, you can see the average server response time.
 
-   ![](media/upd-ex6-t1-server-response-time.png)
+   ![](media/E4T1S4.png)
 
 1. In the next graph, you can see the number of server requests.
 
-   ![](media/upd-ex6-t1-server-requests.png)
+   ![](media/E4T1S5.png)
 
 1. In the last graph, you can see the average availability.
 
-   ![](media/upd-ex6-t1-availability.png)
+   ![](media/E4T1S6.png)
 
 ## Task 2: Set up Load Testing
 
@@ -48,7 +48,7 @@ In this task, you'll create an Azure Load Testing instance and run a test using 
 
 1. From the overview of **contoso-traders-ui2<inject key="Deploymentid" enableCopy="false" />** endpoint, copy the **Endpoint hostname** and paste it into the notepad for later use in the task.
 
-   ![](media/dglt2.jpg)
+   ![](media/E4T2S2.png)
 
 1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" enableCopy="false" />** **(1)** resource group and select the **Azure Load Testing** resource with the name **contoso-traders-loadtest<inject key="Deploymentid" />** **(2)**.
 
@@ -83,19 +83,19 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
 1. In the **Azure Chaos Studio**, select **Targets (1)** in the left menu from the Experiments management dropdown. From the drop-down menu, select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** **(2)** resource group.
 
-   ![](media/giub3.png)
+   ![](media/E4T3S2.png)
 
 1. Click on the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** **(1)** **Kubernetes service** instance and form the drop-down for **Enable Targets** **(2)** choose **Enable service-direct targets (All resources)** **(3)**.
 
-   ![](media/giub.png)
+   ![](media/E4T3S3.png)
 
 1. Click on **Review + Enable**.
 
-   ![](media/reviewenable.png)
+   ![](media/E4T3S4.png)
 
 1. Then click on **Enable** to Enable service direct targets.
 
-   ![](media/enable.png)
+   ![](media/E4T3S5.png)
 
 1. Wait for the deployment to be completed.
 
@@ -114,11 +114,11 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
    - Name: **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** **(3)**
    - Region: Leave it to default
 
-     ![](media/E5T1S10.png)
+     ![](media/E4T3S9.png)
 
 1. On the **Permissions** page, select **Assign experiment permission manually** and select **Next: Experiment designer >**.
 
-   ![](media/perm.png)
+   ![](media/E4T3S10.png)
 
 1. On the **Experiment designer** page select **+ Add action (1)** and choose **Add fault (2)**.
 
@@ -138,11 +138,11 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
 1. Click on **Review + create**.
 
-   ![](media/upd-review.png)
+   ![](media/E4T3S14.png)
 
 1. On the **Review + create** click on **Create**.
 
-   ![](media/2dgn104.png)
+   ![](media/E4T3S15.png)
 
 1. Navigate back to the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** container instance and select **Access control (IAM) (1)** from the left navigation pane, click on **+ Add (2)** and select **Add role assignment (3)**.
 
@@ -166,7 +166,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
 1. On the Azure portal navigate back to the Chaos experiment you created **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** and click on **Start**.
 
-   ![](media/giub6.png)
+   ![](media/E4T3S21.png)
 
 1. Select **Ok** for **Start this experiment** pop-up.
 
@@ -174,7 +174,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
 1. Once the experiment status is **Success** click on **Details** to view the run preview.
 
-   ![](media/2dgn109.png)
+   ![](media/E4T3S23.png)
 
 1. On the **Details** preview page select **Action (1)** and view the complete detail of the run on **Fault details** under **Successful targets (2)**.
 
