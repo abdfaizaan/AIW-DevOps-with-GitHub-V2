@@ -165,6 +165,10 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
    ```pwsh
    cd C:\Workspaces\lab\aiw-devops-with-github-lab-files
+   ```
+   >**Note**:Use the above command if not in the "\Workspaces\lab\aiw-devops-with-github-lab-files" on VS code. 
+   If already in the library, use the command below.
+   ```pwsh
    git pull
    ```
   

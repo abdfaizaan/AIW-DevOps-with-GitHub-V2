@@ -117,7 +117,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
 1. Run the below command to set secret path.
 
    ```pwsh
-   cd dotnet user-secrets set "KeyVaultEndpoint" "https://contosotraderskv<inject key="DeploymentID" />.vault.azure.net/
+   dotnet user-secrets set "KeyVaultEndpoint" "https://contosotraderskv<inject key="DeploymentID" />.vault.azure.net/
    ```
 
    ![](media/upd-2dgn53.png)
@@ -185,7 +185,7 @@ In this task, you'll access the GitHub enterprise account and create a new repos
 
 In this task, you will create an account in [GitHub](https://github.com) and use `git` to add lab files to a new repository.
 
-1. In a new browser tab open ```https://www.github.com/login```. From Environment details page ***(1)***, navigate to **License** ***(2)*** tab and **copy** ***(3)*** the crentials. Use the same username and password to login into GitHub.
+1. In a new browser tab open ```https://www.github.com/login```. From Environment details page ***(1)***, navigate to **License** ***(2)*** tab and **copy** ***(3)*** the credentials. Use the same username and password to login into GitHub.
 
    ![](media/credloupd.png) 
    
@@ -263,8 +263,8 @@ In this task, you will create an account in [GitHub](https://github.com) and use
       git add .
       git commit -m "Initial commit"
       git branch -M main
-      git remote add origin<Unique-ID> <your_github_repository-url>
-      git push -u origin<Unique-ID> main
+      git remote add <Unique-ID> <your_github_repository-url>
+      git push -u <Unique-ID> main
       ```
      
    - If you are asked authenticate your GitHub account. Select **1. web browser** and you will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize git-ecosystem** to provide access
@@ -287,7 +287,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![](media/error1lo.png)   
 
-(iii) After completing the previous step, navigate back to VS Code and rerun step-15 to finish the push process. 
+(iii) After completing the previous step, navigate back to VS Code and rerun step-13 to finish the push process. 
 
 ### Task 4: Build and push using GitHub Actions
 
