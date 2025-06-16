@@ -19,7 +19,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
 **Note**: To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to the public.
    
-1. Select the **settings** ***(1)*** tab from the GitHub browser tab. Click on **Advanced security** ***(2)*** under security side blade.
+1. Select the **Settings (1)** tab from the GitHub browser tab. Click on **Advanced security (2)** under security side blade.
 
    ![](media/settingsupd.png)  
    
@@ -27,25 +27,25 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
    ![](media/set_up.png)      
 
-1. Update the workflow name to **codeql-analysis.yml** ***(1)*** and review the yaml file. Select **Commit changes** ***(2)***, then select **Commit directly to the main branch** ***(3)*** and click on **Commit changes** ***(4)***.
+1. Update the workflow name to **codeql-analysis.yml (1)** and review the yaml file. Select **Commit changes (2)**, then select **Commit directly to the main branch (3)** and click on **Commit changes (4)**.
   
    ![](media/code234.png) 
 
    ![](media/code456.png) 
   
-1. Navigate to **Actions** ***(1)*** tab, You can review the **workflow** ***(2)*** run.
+1. Navigate to **Actions (1)** tab, You can review the **workflow (2)** run.
     
    ![](media/ex5-codeql-actions.png) 
 
-1. Click on **Security** and under code scanning alerts, click on **set up code scanning (1)** if it is not enabled.
+1. Click on **Security** and under code scanning alerts, click on **Set up code scanning (1)** if it is not enabled.
 
    ![](media/set_up_code_scanning.png) 
    
-1. Navigate to **Security** ***(1)*** tab and click on **View alerts** ***(2)***.
+1. Navigate to **Security (1)** tab and click on **View alerts (2)**.
    
    ![](media/ex5-codescanning-viewalerts.png)
   
-1. You will be navigated to **Code scanning (1)** section. You may see **No new code scanning alerts**.
+1. You will be navigated to **Code scanning (1)** section. You may see **No new code scanning alerts (2)**.
    
    ![](media/codescanning.png)
     
@@ -53,15 +53,15 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
  
 In this task, you'll enable Repository security advisories. You can use GitHub Security Advisories to privately discuss, fix, and publish information about security vulnerabilities in your repository.  Anyone with admin permissions to a repository can create a security advisory.
  
-1. Navigate to **Security** ***(1)*** tab, select **Advisories** ***(2)*** from the side blade and click on **New draft security advisory** ***(3)***.
+1. Navigate to **Security (1)** tab, select **Advisories (2)** from the side blade and click on **New draft security advisory (3)**.
 
    ![](media/ex5-t2-advisories.png)  
      
 1. In the Open a draft security advisory tab, under Advisory Details section provide the following details.
 
-   - Title: **Improper Access Control in aiw-devops-with-github-lab-files/src/TailwindTraders.Ui.Website/src/App.js** ***(1)***
-   - CVE identifier: **Request CVE ID later** ***(2)***
-   - Description: **Add** ***(3)*** the below mentioned details in the description section.
+   - Title: **Improper Access Control in aiw-devops-with-github-lab-files/src/TailwindTraders.Ui.Website/src/App.js (1)**
+   - CVE identifier: **Request CVE ID later (2)**
+   - Description: **Add (3)** the below mentioned details in the description section.
    
       ```
       Impact
@@ -98,18 +98,18 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
     
       ![](media/ex5-t2-securityadvisor1.png)
    
-1. In the Affected products section, provide the following details and click on **Create draft security advisory** ***(7)***   
+1. In the Affected products section, provide the following details and click on **Create draft security advisory (7)**   
  
-   - Ecosystem: **Composer** ***(1)***
-   - Package name: **aiw-devops-with-github-lab-files/src/TailwindTraders.Ui.Website/src/App.js** ***(2)***
-   - Affected version: **<1.2** ***(3)***
-   - Patched version: **1.2** ***(4)***
-   - Severity: **High** ***(5)***
-   - Common Weakness Enumerator (CWE): **Improper Access Control (CWE-284)** ***(6)***
+   - Ecosystem: **Composer(1)**
+   - Package name: **aiw-devops-with-github-lab-files/src/TailwindTraders.Ui.Website/src/App.js (2)**
+   - Affected version: **<1.2 (3)**
+   - Patched version: **1.2 (4)**
+   - Severity: **High (5)**
+   - Common Weakness Enumerator (CWE): **Improper Access Control (CWE-284) (6)**
   
       ![](media/ex5-t2-securityadvisor2.png)
    
- 1. Once the security advisory is created, scroll-down and click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
+ 1. Once the security advisory is created, scroll-down and click on **Start a temporary private fork**. It is used to collaborate on a patch for this advisory.
 
     ![](media/ex5-t2-securityadvisor3.png)
     
@@ -127,7 +127,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
 In this task, you will use Dependabot to track the versions of the packages we use in our GitHub repository and create pull requests to update packages for us.
 
-1. In your lab files GitHub repository, navigate to the **Settings** tab and select the **Advanced security** ***(2)*** under Security from side blade. Make sure **Dependabot alerts** is **Enabled** ***(3)***, if not click on **Enable** to Enable Dependabot alerts. Click on **Enable** ***(4)*** to Enable Dependabot security updates.
+1. In your lab files GitHub repository, navigate to the **Settings** tab and select the **Advanced security (2)** under Security from side blade. Make sure **Dependabot alerts** is **Enabled (3)**, if not click on **Enable** to Enable Dependabot alerts. Click on **Enable (4)** to Enable Dependabot security updates.
 
    > **Note**: Enabling the `Dependabot security updates` will also automatically enable `Dependency graph` and `Dependabot alerts`.
 
@@ -135,7 +135,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
    > **Note**: The alerts for the repository may take some time to appear. The rest of the steps for this task rely on the alerts to be present.
 
-1. To observe Dependabot issues, navigate to the **Security** ***(1)*** tab and select the **View Dependabot alerts** ***(2)*** link.
+1. To observe Dependabot issues, navigate to the **Security (1)** tab and select the **View Dependabot alerts (2)** link.
 
    ![GitHub Dependabot alerts in the Security tab.](media/ex5-t3-viewdb.png "GitHub Dependabot alerts")
 
@@ -143,7 +143,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
    ![GitHub Dependabot alerts in the Security tab.](media/ex5-t3-dependabot.png "GitHub Dependabot alerts")
 
-1. Sort the Dependabot alerts by `Package name`. Under the **Package** ***(1)*** dropdown menu, search for **node-forge** ***(2)*** by typing in the search box and select **node-forge** ***(3)*** vulnerability.
+1. Sort the Dependabot alerts by `Package name`. Under the **Package (1)** dropdown menu, search for **node-forge (2)** by typing in the search box and select **node-forge (3)** vulnerability.
 
    ![Summary of the `handlebars` Dependabot alert in the list of Dependabot alerts.](media/ex5-t3-node-forge.png "`handlebars` Dependabot alert")
 
@@ -166,7 +166,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
    ```pwsh
    cd C:\Workspaces\lab\aiw-devops-with-github-lab-files
    ```
-   >**Note**:Use the above command if not in the "\Workspaces\lab\aiw-devops-with-github-lab-files" on VS code. 
+   >**Note**: Use the above command if not in the "\Workspaces\lab\aiw-devops-with-github-lab-files" on VS code. 
    If already in the library, use the command below.
    ```pwsh
    git pull
@@ -182,7 +182,7 @@ In this task, you'll explore about how secret scanning works and see how it gene
 
    ![](media/2dg110.png)
     
-1. Select **Code security** from the sidebar and make sure **Secret scanning** and **Push protection** is **enabled**.
+1. Select **Code security** from the sidebar and make sure **Secret scanning** and **Push protection** is **Enabled**.
 
    ![](media/2dg111a.png)   
     
@@ -190,11 +190,11 @@ In this task, you'll explore about how secret scanning works and see how it gene
 
    ![](media/2dg112.png)    
    
-1. Click on **Add file** and select **create new file** option.
+1. Click on **Add file** and select **Create new file** option.
 
    ![](media/2dg113.png)    
    
-1. Add new file with name **build.docker-compose.yml (1)** name, add the code mentioned below **commit** the file. Here, you'll expose the **application ID** of a service principal.
+1. Add new file with name **build.docker-compose.yml (1)** name, add the code mentioned below **commit** the file. Here, you'll expose the **Application ID** of a service principal.
 
    >**Note:** Replace your `<Application ID>` and `<Secret Key>` in the code.
 
