@@ -99,12 +99,13 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    ![](media/upd-2dgn51.png)     
    
    > **Note:** If you are not able to access the application, click on **Advanced** under Your connection isn't private.
+       
 
-   ![](media/localhost1.png) 
+    ![](media/localhost1.png) 
    
-* Then click on Continue to localhost(unsafe) to access the application.
+   * Then click on Continue to localhost(unsafe) to access the application.
 
-   ![](media/localhost2.png)   
+      ![](media/localhost2.png)   
    
 1. Navigate back to **VS Code** and stop the terminal by typing **Ctrl + C**. Run the below mentioned command to navigate to `ContosoTraders.Api.Carts` folder. 
   
