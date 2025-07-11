@@ -50,9 +50,18 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
 
    ![](media/2dgn96.png)
 
-1. On the **Create test** page, under basic tab paste the **Endpoint URL** as Test URL ***(1)*** and  leave everything as default, then click **Run Test** ***(2)***.
+1. On the **Create a URL-based test** page, under the **Basics** tab, configure the following:
 
-   ![](media/dglt3.jpg)
+   - Uncheck the **Enable advanced settings** box **(1)**.
+   - Set the **Test description** to a name of your choice **(2)**.
+   - Enter the **Test URL** using the endpoint copied earlier **(3)**.
+   - Set **Number of virtual users** to `5` **(4)**.
+   - Set **Test duration** to `2` minutes **(5)**.
+   - Set **Ramp-up time** to `0` minutes **(6)**.
+   - Leave the other settings as default.
+   - Click on **Review + create** **(7)**.
+
+   ![](media/gtgt-rt.png)
 
 1. The test run will starting running and once the test run is completed, you will be able to see **Client-side metrics**. Explore the given metrics output.
 
@@ -62,103 +71,107 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
      
 ## Task 3: Explore Chaos Studio
 
-In this task you will add **Targets** and create an **Experiment** on **Azure Chaos Studio** to check the resilience of the web application that we created by adding  real faults and observe how our applications respond to real-world disruptions.
+In this task you will add **Targets** and create an **Experiment** on **Azure Chaos Studio** to check the resilience of the web application that we created by adding real faults and observe how our applications respond to real-world disruptions.
 
 1. In the Azure Portal search for **Azure Chaos Studio (1)** and then click on it from the search results **(2)**.
-   
+
    ![](media/Ex6-T2-S1.1.png)
 
-1. In the **Azure Chaos Studio**, select **Targets** on the left menu.
+1. In the **Azure Chaos Studio**, select **Targets (1)** in the left menu from the Experiments management dropdown. From the drop-down menu, select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** **(2)** resource group.
 
-   ![](media/Ex6-T2-S2.png)
-      
-1. From the drop-down menu, select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group.
- 
-   ![](media/2dgn122.1.png)
-     
+   ![](media/E4T3S2.png)
+
 1. Click on the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** **(1)** **Kubernetes service** instance and form the drop-down for **Enable Targets** **(2)** choose **Enable service-direct targets (All resources)** **(3)**.
 
-   ![](media/2dgn99.png)
-     
+   ![](media/E4T3S3.png)
+
 1. Click on **Review + Enable**.
 
-   ![](media/reviewenable.png)
+   ![](media/E4T3S4.png)
 
-1. Then click on **Enable** to Enable service direct targets . 
-   
-   ![](media/enable.png)
+1. Then click on **Enable** to Enable service direct targets.
 
-1. Wait for the deployment to be completed.  
+   ![](media/E4T3S5.png)
 
-1. In the Azure Portal search for **Azure Chaos Studio** ***(1)*** and then click on it from the search results ***(2)***.
-   
+1. Wait for the deployment to be completed.
+
+1. In the Azure Portal search for **Azure Chaos Studio** **_(1)_** and then click on it from the search results **_(2)_**.
+
    ![](media/Ex6-T2-S1.1.png)
-    
-1. Once the target is enabled, select **Experiments** ***(1)*** on the left and click **+ Create** ***(2)***.
- 
-   ![](media/Ex6-T2-S5.3.png)
- 
-1. On the **Create an experiment** page, under **Basics** tab provide the following values and select **Next: Experiment designer >** ***(5)***.
 
-    - Subscription: select the default subscription ***(1)***
-    - Resource Group: **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** ***(2)***
-    - Name: **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** ***(3)***
-    - Region: Leave it to default ***(4)***
- 
-   ![](media/2dgn119.png)
- 
+1. Once the target is enabled, select **Experiments** **_(1)_** from the Experiments management dropdown on the left, click **+ Create** **_(2)_** drop-down, and select **New experiment** **(3)** .
+
+   ![](media/giub10.png)
+
+1. On the **Create an experiment** page, under **Basics** tab provide the following values and select **Next: Permissions >** **(4)**.
+
+   - Subscription: Select the default subscription **(1)**
+   - Resource Group: **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** **(2)**
+   - Name: **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** **(3)**
+   - Region: Leave it to default
+
+     ![](media/E4T3S9.png)
+
+1. On the **Permissions** page, select **Assign experiment permission manually** and select **Next: Experiment designer >**.
+
+   ![](media/E4T3S10.png)
+
 1. On the **Experiment designer** page select **+ Add action (1)** and choose **Add fault (2)**.
 
    ![](media/Ex6-T2-S7.3.png)
- 
-1. On the **Add fault** page, select the following and select **Next: Target resources>** **(4)**.
-   
-   - Faults: **AKS Chaos Mesh Pods Chaos** ***(1)***
-   - Duration (minutes): **5** ***(2)***
-   - jsonSpec: Leave it to default ***(3)***
-     
-   ![](media/2dgn61.png)
-     
-1. On the **Target resources**, select the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** ***(1)*** resource and **Add** ***(2)***.
-  
+
+1. On the **Add fault** page, select the following and select **Next: Target resources>**.
+
+   - Faults: **AKS Chaos Mesh Pod Chaos (deprecated)** **(1)**
+   - Duration (minutes): **5** **(2)**
+   - jsonSpec: Leave it to default **(3)**
+
+      ![](media/2dgn61-1.png)
+
+1. On the **Target resources**, select the **Manually select from a list** **(1)** under **Select target resources** , select the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** **(2)** resource, and **Add** **(3)**.
+
    ![](media/2dgn112.png)
-  
+
 1. Click on **Review + create**.
-  
-   ![](media/upd-review.png)
-   
+
+   ![](media/E4T3S14.png)
+
 1. On the **Review + create** click on **Create**.
-  
+
    ![](media/2dgn104.png)
-  
-1. Navigate back to the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** container instance and select **Access control (IAM) (1)**, click on **+ Add (2)** and select **Add role assignment (3)**. 
-  
-   ![](media/2dgn121.png)
-  
-1. In the **Add role assignment** page, under **Role** tab select **Owner (1)** and select **Next (2)**.
-  
-   ![](media/2dgn114.png)
-  
-1. Next on the **Members** tab select **Managed identity (1)**  for **Assign access to** , click on **+ Selected members (2)**  on the **Select managed identities** choose **Chaos Experiment (3)** for **Managed identity** select the experiment **fabmedical-chaos-<inject key="DeploymentID" enableCopy="false" /> (4)** click on **Select (5)**.  
-   
-   ![](media/2dgn115.png)
-  
-1. Click on **Review + assign**. 
-   
-   ![](media/2dgn116.png)
-      
+
+1. Navigate back to the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** container instance and select **Access control (IAM) (1)** from the left navigation pane, click on **+ Add (2)** and select **Add role assignment (3)**.
+
+   ![](media/giub9.png)
+
+1. In the **Add role assignment** page, under **Role** tab select **Privileged administrator roles (1)**. Select **Owner (2)** in it and then **Next (3)**.
+
+   ![](media/giub8.png)
+
+1. Next on the **Members** tab select **Managed identity (1)** for **Assign access to** , click on **+ Select members (2)** on the **Select managed identities** choose **Chaos Experiment (3)** for **Managed identity** select the experiment **contoso-chaos-<inject key="DeploymentID" enableCopy="false" /> (4)**, click on **Select (5)** and click on **Next** **(6)**.
+
+   ![](media/giub7.png)
+
+1. Next on the **Conditions** tab select **What user can do** as **Allow user to assign all roles (highly privileged)** **(1)** and click on **Review + assign** **(2)**.
+
+   ![](media/giub4.png)
+
+1. Click on **Review + assign**.
+
+   ![](media/giub5.png)
+
 1. On the Azure portal navigate back to the Chaos experiment you created **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** and click on **Start**.
-  
-   ![](media/2dgn108.png)
- 
+
+   ![](media/E4T3S21.png)
+
 1. Select **Ok** for **Start this experiment** pop-up.
 
-    ![](media/Ex6-T2-S17.1.png)
-       
+   ![](media/Ex6-T2-S17.1.png)
+
 1. Once the experiment status is **Success** click on **Details** to view the run preview.
- 
-   ![](media/2dgn109.png)
- 
+
+   ![](media/E4T3S23.png)
+
 1. On the **Details** preview page select **Action (1)** and view the complete detail of the run on **Fault details** under **Successful targets (2)**.
  
    ![](media/2dgn110.png)
