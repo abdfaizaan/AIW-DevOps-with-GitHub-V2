@@ -64,15 +64,15 @@ In this task, you will create an Azure Load Testing instance and run a quick URL
 
    ![](media/ld-ex3-2-5.png)
 
-1. The test run will starting running and once the test run is completed, you will be able to see **Client-side metrics**. Explore the given metrics output.
+1. The test run will start running, and once the test run is completed, you will be able to see **Client-side metrics**. Explore the given metrics output.
 
    ![](media/dglt4.jpg)
    
-   **Note**: In case, the test fails due to `The test was stopped due to a high error rate. Check your script and try again. In case the issue persists, raise a ticket with support` error. This is expected as sometimes the load on the application exceeds the defined throughput.
+   **Note**: In case the test fails due to `The test was stopped due to a high error rate. Check your script and try again. In case the issue persists, raise a ticket with support team. This is expected as sometimes the load on the application exceeds the defined throughput.
      
 ## Task 3: Explore Chaos Studio
 
-In this task you will add **Targets** and create an **Experiment** on **Azure Chaos Studio** to check the resilience of the web application that we created by adding real faults and observe how our applications respond to real-world disruptions.
+In this task, you will add **Targets** and create an **Experiment** on **Azure Chaos Studio** to check the resilience of the web application that we created by adding real faults and observe how our applications respond to real-world disruptions.
 
 1. On the **Azure Portal**, use the search bar **(1)** to search for **Chaos Studio**, and select it from the search results **(2)**.
 
@@ -90,7 +90,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
    ![](media/ld-ex3-3-4.png)
 
-1. Then click on **Enable** to Enable service direct targets.
+1. Then click on **Enable** to enable service direct targets.
 
    ![](media/ld-ex3-3-5.png)
 
@@ -177,7 +177,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
    ![](media/giub5.png)
 
-1. On the Azure portal navigate back to the Chaos experiment you created **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** and click on **Start**.
+1. On the Azure portal, navigate back to the Chaos experiment you created **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** and click on **Start**.
 
    ![](media/E4T3S21.png)
 
