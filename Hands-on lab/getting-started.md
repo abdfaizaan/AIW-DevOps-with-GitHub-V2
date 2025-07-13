@@ -24,7 +24,7 @@ Participants should have basic knowledge and understanding of the following:
 
 ## Architecture
 
-In This lab architecture focuses on validating the performance and resilience of a cloud-native web application deployed to Azure. The application is hosted on Azure Kubernetes Service (AKS) and connects to supporting services like Azure SQL Database and Azure Cosmos DB. 
+In this lab, the architecture focuses on validating the performance and resilience of a cloud-native web application deployed to Azure. The application is hosted on Azure Kubernetes Service (AKS) and connects to supporting services like Azure SQL Database and Azure Cosmos DB. 
 
 Application monitoring is enabled using Azure Application Insights to collect telemetry data, track performance metrics, and visualize failures. Azure Load Testing is used to generate high-scale simulated traffic against the application endpoints to evaluate performance under load. To test system resilience, Azure Chaos Studio is integrated to inject controlled faults into the application infrastructure and measure its response to real-world disruptions.
 
@@ -72,7 +72,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 ## Lab Validation
 
-After completing the task, hit the **Validate** button under the Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
+After completing the task, hit the **Validate** button under the Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task; if not, carefully read the error message and retry the step, following the instructions in the lab guide.
 
    ![](media/lab-04.png)
 
