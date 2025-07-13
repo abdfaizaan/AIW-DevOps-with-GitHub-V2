@@ -68,7 +68,7 @@ In this task, you will create an Azure Load Testing instance and run a quick URL
 
    ![](media/dglt4.jpg)
    
-   **Note**: In case the test fails due to `The test was stopped due to a high error rate. Check your script and try again. In case the issue persists, raise a ticket with support team. This is expected as sometimes the load on the application exceeds the defined throughput.
+   **Note:** In case the test fails due to `The test was stopped due to a high error rate. Check your script and try again. In case the issue persists, raise a ticket with support team. This is expected as sometimes the load on the application exceeds the defined throughput.
      
 ## Task 3: Explore Chaos Studio
 
@@ -104,12 +104,12 @@ In this task, you will add **Targets** and create an **Experiment** on **Azure C
 
    ![](media/giub10.png)
 
-1. On the **Create an experiment** page, under the **Basics** tab, provide the following values and click **Next: Permissions >** **(5)**:
+1. On the **Create an experiment** page, under the **Basics** tab, provide the following values and click **Next: Permissions (5)**:
 
-   - **Subscription**: Select your default subscription **(1)**
-   - **Resource group**: **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** **(2)**
-   - **Name**: **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** **(3)**
-   - **Region**: Leave it to default **(4)**
+   - **Subscription:** Select your default subscription **(1)**
+   - **Resource group:** **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** **(2)**
+   - **Name:** **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** **(3)**
+   - **Region:** Leave it to default **(4)**
 
      ![](media/ld-ex3-3-9.png)
 
