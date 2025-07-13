@@ -391,7 +391,7 @@ In this task, you will configure GitHub Codespaces to work with your project rep
    git push
    ```
     
-1. From your GitHub repository, select **Actions** ***(1)*** tab. You'll see an Action named **Updated node version** ***(2)*** executing. Please wait until the execution completes
+1. From your GitHub repository, select **Actions (1)** tab. You'll see an Action named **Updated node version (2)** executing. Please wait until the execution completes
 
    ![](media/2dgn160.png)
    
@@ -417,12 +417,12 @@ In this task, you will configure GitHub Codespaces to work with your project rep
     
 ### Task 5: Editing the GitHub Workflow File using Codespace
 
-The last task automated building and updating only one of the Docker images. In this task, we will update the workflow file with a more appropriate workflow for the structure of our repository. This task will end with a file named `docker-publish.yml` that will rebuild and publish Docker images as their respective code is updated.
+ In this task, you will manually trigger the GitHub Actions workflow to deploy the application using the configuration and secrets added in the previous steps. You will monitor the workflow run, examine the logs for each job, and validate that the deployment completes successfully. This step ensures your CI/CD pipeline is correctly configured and functional.
 
-1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** ***(3)***.
+1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main (3)**.
 
-   - click on **Code** ***(1)***, 
-   - Select the **Codespace** ***(2)*** tab
+   - click on **Code (1)**, 
+   - Select the **Codespace (2)** tab.
 
    ![](media/ex2-kc-codespace.png)
    
@@ -434,11 +434,12 @@ The last task automated building and updating only one of the Docker images. In 
    
 1. From the explorer side blade, navigate to **.github (1)** > **workflows** **(2)** and select **contoso-traders-provisioning-deployment.yml** **(3)** file.
 
-   ![](media/contosoprovision.png) 
+   ![](media/ex-1-31.png) 
    
 1. Remove the commands from lines 7 to 14 from the workflow file.
 
-   ![](media/2dgn163.png) 
+   ![](media/ex-1-32.png)
+   ![](media/ex-1-33.png) 
    
 1. Using the terminal from Codespace, run the following commands to commit this change to your repo and to push the change to GitHub.
 
@@ -447,7 +448,7 @@ The last task automated building and updating only one of the Docker images. In 
    git commit -m "Updating app deployment"
    git push
    ```
-   ![](media/2dgn133.png) 
+   ![](media/ex-1-34.png) 
     
    > **Note:** This will update the workflow and will **not** run the "Update the ... Docker image" jobs.
 
@@ -457,8 +458,10 @@ The last task automated building and updating only one of the Docker images. In 
 
 1. Click on the **Next** button present in the bottom-right corner of this lab guide.
 
+   ![](media/lab-06.png)
+
 ## Summary
 
-In this exercise, you hosted the application locally, deployed the application to Azure using GitHub Actions, and explored Codespace.
+In this exercise, you configured a local development environment, created a GitHub repository, and set up secrets and credentials. You deployed the application to Azure using GitHub Actions and verified the deployment. You also used GitHub Codespaces to update and manage the CI/CD workflow.
    
    
