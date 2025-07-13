@@ -239,7 +239,7 @@ In this task, you'll log in to GitHub and create a new repository to store the l
 
    ![The `New Repository` creation form in GitHub.](media/2dg120.png "New Repository Creation Form")
 
-1. In the Are you absolutely sure? pop up window, Copy the **repository name** **(1)**, paste it in the **box** **(2)**, and cick on **I understand the consequences, delete this repository** **(3)**.
+1. Are you absolutely sure? pop up window, Copy the **repository name** **(1)**, paste it in the **box** **(2)**, and cick on **I understand the consequences, delete this repository** **(3)**.
 
    ![The `New Repository` creation form in GitHub.](media/2dg121.png "New Repository Creation Form")
 
@@ -334,7 +334,7 @@ In this task, you will configure GitHub Codespaces to work with your project rep
 
    ![](media/g_cor_1.png)
    
-   - Replace the values that you copied in below Json. You will be using them in this step.
+   - Replace the values that you copied below with JSON. You will be using them in this step.
    
    ```json
    {
@@ -452,7 +452,7 @@ In this task, you will configure GitHub Codespaces to work with your project rep
     
    > **Note:** This will update the workflow and will **not** run the "Update the ... Docker image" jobs.
 
-1. Navigate back to the GitHub browser, select the **Actions** ***(1)*** tab and review the **workflow** ***(2)*** created automatically for the changes made. 
+1. Navigate back to the GitHub browser, select the **Actions** ***(1)*** tab, and review the **workflow** ***(2)*** created automatically for the changes made. 
 
    ![](media/2dgn164.png)
 
