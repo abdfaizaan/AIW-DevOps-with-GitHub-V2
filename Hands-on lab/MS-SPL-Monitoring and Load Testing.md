@@ -54,7 +54,6 @@ In this task, you will create an Azure Load Testing instance and run a quick URL
 
 1. On the **Create a URL-based test** page, under the **Basics** tab, configure the following settings:
 
-   - Uncheck the **Enable advanced settings** box.
    - Set **Test name** to a name of your choice **(1)**.
    - Enter the **Test URL** using the copied endpoint hostname **(2)**.
    - Set **Number of virtual users** to `5` **(3)**.
