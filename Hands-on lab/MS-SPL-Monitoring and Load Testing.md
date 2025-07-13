@@ -1,18 +1,20 @@
-# Hands-On-Lab: Monitoring and Load Testing
+# Exercise 2: Monitoring and Load Testing
 
 ### Estimated Duration: 100 minutes
 
-In this exercise, we will add monitoring and logging to gain insight on the application's usage in the cloud. Then create Azure load testing, which is a fully managed load-testing service that enables you to generate high-scale loads. The service simulates traffic for your applications, regardless of where they're hosted. Developers, testers, and quality assurance (QA) engineers can use it to optimise application performance, scalability, or capacity. We will also explore Azure Chaos Studio, which helps you measure, understand, and improve your cloud application and service resilience.
+In this exercise, you will monitor application health using Application Insights, configure Azure Load Testing to simulate traffic, and explore Azure Chaos Studio to assess application resilience. These steps will help you analyze performance under load and evaluate how your system responds to real-world faults.
 
 ### Task 1: Monitoring using Application Insights
 
-1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" />** **(1)** resource group and select the **Application Insights** resource with the name  **contoso-traders-ai<inject key="Deploymentid" />** **(2)**.
+In this task, you will explore telemetry data captured by Application Insights. You'll review key metrics such as failed requests, server response time, server requests, and availability to monitor the health and performance of your application.
 
-   ![](media/upd-ex6-t1-openai.png)
+1. On the **Azure Portal**, navigate to the **contoso-traders-<inject key="DeploymentID" />** resource group **(1)** and select the **Application Insights** resource named **contoso-traders-ai<inject key="DeploymentID" />** **(2)**.
+
+   ![](media/ld-ex3-1-1.png)
    
-1. From the Overview of **contoso-traders-ai<inject key="Deploymentid" />** Application Insights resource, you can set the **Show data for last** as per your requirement of monitoring insights.
+1. On the **Overview** pane of the **contoso-traders-ai<inject key="DeploymentID" />** Application Insights resource **(1)**, use the **Show data for last** dropdown **(2)** to filter the monitoring data by a specific time range.
 
-   ![](media/upd-ex6-t1-set-showdata.png)
+   ![](media/ld-ex3-1-2.png)
    
 1. In the first graph, you can see the number of failed requests for the Application access.
 
@@ -32,36 +34,36 @@ In this exercise, we will add monitoring and logging to gain insight on the appl
    
 ## Task 2: Set up Load Testing
 
-In this task, you'll create Azure Load Testing instance and run a test using a JMeter file.
+In this task, you will create an Azure Load Testing instance and run a quick URL-based test using your application’s endpoint. This will help evaluate how your application performs under simulated load conditions.
 
-1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" />** resource group and select the **Endpoint** resource with the name  **contoso-traders-ui2<inject key="Deploymentid" />**.
+1. On the **Azure Portal**, navigate to the **contoso-traders-<inject key="DeploymentID" />** resource group **(1)** and select the **Endpoint** resource named **contoso-traders-ui2<inject key="DeploymentID" />** **(2)**.
 
-   ![](media/dglt1.jpg)
+   ![](media/ld-ex3-2-1.png)
 
-1. From the overview of **contoso-traders-ui2<inject key="Deploymentid" />** endpoint, copy the **Endpoint hostname** **(2)** and paste it in the notepad for later use in the task.
+1. On the **Overview** pane of the **contoso-traders-ui2<inject key="DeploymentID" />** endpoint **(1)**, copy the **Endpoint hostname** value **(2)** and save it in Notepad for later use in this task.
 
-   ![](media/dglt2.jpg)
+   ![](media/ld-ex3-2-2.png)
 
-1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" />** **(1)** resource group and select the **Azure Load Testing** resource with the name  **contoso-traders-loadtest<inject key="Deploymentid" />** **(2)**.
+1. On the **Azure Portal**, navigate to the **contoso-traders-<inject key="DeploymentID" />** resource group **(1)** and select the **Azure Load Testing** resource named **contoso-traders-loadtest<inject key="DeploymentID" />** **(2)**.
 
    ![](media/upd-2dgn117.png)
    
-1. On the left hand side pane, select **Tests** ***(1)*** and click on **+ Create** ***(2)*** and select **Create a quick test** ***(3)***.
+1. On the **Azure Load Testing** resource page, from the left-hand menu, select **Tests** **(1)**. Then click on **+ Create** **(2)** and choose **Create a quick test** **(3)**.
 
    ![](media/2dgn96.png)
 
-1. On the **Create a URL-based test** page, under the **Basics** tab, configure the following:
+1. On the **Create a URL-based test** page, under the **Basics** tab, configure the following settings:
 
-   - Uncheck the **Enable advanced settings** box **(1)**.
-   - Set the **Test description** to a name of your choice **(2)**.
-   - Enter the **Test URL** using the endpoint copied earlier **(3)**.
-   - Set **Number of virtual users** to `5` **(4)**.
-   - Set **Test duration** to `2` minutes **(5)**.
+   - Uncheck the **Enable advanced settings** box.
+   - Set **Test name** to a name of your choice **(1)**.
+   - Enter the **Test URL** using the copied endpoint hostname **(2)**.
+   - Set **Number of virtual users** to `5` **(3)**.
+   - Set **Test duration** to `2` minutes **(4)**.
    - Set **Ramp-up time** to `0` minutes **(6)**.
-   - Leave the other settings as default.
+   - Leave **Enable advanced settings** unchecked.
    - Click on **Review + create** **(7)**.
 
-   ![](media/gtgt-rt.png)
+   ![](media/ld-ex3-2-5.png)
 
 1. The test run will starting running and once the test run is completed, you will be able to see **Client-side metrics**. Explore the given metrics output.
 
@@ -73,80 +75,96 @@ In this task, you'll create Azure Load Testing instance and run a test using a J
 
 In this task you will add **Targets** and create an **Experiment** on **Azure Chaos Studio** to check the resilience of the web application that we created by adding real faults and observe how our applications respond to real-world disruptions.
 
-1. In the Azure Portal search for **Azure Chaos Studio (1)** and then click on it from the search results **(2)**.
+1. On the **Azure Portal**, use the search bar **(1)** to search for **Chaos Studio**, and select it from the search results **(2)**.
 
-   ![](media/Ex6-T2-S1.1.png)
+   ![](media/ld-ex3-3-1.png)
 
-1. In the **Azure Chaos Studio**, select **Targets (1)** in the left menu from the Experiments management dropdown. From the drop-down menu, select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** **(2)** resource group.
+1. On the **Chaos Studio** page, from the left-hand menu, select **Targets** **(1)**. Then, in the resource group dropdown, select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** **(2)**.
 
    ![](media/E4T3S2.png)
 
-1. Click on the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** **(1)** **Kubernetes service** instance and form the drop-down for **Enable Targets** **(2)** choose **Enable service-direct targets (All resources)** **(3)**.
+1. Click on the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** Kubernetes service instance **(1)**. From the **Enable Targets** dropdown **(2)**, select **Enable service-direct targets (All resources)** **(3)**.
 
    ![](media/E4T3S3.png)
 
-1. Click on **Review + Enable**.
+1. Select the checkbox next to **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** **(1)** and click **Review + Enable** **(2)**.
 
-   ![](media/E4T3S4.png)
+   ![](media/ld-ex3-3-4.png)
 
 1. Then click on **Enable** to Enable service direct targets.
 
-   ![](media/E4T3S5.png)
+   ![](media/ld-ex3-3-5.png)
 
 1. Wait for the deployment to be completed.
 
-1. In the Azure Portal search for **Azure Chaos Studio** **_(1)_** and then click on it from the search results **_(2)_**.
+1. In the **Azure Portal**, use the search bar **(1)** to search for **Chaos Studio**, and select it from the search results **(2)**.
 
-   ![](media/Ex6-T2-S1.1.png)
+   ![](media/ld-ex3-3-7.png)
 
-1. Once the target is enabled, select **Experiments** **_(1)_** from the Experiments management dropdown on the left, click **+ Create** **_(2)_** drop-down, and select **New experiment** **(3)** .
+1. Once the target is enabled, select **Experiments** **(1)** from the left-hand menu. Click on **+ Create** **(2)** and select **New experiment** **(3)**.
 
    ![](media/giub10.png)
 
-1. On the **Create an experiment** page, under **Basics** tab provide the following values and select **Next: Permissions >** **(4)**.
+1. On the **Create an experiment** page, under the **Basics** tab, provide the following values and click **Next: Permissions >** **(5)**:
 
-   - Subscription: Select the default subscription **(1)**
-   - Resource Group: **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** **(2)**
-   - Name: **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** **(3)**
-   - Region: Leave it to default
+   - **Subscription**: Select your default subscription **(1)**
+   - **Resource group**: **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** **(2)**
+   - **Name**: **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** **(3)**
+   - **Region**: Leave it to default **(4)**
 
-     ![](media/E4T3S9.png)
+     ![](media/ld-ex3-3-9.png)
 
-1. On the **Permissions** page, select **Assign experiment permission manually** and select **Next: Experiment designer >**.
+1. On the **Permissions** tab:
+   - Select **System assigned identity** **(1)**
+   - Choose **Assign experiment permissions manually** **(2)**
+   - Click **Next: Experiment designer >** **(3)**
 
-   ![](media/E4T3S10.png)
+   ![](media/ld-ex3-3-10.png)
 
 1. On the **Experiment designer** page select **+ Add action (1)** and choose **Add fault (2)**.
 
    ![](media/Ex6-T2-S7.3.png)
 
-1. On the **Add fault** page, select the following and select **Next: Target resources>**.
+1. On the **Add fault** page:
 
-   - Faults: **AKS Chaos Mesh Pod Chaos (deprecated)** **(1)**
-   - Duration (minutes): **5** **(2)**
-   - jsonSpec: Leave it to default **(3)**
+   - Select the fault type: **AKS Chaos Mesh Pod Chaos (deprecated)** **(1)**
+   - Set the **Duration (minutes)** to `5` **(2)**
+   - Click **Next: Target resources >** **(3)**
 
-      ![](media/2dgn61-1.png)
+      ![](media/ld-ex3-3-12.png)
 
-1. On the **Target resources**, select the **Manually select from a list** **(1)** under **Select target resources** , select the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** **(2)** resource, and **Add** **(3)**.
+1. On the **Target resources** tab:
+   - Select **Manually select from a list** **(1)**
+   - Check the box for **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** **(2)**
+   - Click **Add** **(3)**
 
-   ![](media/2dgn112.png)
+   ![](media/ld-ex3-3-13.png)
 
 1. Click on **Review + create**.
 
-   ![](media/E4T3S14.png)
+   ![](media/ld-ex3-3-14.png)
 
 1. On the **Review + create** click on **Create**.
 
    ![](media/2dgn104.png)
 
-1. Navigate back to the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** container instance and select **Access control (IAM) (1)** from the left navigation pane, click on **+ Add (2)** and select **Add role assignment (3)**.
+1. Navigate back to the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** container instance.
+
+   ![](media/ld-ex3-3-16.png)
+
+
+1. Select **Access control (IAM) (1)** from the left navigation pane, click on **+ Add (2)** and select **Add role assignment (3)**.
 
    ![](media/giub9.png)
 
-1. In the **Add role assignment** page, under **Role** tab select **Privileged administrator roles (1)**. Select **Owner (2)** in it and then **Next (3)**.
+1. On the **Add role assignment** page:
 
-   ![](media/giub8.png)
+   - Make sure the **Role** tab is selected **(1)**
+   - Under **Job function roles**, select **Privileged administrator roles** **(2)**
+   - Choose the **Owner** role from the list **(3)**
+   - Click **Next** **(4)**
+
+   ![](media/ld-ex3-3-17.png)
 
 1. Next on the **Members** tab select **Managed identity (1)** for **Assign access to** , click on **+ Select members (2)** on the **Select managed identities** choose **Chaos Experiment (3)** for **Managed identity** select the experiment **contoso-chaos-<inject key="DeploymentID" enableCopy="false" /> (4)**, click on **Select (5)** and click on **Next** **(6)**.
 
@@ -178,4 +196,6 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
 ## Summary
 
-In this exercise, you explored monitoring using Application Insights. You also configured Load testing and Chaos experiments for the application.
+In this exercise, you monitored application performance using Application Insights, simulated traffic using Azure Load Testing, and used Chaos Studio to evaluate the resilience of your application under real-world fault conditions. These tools help ensure your application is performant, stable, and fault-tolerant under load and disruption.
+
+## You have successfully completed the lab!
