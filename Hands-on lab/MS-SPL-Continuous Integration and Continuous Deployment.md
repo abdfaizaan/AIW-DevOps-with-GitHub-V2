@@ -181,12 +181,11 @@ In this task, you will set up the local infrastructure using **.NET**. You'll be
 
 In this task, you'll log in to GitHub and create a new repository to store the lab project files. You'll also configure repository settings and initialize it using Git from Visual Studio Code, preparing it for automated deployment through GitHub Actions.
 
-1. In a new browser tab, go to `https://www.github.com/login`.
+1. In a new browser tab, go to `https://www.github.com/login` and save the copied credentials in Notepad. You’ll use them again during GitHub login and device verification steps.
 
    From the **Environment** tab **(1)** in the lab environment, click on the **Licenses (2)** button. Then, copy the **GitHub UserEmail (3)** and **GitHub Password (4)**.
 
    ![](media/ex-1-4.png)
-   > **Note:** Save the copied credentials in Notepad. You’ll use them again during GitHub login and device verification steps.
  
 1. Open an **InPrivate window** in Microsoft Edge by clicking the three-dot menu **(1)** in the top-right and selecting **New InPrivate window (2)**.
 
