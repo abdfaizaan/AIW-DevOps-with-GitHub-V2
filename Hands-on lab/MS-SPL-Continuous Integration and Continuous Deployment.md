@@ -151,7 +151,7 @@ In this task, you will set up the local infrastructure using **.NET**. You'll be
    ```
    ![](media/upd-2dgn54.png) 
    
-1. Run the below mentioned command to install npm.
+1. Run the below-mentioned command to install npm.
 
    ```pwsh
    npm ci
