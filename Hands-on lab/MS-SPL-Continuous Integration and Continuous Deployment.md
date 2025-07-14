@@ -183,7 +183,7 @@ In this task, you'll log in to GitHub and create a new repository to store the l
 
 1. In a new browser tab, go to `https://www.github.com/login` and save the copied credentials in Notepad. You’ll use them again during GitHub login and device verification steps.
 
-   From the **Environment** tab **(1)** in the lab environment, click on the **Licenses (2)** button. Then, copy the **GitHub UserEmail (3)** and **GitHub Password (4)**.
+   From the **Environment** tab **(1)** in the lab environment, click on the **Licenses (2)** button, then copy the **GitHub UserEmail (3)** and **GitHub Password (4)**.
 
    ![](media/ex-1-4.png)
  
