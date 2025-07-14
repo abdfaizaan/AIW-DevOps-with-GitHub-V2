@@ -4,6 +4,16 @@
 
 In this exercise, you will set up the local infrastructure for a cloud-native web application using .NET and Docker, and deploy it to Azure using GitHub Actions. You will also automate deployment workflows, configure GitHub secrets, and explore Codespaces for managing your project repository.
 
+### Lab Objectives
+
+In this exercise, you will:
+
+- **Task 1: Access the lab files** using Visual Studio Code and explore the source code.
+- **Task 2: Set up Local Infrastructure** using .NET and Docker to run services locally.
+- **Task 3: Create the Project Repo** on GitHub and push the code from your local system.
+- **Task 4: Build and push using GitHub Actions** to automate container builds and deployments.
+- **Task 5: Editing the GitHub Workflow File using Codespace** to validate and customize CI/CD pipelines.
+
 ### Task 1: Access the lab files
 
 In this task, you'll access and explore the code repository of the web app using Visual Studio Code. Visual Studio Code is a cross-platform, lightweight, but powerful source code editor.
@@ -16,8 +26,7 @@ In this task, you'll access and explore the code repository of the web app using
 
    ![](media/devops1.3.png)
 
-1. In the **Open Folder** window, navigate to the following path:  
-   `C:\Workspaces\lab\aiw-devops-with-github-lab-files` **(1)**, Then click on **Select Folder (2)** to open the project.
+1. In the **Open Folder** window, navigate to the following path:  `C:\Workspaces\lab\aiw-devops-with-github-lab-files` **(1)**, Then click on **Select Folder (2)** to open the project.
 
    ![](media/ex-1-1.png)
     
@@ -41,13 +50,13 @@ In this task, you will set up the local infrastructure using **.NET**. You'll be
 
    ![](media/2dgn45.png)
    
-1. Navigate to the **Environment Details** pane **(1)**, click on **Service Principal Details (2)**, and copy the following values:
+1. Navigate to the **Environment (1)** details pane, click on **Service Principal Details (2)**, and copy the following values:
 
    - **Application ID (Client ID)**
    - **Secret Key (Client Secret)**
    -  **Tenant ID (Directory ID)** 
    
-   ![](media/ex-1-14.png)
+      ![](media/ex-1-14.png)
    
 1. Update the **Application ID (Client ID)**, **Client Secret**, and **Tenant ID** in the command below, and run it in the terminal:
 
@@ -93,11 +102,11 @@ In this task, you will set up the local infrastructure using **.NET**. You'll be
 
    ![](media/localhost1.png) 
    
-   * Then click on Continue to localhost(unsafe) to access the application.
+   > **Note:** Then click on Continue to localhost(unsafe) to access the application.
 
    ![](media/localhost2.png)   
    
-1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**. Run the below-mentioned command to navigate to `ContosoTraders.Api.Carts` folder. 
+1. Navigate back to **VS Code** and stop the terminal by typing **Ctrl + C**. Run the below-mentioned command to navigate to `ContosoTraders.Api.Carts` folder. 
   
    ```pwsh
    cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\ContosoTraders.Api.Carts
@@ -129,7 +138,7 @@ In this task, you will set up the local infrastructure using **.NET**. You'll be
 
    ![](media/upd-2dgn57.png)
    
-1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**.    
+1. Navigate back to **VS Code** and stop the terminal by typing **Ctrl + C**.    
    
 1. From the Windows taskbar, search for **Command Prompt** by typing **Command prompt (1)** in the search box, then click on **Command Prompt (2)** from the results to open it.
 
@@ -150,7 +159,7 @@ In this task, you will set up the local infrastructure using **.NET**. You'll be
   
    ![](media/2dg124.jpg) 
    
-   >**Note:** Please wait until the installation completes. It will take around 10 - 15 minutes when you run npm install for the first time. In case the execution is stuck, please use **ctrl + C** to stop the execution and retry the step.
+   >**Note:** Please wait until the installation completes. It will take around 10 - 15 minutes when you run npm install for the first time. In case the execution is stuck, please use **Ctrl + C** to stop the execution and retry the step.
    
 1. Navigate back to **VS Code**, run the below-mentioned command to navigate to `ContosoTraders.Ui.Website` folder. 
   
@@ -172,18 +181,17 @@ In this task, you will set up the local infrastructure using **.NET**. You'll be
 
 In this task, you'll log in to GitHub and create a new repository to store the lab project files. You'll also configure repository settings and initialize it using Git from Visual Studio Code, preparing it for automated deployment through GitHub Actions.
 
-1. In a new browser tab, go to `https://www.github.com/login`.
+1. In a new browser tab, go to `https://www.github.com/login` and save the copied credentials in Notepad. You’ll use them again during GitHub login and device verification steps.
 
-   From the **Environment** tab **(1)** in the lab environment, click on the **Licenses** button **(2)**. Then, copy the **GitHub UserEmail (3)** and **GitHub Password (4)**.
+   From the **Environment** tab **(1)** in the lab environment, click on the **Licenses (2)** button. Then, copy the **GitHub UserEmail (3)** and **GitHub Password (4)**.
 
    ![](media/ex-1-4.png)
-   > **Note:** Save the copied credentials in Notepad. You’ll use them again during GitHub login and device verification steps.
  
 1. Open an **InPrivate window** in Microsoft Edge by clicking the three-dot menu **(1)** in the top-right and selecting **New InPrivate window (2)**.
 
    ![](media/ex-1-5.png)
 
-1. In the new InPrivate window, go to `https://www.github.com/login`.
+1. In the new InPrivate window, go to `http://outlook.office.com/`.
 
    ![](media/ex-1-6.png)
 
@@ -203,7 +211,7 @@ In this task, you'll log in to GitHub and create a new repository to store the l
 
    ![](media/ex-1-10.png)
 
-1. On the **Device verification** screen, enter the code that was emailed to you and click **Verify (2)**.
+1. On the **Device verification** screen, enter the **Device verification code (1)** that was emailed to you and click **Verify (2)**.
 
    ![](media/g_cor.png) 
     
@@ -219,15 +227,15 @@ In this task, you'll log in to GitHub and create a new repository to store the l
 
 1. On the **Create a new repository** tab, name the repository **aiw-devops-with-github-lab-files (1)**, select **Public (2)**, and click the **Create repository (3)** button.
 
-   ![The `New Repository` creation form in GitHub.](media/2dgn91.png "New Repository Creation Form")
+   ![](media/g_cor_3.png)
    
-   >**Note:** If you observe any repository existing with the same name, please make sure you delete the Repo and create a new one. Please follow steps 6 to 10. Else, skip to step 11.
+   >**Note:** If you observe any repository existing with the same name, please make sure you delete the Repo and create a new one. Please follow steps 12 to 16. Else, skip to step 17.
 
 1. In the upper-right corner, expand the user **drop-down menu** ***(1)*** and select **Your repositories** ***(2)***.
 
    ![The `New Repository` creation form in GitHub.](media/2dg1.png "New Repository Creation Form")
 
-1. Using the search bar, search for ```aiw-devops-with-github-lab-files``` **(1)** and select to open it.
+1. Using the search bar, search for ```aiw-devops-with-github-lab-files``` **(1)** and select **aiw-devops-with-github-lab-files (2)**.
 
    ![The `New Repository` creation form in GitHub.](media/2dg118.png "New Repository Creation Form")
 
@@ -302,7 +310,7 @@ In this task, you will configure GitHub Codespaces to work with your project rep
 
    ![](media/upd-2dgn11.png) 
    
-1. In the **productsdb** page, expand **Settings (1)** from the left-hand menu, then select **Connection strings (2)**.  Under the **ADO.NET (3)** tab, copy the **ADO.NET (SQL authentication)** connection string by clicking the copy icon **(4)**.
+1. In the **productsdb** page, expand **Settings (1)** from the left-hand menu, then select **Connection strings (2)**.  Under the **ADO.NET (3)** tab, copy the **ADO.NET (SQL authentication)** connection string by clicking the **copy icon (4)**.
 
    ![](media/ex-1-21.png)  
  
@@ -319,11 +327,11 @@ In this task, you will configure GitHub Codespaces to work with your project rep
    - **Name:** Enter **SQL_PASSWORD (1)**
    - **Secret:** Paste the **ADO.NET (SQL authentication) (2)** connection string copied in the previous step.
    
-   ![](media/ex-1-23.png)
+      ![](media/ex-1-23.png)
    
-   >**Note:** Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
+      >**Note:** Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
    
-   ![](media/ex-1-22.png)   
+      ![](media/ex-1-22.png)   
    
 1. Navigate to the **Environment (1)** tab and click on **Service Principal Details (2)**. From the list, copy the following fields:
 
@@ -332,32 +340,32 @@ In this task, you will configure GitHub Codespaces to work with your project rep
    - **Application ID (Client ID)**
    - **Secret Key (Client Secret)**
 
-   ![](media/g_cor_1.png)
+      ![](media/g_cor_1.png)
    
    - Replace the values that you copied below with JSON. You will be using them in this step.
    
-   ```json
-   {
-      "clientId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
-      "clientSecret": "client-secret",
-      "tenantId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
-      "subscriptionId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz"
-   }
-   ```
+      ```json
+      {
+         "clientId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
+         "clientSecret": "client-secret",
+         "tenantId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz",
+         "subscriptionId": "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz"
+      }
+      ```
    
 1. Under **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret (3)**
 
    - **Name :** Enter **SERVICEPRINCIPAL (1)**
    - **Value :** Paste the service principal details in json format **(2)**
    
-   ![](media/ex-1-24.png)
+      ![](media/ex-1-24.png)
    
 1. Under **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret (3)**
 
    - **Name :** Enter **ENVIRONMENT (1)**.
    - **Value : ** **<inject key="DeploymentID" enableCopy="false" />** **(2)**.
    
-   ![](media/2dgn33.png)
+      ![](media/2dgn33.png)
    
 1. From your GitHub repository, select the **Actions (1)** tab. Select the **contoso-traders-app-deployment (2)** workflow from the side blade, click on the  **drop-down (3)** next Run workflow button, and select **Run workflow (4)**.
 
@@ -376,7 +384,7 @@ In this task, you will configure GitHub Codespaces to work with your project rep
    - click on **Code** ***(1)***, 
    - Select the **Codespace** ***(2)*** tab
 
-   ![](media/ex2-kc-codespace.png)
+      ![](media/ex2-kc-codespace.png)
    
 1. Run the below-mentioned commands in the **Terminal**. You'll set node version to node 14.
 
@@ -424,9 +432,9 @@ In this task, you will configure GitHub Codespaces to work with your project rep
    - click on **Code (1)**, 
    - Select the **Codespace (2)** tab.
 
-   ![](media/ex2-kc-codespace.png)
+      ![](media/ex2-kc-codespace.png)
    
-   >**Note:** In case you had created a codespace in the previous task. Click on the **+** button to create a new codespace.
+      >**Note:** In case you had created a codespace in the previous task. Click on the **+** button to create a new codespace.
    
 1. You'll be redirected to a new codespace tab in the browser. Please wait until the codespace is configured.
 
@@ -452,7 +460,7 @@ In this task, you will configure GitHub Codespaces to work with your project rep
     
    > **Note:** This will update the workflow and will **not** run the "Update the ... Docker image" jobs.
 
-1. Navigate back to the GitHub browser, select the **Actions** ***(1)*** tab, and review the **workflow** ***(2)*** created automatically for the changes made. 
+1. Navigate back to the GitHub browser, Under the Actions tab, and review the **workflow**  created automatically for the changes made. 
 
    ![](media/2dgn164.png)
 

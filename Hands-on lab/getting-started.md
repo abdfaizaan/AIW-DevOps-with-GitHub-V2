@@ -1,10 +1,10 @@
 # Get started with Azure Load Testing 
 
-### Overall Estimated Duration: 8 Hours
+### Overall Estimated Duration: 4 Hours
 
 ## Overview
 
-In this lab, you'll get hands-on with Azure Load Testing—a fully managed service that helps you generate high-scale traffic to test the performance and reliability of your applications. You’ll start by enabling monitoring using Application Insights to gain visibility into application health and telemetry. Then, you’ll simulate real-world load scenarios using Azure Load Testing and evaluate how your system performs under stress. Finally, you’ll explore Azure Chaos Studio to inject controlled faults and measure your application’s resilience during disruptions.
+In this lab, you'll get hands-on with Azure Load Testing, a fully managed service that helps you generate high-scale traffic to test the performance and reliability of your applications. You’ll start by enabling monitoring using Application Insights to gain visibility into application health and telemetry. Then, you’ll simulate real-world load scenarios using Azure Load Testing and evaluate how your system performs under stress. Finally, you’ll explore Azure Chaos Studio to inject controlled faults and measure your application’s resilience during disruptions.
 
 ## Objectives
 
