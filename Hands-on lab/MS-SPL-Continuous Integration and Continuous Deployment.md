@@ -14,7 +14,7 @@ In this exercise, you will:
 - **Task 4: Build and push using GitHub Actions** to automate container builds and deployments.
 - **Task 5: Editing the GitHub Workflow File using Codespace** to validate and customize CI/CD pipelines.
 
-### Task 1: Access the lab files
+## Task 1: Access the lab files
 
 In this task, you'll access and explore the code repository of the web app using Visual Studio Code. Visual Studio Code is a cross-platform, lightweight, but powerful source code editor.
 
@@ -38,7 +38,7 @@ In this task, you'll access and explore the code repository of the web app using
 
    ![](media/devops1.4.png)
 
-### Task 2: Set up Local Infrastructure
+## Task 2: Set up Local Infrastructure
 
 In this task, you will set up the local infrastructure using **.NET**. You'll be working with three Docker images: `fabrikam-init`, `fabrikam-api`, and `fabrikam-web`.
    
@@ -151,7 +151,7 @@ In this task, you will set up the local infrastructure using **.NET**. You'll be
    ```
    ![](media/upd-2dgn54.png) 
    
-1. Run the below mentioned command to install npm.
+1. Run the below-mentioned command to install npm.
 
    ```pwsh
    npm ci
@@ -177,7 +177,7 @@ In this task, you will set up the local infrastructure using **.NET**. You'll be
    
    >**Note:** It can take 5 - 10 minutes when you execute the command for the first time. You can continue with the next task and check on this step later.   
    
-### Task 3: Create the Project Repo
+## Task 3: Create the Project Repo
 
 In this task, you'll log in to GitHub and create a new repository to store the lab project files. You'll also configure repository settings and initialize it using Git from Visual Studio Code, preparing it for automated deployment through GitHub Actions.
 
@@ -277,8 +277,7 @@ In this task, you'll log in to GitHub and create a new repository to store the l
    
    ![](media/ex-1-16.png)
 
-1. Run the following commands in the terminal to initialize the folder as a Git repository and push the contents to the remote GitHub repository.  
-Make sure to replace `<your_github_repository-url>` with the URL copied in Step 6 and `<Unique-ID>` from Step 7.
+1. Run the following commands in the terminal to initialize the folder as a Git repository and push the contents to the remote GitHub repository. Make sure to replace `<your_github_repository-url>` with the URL copied in Step 6 and `<Unique-ID>` from Step 7.
 
    ```pwsh
    git init
@@ -292,9 +291,10 @@ Make sure to replace `<your_github_repository-url>` with the URL copied in Step 
 1. If you are asked to authenticate your GitHub account. Select **1. web browser**, and you will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize GitCredentialManager** to provide access
 
    ![](media/2dgn158.png)
-   > **Note:**After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
+
+   > **Note:** After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
      
-### Task 4: Build and push using GitHub Actions
+## Task 4: Build and push using GitHub Actions
 
 In this task, you will configure GitHub Codespaces to work with your project repository. Codespaces provides a cloud-hosted development environment directly within GitHub, allowing you to develop, build, and run your applications without needing local setup. You’ll open your project inside Codespaces, verify the environment configuration, and begin development using the pre-installed tools.
 
@@ -355,15 +355,15 @@ In this task, you will configure GitHub Codespaces to work with your project rep
    
 1. Under **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret (3)**
 
-   - **Name :** Enter **SERVICEPRINCIPAL (1)**
-   - **Value :** Paste the service principal details in json format **(2)**
+   - **Name:** Enter **SERVICEPRINCIPAL (1)**
+   - **Value:** Paste the service principal details in json format **(2)**
    
       ![](media/ex-1-24.png)
    
 1. Under **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret (3)**
 
-   - **Name :** Enter **ENVIRONMENT (1)**.
-   - **Value : ** **<inject key="DeploymentID" enableCopy="false" />** **(2)**.
+   - **Name:** Enter **ENVIRONMENT (1)**.
+   - **Value:** **<inject key="DeploymentID" enableCopy="false" />** **(2)**.
    
       ![](media/2dgn33.png)
    
@@ -381,12 +381,12 @@ In this task, you will configure GitHub Codespaces to work with your project rep
    
 1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** ***(3)***.
 
-   - click on **Code** ***(1)***, 
-   - Select the **Codespace** ***(2)*** tab
+   - Click on **Code** **(1)**, 
+   - Select the **Codespace** **(2)** tab
 
       ![](media/ex2-kc-codespace.png)
    
-1. Run the below-mentioned commands in the **Terminal**. You'll set node version to node 14.
+1. Run the below-mentioned commands in the **Terminal**. You'll set the node version to node 14.
 
    ```pwsh
    cd src
@@ -399,7 +399,7 @@ In this task, you will configure GitHub Codespaces to work with your project rep
    git push
    ```
     
-1. From your GitHub repository, select **Actions (1)** tab. You'll see an Action named **Updated node version (2)** executing. Please wait until the execution completes
+1. From your GitHub repository, select the **Actions (1)** tab. You'll see an Action named **Updated node version (2)** executing. Please wait until the execution completes
 
    ![](media/2dgn160.png)
    
@@ -423,13 +423,13 @@ In this task, you will configure GitHub Codespaces to work with your project rep
     
    ![](media/2dgn162.png) 
     
-### Task 5: Editing the GitHub Workflow File using Codespace
+## Task 5: Editing the GitHub Workflow File using Codespace
 
- In this task, you will manually trigger the GitHub Actions workflow to deploy the application using the configuration and secrets added in the previous steps. You will monitor the workflow run, examine the logs for each job, and validate that the deployment completes successfully. This step ensures your CI/CD pipeline is correctly configured and functional.
+In this task, you will manually trigger the GitHub Actions workflow to deploy the application using the configuration and secrets added in the previous steps. You will monitor the workflow run, examine the logs for each job, and validate that the deployment completes successfully. This step ensures your CI/CD pipeline is correctly configured and functional.
 
 1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main (3)**.
 
-   - click on **Code (1)**, 
+   - Click on **Code (1)**, 
    - Select the **Codespace (2)** tab.
 
       ![](media/ex2-kc-codespace.png)
@@ -440,13 +440,14 @@ In this task, you will configure GitHub Codespaces to work with your project rep
 
    ![](media/2dg33.png)
    
-1. From the explorer side blade, navigate to **.github (1)** > **workflows** **(2)** and select **contoso-traders-provisioning-deployment.yml** **(3)** file.
+1. From the explorer side blade, navigate to **.github (1)** -> **workflows** **(2)** and select **contoso-traders-provisioning-deployment.yml** **(3)** file.
 
    ![](media/ex-1-31.png) 
    
 1. Remove the commands from lines 7 to 14 from the workflow file.
 
    ![](media/ex-1-32.png)
+
    ![](media/ex-1-33.png) 
    
 1. Using the terminal from Codespace, run the following commands to commit this change to your repo and to push the change to GitHub.
@@ -460,16 +461,14 @@ In this task, you will configure GitHub Codespaces to work with your project rep
     
    > **Note:** This will update the workflow and will **not** run the "Update the ... Docker image" jobs.
 
-1. Navigate back to the GitHub browser, Under the Actions tab, and review the **workflow**  created automatically for the changes made. 
+1. Navigate back to the GitHub browser, under the Actions tab, and review the **workflow**  created automatically for the changes made. 
 
    ![](media/2dgn164.png)
-
-1. Click on the **Next** button present in the bottom-right corner of this lab guide.
-
-   ![](media/lab-06.png)
 
 ## Summary
 
 In this exercise, you configured a local development environment, created a GitHub repository, and set up secrets and credentials. You deployed the application to Azure using GitHub Actions and verified the deployment. You also used GitHub Codespaces to update and manage the CI/CD workflow.
-   
-   
+
+Click on the **Next** button present in the bottom-right corner of this lab guide.
+
+![](media/lab-06.png)
