@@ -1,28 +1,34 @@
-# Devops with GitHub 
+# Get started with Azure Load Testing 
 
 ### Overall Estimated Duration: 8 Hours
 
 ## Overview
 
-In this lab, you'll set up local infrastructure using .NET, and work with the application's carts, products, and UI components. The infrastructure will be deployed to the cloud using GitHub Actions, with automation for updating and republishing workflows. You’ll explore Azure Boards, Test Plans, and GitHub Enterprise security features such as Code scanning, CodeQL alerts, and Dependabots. Additionally, the lab covers implementing monitoring, logging, Azure load testing, and Azure Chaos Studio to improve application resilience and performance.
+In this lab, you'll get hands-on with Azure Load Testing—a fully managed service that helps you generate high-scale traffic to test the performance and reliability of your applications. You’ll start by enabling monitoring using Application Insights to gain visibility into application health and telemetry. Then, you’ll simulate real-world load scenarios using Azure Load Testing and evaluate how your system performs under stress. Finally, you’ll explore Azure Chaos Studio to inject controlled faults and measure your application’s resilience during disruptions.
 
 ## Objectives
 
-Set up Dev Box, CI/CD with GitHub, integrate Azure Boards, enable GitHub security, run load tests, explore Chaos Studio and monitor performance.
+In this lab, you will learn how to monitor, test, and improve the performance and resilience of a cloud-based application using Azure-native tools.
 
-- **Continuous Integration and Continuous Deployment**: You will be able to access the lab files, set up the local infrastructure, create a project repository, build and push the code using GitHub Actions, and edit the GitHub workflow file within Codespaces.
-- **Azure Boards and Test Plans**: Connect Azure Boards with GitHub to enhance project tracking, and link GitHub pull requests to Boards items, enabling seamless integration between code development and project management workflows.
-- **Explore GitHub's advanced security features**: Enable code scanning with CodeQL alerts, configure repository security advisories, utilize Dependabot for dependency management, and explore secret scanning to enhance repository security.
-- **Monitoring and Load Testing**: Monitor application performance using Application Insights, set up load testing to evaluate system scalability, and explore Chaos Studio to simulate real-world failures for improving system resilience.
-
+- **Monitor Application Health**: Configure Application Insights to track key metrics like response time, availability, and failed requests.
+- **Simulate Load with Azure Load Testing**: Create and run high-scale load tests to evaluate application performance under pressure.
+- **Improve Resilience with Chaos Studio**: Inject real-world failures using Chaos Studio and observe how your application responds to disruptions.
+  
 ## Prerequisites
 
 Participants should have basic knowledge and understanding of the following:
-- Basic Scripting and Automation
+
+- Azure Portal navigation and resource management
+- Fundamental knowledge of web applications and endpoints
+- Basic familiarity with cloud monitoring and performance testing tools
 
 ## Architecture
 
-In this lab, the architecture flow begins with local infrastructure is set up using .NET, focusing on managing application components such as carts, products, and the UI. GitHub Actions automate the deployment of this infrastructure to the cloud, streamlining update and republishing workflows. Next, you'll explore Azure Boards for project management, Test Plans for testing workflows, and GitHub Enterprise security features like Code scanning, CodeQL alerts, and Dependabot for vulnerability detection. Finally, you’ll implement monitoring and logging, conduct Azure Load Testing for performance benchmarking, and explore Azure Chaos Studio to simulate failures and improve the system's resilience.
+In this lab, the architecture focuses on validating the performance and resilience of a cloud-native web application deployed to Azure. The application is hosted on Azure Kubernetes Service (AKS) and connects to supporting services like Azure SQL Database and Azure Cosmos DB. 
+
+Application monitoring is enabled using Azure Application Insights to collect telemetry data, track performance metrics, and visualize failures. Azure Load Testing is used to generate high-scale simulated traffic against the application endpoints to evaluate performance under load. To test system resilience, Azure Chaos Studio is integrated to inject controlled faults into the application infrastructure and measure its response to real-world disruptions.
+
+The solution also includes a container registry for image management and Azure Container Apps for scalability scenarios.
 
 ## Architecture Diagram
 
@@ -38,51 +44,49 @@ In this lab, the architecture flow begins with local infrastructure is set up us
 
 ## Getting Started with Lab
 
-Welcome to your Devops-with-Github  Workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience.
+Welcome to your Get started with Azure Load Testing Workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience.
 
 ## Accessing Your Lab Environment
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-   ![](media/lab-05.png)
+   ![](media/gg_1.png)
 
 ## Exploring Your Lab Resources
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-   ![](media/lab-01.png)
+   ![](media/gg_2.png)
 
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-   ![](media/lab-02.png)
+   ![](media/gg_3.png)
 
 ## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-   ![](media/lab-03.png)
+   ![](media/gg_4.png)
 
 ## Lab Validation
 
-1. After completing the task, hit the **Validate** button under the Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
+After completing the task, hit the **Validate** button under the Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task; if not, carefully read the error message and retry the step, following the instructions in the lab guide.
 
    ![](media/lab-04.png)
 
 ## Lab Guide Zoom In/Zoom Out
  
-1. To adjust the zoom level for the environment page, click the **A↕: 100%** icon located next to the timer in the lab environment.
+To adjust the zoom level for the environment page, click the **A↕: 100%** icon located next to the timer in the lab environment.
 
-     ![](media/new-get-start-25-6.png)
+   ![](media/new-get-start-25-6.png)
 
 ## Let's Get Started with Azure Portal
 
 1. In the JumpVM, click on the Azure portal shortcut of the Microsoft Edge browser, which is created on the desktop.
 
-      ![](media/GS1.png)
-
-   > **Note**: If you see any PowerShell windows running in your VM, please do not close them as it's setting up some configurations inside the environment.
+      ![](media/gg_5.png)
 
 1. On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter the following email/username and click **Next**.
 
@@ -108,11 +112,11 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 1. Now you will see the Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
 
-   ![](media/select-rg.png "Resource groups")
+   ![](media/gg_7.png)
 
 1. Confirm that you have all the resource groups present as shown below.
 
-   ![](media/rgdn-new.png "Resource groups")
+   ![](media/gg_6.png)
 
 ## Support Contact
 
