@@ -10,9 +10,9 @@ In this lab, you'll get hands-on with Azure Load Testing, a fully managed servic
 
 In this lab, you will learn how to monitor, test, and improve the performance and resilience of a cloud-based application using Azure-native tools.
 
-- **Monitor Application Health**: Configure Application Insights to track key metrics like response time, availability, and failed requests.
-- **Simulate Load with Azure Load Testing**: Create and run high-scale load tests to evaluate application performance under pressure.
-- **Improve Resilience with Chaos Studio**: Inject real-world failures using Chaos Studio and observe how your application responds to disruptions.
+- **Monitor Application Health:** Configure Application Insights to track key metrics like response time, availability, and failed requests.
+- **Simulate Load with Azure Load Testing:** Create and run high-scale load tests to evaluate application performance under pressure.
+- **Improve Resilience with Chaos Studio:** Inject real-world failures using Chaos Studio and observe how your application responds to disruptions.
   
 ## Prerequisites
 
@@ -36,15 +36,15 @@ The solution also includes a container registry for image management and Azure C
 
 ## Explanation of the Components
 
-- **Application Insights**: A monitoring tool that provides real-time performance and usage analytics for applications.
-- **Azure Container Apps**: A fully managed service to build and deploy microservices and containerized applications with ease.
-- **Azure Kubernetes Service (AKS)**: A managed container orchestration service that simplifies deploying, managing, and scaling Kubernetes clusters.
-- **Azure Cosmos DB**: A globally distributed, fully managed NoSQL database service designed for scalable, high-performance applications.
-- **GitHub**: A cloud-based platform for version control and collaboration, enabling developers to manage, share, and collaborate on code projects using Git.
+- **Application Insights:** A monitoring tool that provides real-time performance and usage analytics for applications.
+- **Azure Container Apps:** A fully managed service to build and deploy microservices and containerized applications with ease.
+- **Azure Kubernetes Service (AKS):** A managed container orchestration service that simplifies deploying, managing, and scaling Kubernetes clusters.
+- **Azure Cosmos DB:** A globally distributed, fully managed NoSQL database service designed for scalable, high-performance applications.
+- **GitHub:** A cloud-based platform for version control and collaboration, enabling developers to manage, share, and collaborate on code projects using Git.
 
 ## Getting Started with Lab
 
-Welcome to your Get started with Azure Load Testing Workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience.
+Welcome to your Get Started with Azure Load Testing Workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience.
 
 ## Accessing Your Lab Environment
  
@@ -90,13 +90,13 @@ To adjust the zoom level for the environment page, click the **A↕: 100%** icon
 
 1. On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter the following email/username and click **Next**.
 
-   - **Email/Username**: <inject key="AzureAdUserEmail"></inject>
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
         ![](media/sc900-image-1.png)
 
 1. Now enter the following password and click on **Sign in**.
 
-   - **Password**: <inject key="AzureAdUserPassword"></inject>
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
 
        ![](media/sc900-image-2.png)
 
