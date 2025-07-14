@@ -217,9 +217,9 @@ In this task, you'll log in to GitHub and create a new repository to store the l
     
 1. In the upper-right corner of the GitHub dashboard, click on your **user avatar (1)** and select **Your repositories (2)** from the dropdown menu.
 
-   ![](media/ex-1-12.png)
+   ![](media/g_cor_4.png)
    
-   ![](media/ex-1-13.png)
+   ![](media/g_cor_5.png)
 
 1. Next to the search criteria, locate and select the **New** button.
 
