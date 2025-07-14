@@ -227,7 +227,7 @@ In this task, you'll log in to GitHub and create a new repository to store the l
 
 1. On the **Create a new repository** tab, name the repository **aiw-devops-with-github-lab-files (1)**, select **Public (2)**, and click the **Create repository (3)** button.
 
-   ![The `New Repository` creation form in GitHub.](media/2dgn91.png "New Repository Creation Form")
+   ![](media/g_cor_3.png)
    
    >**Note:** If you observe any repository existing with the same name, please make sure you delete the Repo and create a new one. Please follow steps 12 to 16. Else, skip to step 17.
 
