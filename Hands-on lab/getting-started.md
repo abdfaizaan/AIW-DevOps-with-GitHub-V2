@@ -66,7 +66,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
 
 ## Managing Your Virtual Machine
  
-Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+Feel free to **Start, Stop, or Restart** your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
    ![](media/gg_4.png)
 
@@ -100,13 +100,13 @@ To adjust the zoom level for the environment page, click the **A↕: 100%** icon
 
        ![](media/sc900-image-2.png)
 
-1. If you see the pop-up **Action Required**, keep default and then click on **Ask later**. If you see the pop-up Help us protect your account, click on **Skip for now**(14 days until this is required), and then click on **Next**.
+1. If you see the pop-up **Action Required**, keep default and then click on **Ask later**. If you see the pop-up Help us protect your account, click on **Skip for now** (14 days until this is required), and then click on **Next**.
    
      ![](media/asklater.png)
 
     >**Note:** Do not enable MFA, select **Ask Later**.
 
-1. First-time users are often prompted to Stay Signed In. If you see any such pop-up, click on **Yes**.
+1. If you see the pop-up **Stay Signed in?**, select **No**.
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 

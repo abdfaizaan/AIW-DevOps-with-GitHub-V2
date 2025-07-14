@@ -22,15 +22,15 @@ In this task, you'll access and explore the code repository of the web app using
 
    ![](media/2dg4.png "New Repository Creation Form")
    
-1. In **Visual Studio Code**, click on the **menu bar (1)**, select **File (2)**, and then choose **Open Folder (3)** to browse the file system.
+1. In **Visual Studio Code**, go to the **Menu bar (1)**, select **File (2)**, and then click **Open Folder (3)** to browse and open a folder from the file system.
 
    ![](media/devops1.3.png)
 
-1. In the **Open Folder** window, navigate to the following path:  `C:\Workspaces\lab\aiw-devops-with-github-lab-files` **(1)**, Then click on **Select Folder (2)** to open the project.
+1. In the **Open Folder** pane, navigate to the following path:  `C:\Workspaces\lab\aiw-devops-with-github-lab-files` **(1)**, Then click on **Select Folder (2)** to open the project.
 
    ![](media/ex-1-1.png)
     
-1. If prompted with a trust warning, check the box **Trust the authors of all files... (1)** and click on **Yes, I trust the authors (2)** to continue.
+1. If a trust warning appears, select the checkbox **Trust the authors of all files (1)** and click **Yes, I trust the authors (2)** to proceed.
 
    ![](media/ex-1-2.png)
    
@@ -102,7 +102,7 @@ In this task, you will set up the local infrastructure using **.NET**. You'll be
 
    ![](media/localhost1.png) 
    
-   > **Note:** Then click on Continue to localhost(unsafe) to access the application.
+   > **Note:** Then click on Continue to localhost (unsafe) to access the application.
 
    ![](media/localhost2.png)   
    
@@ -181,9 +181,9 @@ In this task, you will set up the local infrastructure using **.NET**. You'll be
 
 In this task, you'll log in to GitHub and create a new repository to store the lab project files. You'll also configure repository settings and initialize it using Git from Visual Studio Code, preparing it for automated deployment through GitHub Actions.
 
-1. In a new browser tab, go to `https://www.github.com/login` and save the copied credentials in Notepad. You’ll use them again during GitHub login and device verification steps.
+1. In a new browser tab, go to `https://www.github.com/login`.
 
-   From the **Environment** tab **(1)** in the lab environment, click on the **Licenses (2)** button, then copy the **GitHub UserEmail (3)** and **GitHub Password (4)**.
+1. Navigate to the **Environment (1)** tab in the lab environment and click on the **Licenses (2)** button. Copy the **GitHub UserEmail (3)** and **GitHub Password (4)**, then save these credentials in **Notepad**. You will need them later during the GitHub login and device verification steps.
 
    ![](media/ex-1-4.png)
  
@@ -195,27 +195,27 @@ In this task, you'll log in to GitHub and create a new repository to store the l
 
    ![](media/ex-1-6.png)
 
-1. Enter your **GitHub username (1)** and click **Next (2)**.
+1. Enter your **GitHub Username (1)** (as saved in Notepad) and click **Next (2)** to proceed.
 
    ![](media/ex-1-7.png)
 
-1. Enter your **GitHub password (1)** and click **Sign in (2)**.
+1. Enter your **GitHub Password (1)** (as saved in Notepad) and click **Sign in (2)**.
 
    ![](media/ex-1-8.png)
 
-1. When prompted, click **No** on the **Stay signed in?** prompt.
+1. If you see the pop-up **Stay Signed in?**, select **No**.
 
    ![](media/ex-1-9.png)
 
-1. Check your email inbox and copy the **verification code** sent by GitHub.
+1. Check your email inbox and copy the **Verification code** sent by GitHub.
 
    ![](media/ex-1-10.png)
 
-1. On the **Device verification** screen, enter the **Device verification code (1)** that was emailed to you and click **Verify (2)**.
+1. On the **Device verification** pane, enter the **Device Verification Code (1)** that was emailed to you and click **Verify (2)**.
 
    ![](media/g_cor.png) 
     
-1. In the upper-right corner of the GitHub dashboard, click on your **user avatar (1)** and select **Your repositories (2)** from the dropdown menu.
+1. In the upper-right corner of the GitHub dashboard, click on your **Profile (1)** icon and select **Your repositories (2)** from the dropdown menu.
 
    ![](media/g_cor_4.png)
    
@@ -229,9 +229,9 @@ In this task, you'll log in to GitHub and create a new repository to store the l
 
    ![](media/g_cor_3.png)
    
-   >**Note:** If you observe any repository existing with the same name, please make sure you delete the Repo and create a new one. Please follow steps 12 to 16. Else, skip to step 17.
+   > **Note:** If a repository with the same name already exists, please delete it and create a new one by following steps **13 to 17**. If no such repository exists, you may skip directly to **Step 17**.
 
-1. In the upper-right corner, expand the user **drop-down menu** ***(1)*** and select **Your repositories** ***(2)***.
+1. In the upper-right corner, expand the user **drop-down menu** **(1)** and select **Your repositories** **(2)**.
 
    ![The `New Repository` creation form in GitHub.](media/2dg1.png "New Repository Creation Form")
 
@@ -267,6 +267,7 @@ In this task, you'll log in to GitHub and create a new repository to store the l
 
    ```pwsh
    cd C:\Workspaces\lab\aiw-devops-with-github-lab-files
+   ```
 
 1. Run the following commands to configure your Git username and email. Replace the placeholder values with your GitHub account details:
 
@@ -288,7 +289,7 @@ In this task, you'll log in to GitHub and create a new repository to store the l
    git push -u origin<Unique-ID> main
    ```
 
-1. If you are asked to authenticate your GitHub account. Select **1. web browser**, and you will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize GitCredentialManager** to provide access
+1. If you are asked to authenticate your GitHub account. Select **1. web browser**, and you will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize GitCredentialManager** to provide access.
 
    ![](media/2dgn158.png)
 
@@ -310,7 +311,7 @@ In this task, you will configure GitHub Codespaces to work with your project rep
 
    ![](media/upd-2dgn11.png) 
    
-1. In the **productsdb** page, expand **Settings (1)** from the left-hand menu, then select **Connection strings (2)**.  Under the **ADO.NET (3)** tab, copy the **ADO.NET (SQL authentication)** connection string by clicking the **copy icon (4)**.
+1. In the **productsdb** SQL database page, expand **Settings (1)** from the left-hand menu, then select **Connection strings (2)**.  Under the **ADO.NET (3)** tab, copy the **ADO.NET (SQL authentication)** connection string by clicking the **copy icon (4)**.
 
    ![](media/ex-1-21.png)  
  
@@ -329,7 +330,7 @@ In this task, you will configure GitHub Codespaces to work with your project rep
    
       ![](media/ex-1-23.png)
    
-      >**Note:** Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
+      >**Note:** Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure Credentials (2)**, and copy **Password (3)**.
    
       ![](media/ex-1-22.png)   
    
@@ -356,14 +357,14 @@ In this task, you will configure GitHub Codespaces to work with your project rep
 1. Under **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret (3)**
 
    - **Name:** Enter **SERVICEPRINCIPAL (1)**
-   - **Value:** Paste the service principal details in json format **(2)**
+   - **Secret:** Paste the service principal details in json format **(2)**
    
       ![](media/ex-1-24.png)
    
 1. Under **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret (3)**
 
    - **Name:** Enter **ENVIRONMENT (1)**.
-   - **Value:** **<inject key="DeploymentID" enableCopy="false" />** **(2)**.
+   - **Secret:** **<inject key="DeploymentID" enableCopy="false" />** **(2)**.
    
       ![](media/2dgn33.png)
    
@@ -377,9 +378,9 @@ In this task, you will configure GitHub Codespaces to work with your project rep
    
    ![](media/2dgn165.png)
    
-   **Note:** If the workflow **fails** due to **npm install** job, follow from step 13 - step 16. Else, continue from step 17. 
+   >**Note:** If the workflow **fails** due to **npm install** job, follow from step 13 - step 16. Else, continue from step 17. 
    
-1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** ***(3)***.
+1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** **(3)**.
 
    - Click on **Code** **(1)**, 
    - Select the **Codespace** **(2)** tab
@@ -405,7 +406,7 @@ In this task, you will configure GitHub Codespaces to work with your project rep
    
    ![](media/2dgn161.png)      
    
-1. Navigate to the Azure Portal, click on Resource groups from the Navigate panel to see the resource groups.
+1. Navigate to the Azure Portal, click on **Resource groups** from the Navigate panel to see the resource groups.
 
    ![](media/2dgn9.png) 
    
@@ -444,7 +445,7 @@ In this task, you will manually trigger the GitHub Actions workflow to deploy th
 
    ![](media/ex-1-31.png) 
    
-1. Remove the commands from lines 7 to 14 from the workflow file.
+1. Remove the commands from lines **7 to 14** from the workflow file.
 
    ![](media/ex-1-32.png)
 
@@ -457,9 +458,8 @@ In this task, you will manually trigger the GitHub Actions workflow to deploy th
    git commit -m "Updating app deployment"
    git push
    ```
-   ![](media/ex-1-34.png) 
-    
-   > **Note:** This will update the workflow and will **not** run the "Update the ... Docker image" jobs.
+
+   ![](media/ex-1-34.png)
 
 1. Navigate back to the GitHub browser, under the Actions tab, and review the **workflow**  created automatically for the changes made. 
 
@@ -469,6 +469,6 @@ In this task, you will manually trigger the GitHub Actions workflow to deploy th
 
 In this exercise, you configured a local development environment, created a GitHub repository, and set up secrets and credentials. You deployed the application to Azure using GitHub Actions and verified the deployment. You also used GitHub Codespaces to update and manage the CI/CD workflow.
 
-Click on the **Next** button present in the bottom-right corner of this lab guide.
+### You have successfully completed the Exercise. Click on Next >> to proceed with the next Exercise.
 
 ![](media/lab-06.png)
