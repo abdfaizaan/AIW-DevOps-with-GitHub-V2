@@ -1,6 +1,6 @@
 # Exercise 2: Monitoring and Load Testing
 
-### Estimated Duration: 100 minutes
+### Estimated Duration: 100 Minutes
 
 In this exercise, you will monitor application health using Application Insights, configure Azure Load Testing to simulate traffic, and explore Azure Chaos Studio to assess application resilience. These steps will help you analyze performance under load and evaluate how your system responds to real-world faults.
 
@@ -12,7 +12,7 @@ In this exercise, you will:
 - **Task 2: Set up Load Testing** by creating an Azure Load Testing instance and running a simulated URL-based test.
 - **Task 3: Explore Chaos Studio** to inject faults into your application using Azure Chaos Studio and evaluate system resilience.
 
-### Task 1: Monitoring using Application Insights
+## Task 1: Monitoring using Application Insights
 
 In this task, you will explore telemetry data captured by Application Insights. You'll review key metrics such as failed requests, server response time, server requests, and availability to monitor the health and performance of your application.
 
@@ -76,7 +76,7 @@ In this task, you will create an Azure Load Testing instance and run a quick URL
 
    ![](media/dglt4.jpg)
    
-   **Note:** In case the test fails due to `The test was stopped due to a high error rate. Check your script and try again. In case the issue persists, raise a ticket with support team. This is expected as sometimes the load on the application exceeds the defined throughput.
+   **Note:** In case the test fails due to `The test was stopped due to a high error rate. Check your script and try again. In case the issue persists, raise a ticket with the support team. This is expected as sometimes the load on the application exceeds the defined throughput.
      
 ## Task 3: Explore Chaos Studio
 
@@ -159,7 +159,6 @@ In this task, you will add **Targets** and create an **Experiment** on **Azure C
 
    ![](media/ld-ex3-3-16.png)
 
-
 1. Select **Access control (IAM) (1)** from the left navigation pane, click on **+ Add (2)** and select **Add role assignment (3)**.
 
    ![](media/giub9.png)
@@ -205,4 +204,4 @@ In this task, you will add **Targets** and create an **Experiment** on **Azure C
 
 In this exercise, you monitored application performance using Application Insights, simulated traffic using Azure Load Testing, and used Chaos Studio to evaluate the resilience of your application under real-world fault conditions. These tools help ensure your application is performant, stable, and fault-tolerant under load and disruption.
 
-## You have successfully completed the lab!
+## You have successfully completed the Hands-on lab!
