@@ -1,6 +1,6 @@
 # Exercise 1: Continuous Integration and Continuous Deployment
 
-### Estimated Duration: 140 minutes
+### Estimated Duration: 140 Minutes
 
 In this exercise, you will set up the local infrastructure for a cloud-native web application using .NET and Docker, and deploy it to Azure using GitHub Actions. You will also automate deployment workflows, configure GitHub secrets, and explore Codespaces for managing your project repository.
 
