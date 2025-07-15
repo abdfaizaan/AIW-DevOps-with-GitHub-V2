@@ -47,7 +47,7 @@ Welcome to your Implement Dev Box workshop! We've prepared a seamless environmen
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-   ![](media/GS1.png)
+   ![](media/cd_gs_1-1.png)
 
 ### Virtual Machine & Lab Guide
  
@@ -67,21 +67,21 @@ For convenience, you can open the lab guide in a separate window by selecting th
    
 ## Managing Your Virtual Machine
  
-Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+On the **Resources (1)** tab and use the **Action buttons (2)** next to your VM. Feel free to start, stop, or restart your virtual machine as needed.. Your experience is in your hands!
 
    ![](media/GS4.4.png) 
 
 ## Lab Guide Zoom In/Zoom Out
 
-To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+To adjust the zoom level for the environment page, click the **A↕ (1)** icon located next to the timer in the lab environment and **100% (2)** to adjust.
 
-   ![](media/GS5.5.png)
+   ![](media/cd_gs_1-6.png)
 
 ## Let's Get Started with Azure Portal
  
 1. On your virtual machine, click on the Azure Portal icon as shown below:
  
-    ![](media/GS1.png)
+    ![](media/cd_gs_1-5.png)
 
 1. If the Docker Desktop service agreement pop-up appears, check the box to **accept the terms(1)** and click **Accept(2)**. Afterward, minimize any remaining Docker Desktop windows.
 
@@ -91,13 +91,13 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
    * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
    
-   ![](media/imagesignin.png "Enter Email")
+      ![](media/sc900-image-1.png "Enter Email")
      
 1. Now enter the following password and click on **Sign in**.
    
    * **Password**: <inject key="AzureAdUserPassword"></inject>
    
-   ![](media/image8.png "Enter Password")
+      ![](media/sc900-image-2.png "Enter Password")
 
 1. If Action required pop-up window appears, click on **Ask later**.
 
