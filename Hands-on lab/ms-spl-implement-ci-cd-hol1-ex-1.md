@@ -66,7 +66,7 @@ In this task, you will set up the local infrastructure using NET. You'll be work
 
    ![](media/2dgn47.png)
 
-   >**Note**: Open Notepad, make the necessary updates to the command, then copy and paste the updated command into the terminal for execution.
+   >**Note :** Open Notepad, make the necessary updates to the command, then copy and paste the updated command into the terminal for execution.
 
 1. Run the below-mentioned command to navigate to `ContosoTraders.Api.Products` folder.
 
@@ -92,7 +92,7 @@ In this task, you will set up the local infrastructure using NET. You'll be work
 
    ![](media/2dg122.jpg) 
    
-   >**Note**: Please wait for 2 - 3 minutes for the build to complete.
+   >**Note :** Please wait for 2 - 3 minutes for the build to complete.
    
 1. Keep the terminal running. Open a new browser tab and try accessing the application using localhost port. You'll be able to see the output similar to the screenshot mentioned below.
 
@@ -135,7 +135,7 @@ In this task, you will set up the local infrastructure using NET. You'll be work
   
    ![](media/2dg123.jpg) 
    
-   >**Note**: Please wait for 2 - 3 minutes for the build to complete.
+   >**Note :** Please wait for 2 - 3 minutes for the build to complete.
 
 1. Keep the terminal running. Open a new browser tab and try accessing the application using localhost port. You'll be able to see the output similar to the screenshot mentioned below.
 
@@ -166,7 +166,7 @@ In this task, you will set up the local infrastructure using NET. You'll be work
   
    ![](media/2dg124.jpg) 
    
-   >**Note**: Please wait until the installation completes. It will take around 10 - 15 minutes when you run npm install for the first time. Incase the execution is stuck, Please use **Ctrl + C** to stop the execution and retry the step again.
+   >**Note :** Please wait until the installation completes. It will take around 10 - 15 minutes when you run npm install for the first time. Incase the execution is stuck, Please use **Ctrl + C** to stop the execution and retry the step again.
    
 1. Navigate back to **VS Code**, run the below-mentioned command to navigate to `ContosoTraders.Ui.Website` folder. 
   
@@ -182,7 +182,7 @@ In this task, you will set up the local infrastructure using NET. You'll be work
   
    ![](media/2dgn156.png) 
    
-   >**Note**: It can take 5 - 10 minutes when you execute the command for the first time. You can continue with the next task and check on this step later.   
+   >**Note :** It can take 5 - 10 minutes when you execute the command for the first time. You can continue with the next task and check on this step later.   
    
 ### Task 3: Create the Project Repo
 
@@ -241,7 +241,7 @@ In this task, you will create an account on [GitHub](https://github.com) and use
 
    ![The `New Repository` creation form in GitHub.](media/2dgn91upd.png "New Repository Creation Form")
    
-   >**Note**: If you observe any repository existing with the same name, please make sure you delete the Repo and create a new one. Please follow the step 6 to step 10. Else, skip to step 11.
+   >**Note :** If you observe any repository existing with the same name, please make sure you delete the Repo and create a new one. Please follow the step 6 to step 10. Else, skip to step 11.
 
 1. In the upper-right corner of the GitHub dashboard, click on your **Profile (1)** icon and select **Your repositories (2)** from the dropdown menu.
 
@@ -279,7 +279,7 @@ In this task, you will create an account on [GitHub](https://github.com) and use
 
 1. In Visual Studio Code, run the following commands in the terminal to set your **Username** and **Email**, which Git uses for commits. Make sure to replace the GitHub account email and username.
 
-   >**Note**: For the email format github_cloudlabsuser_xxx@xxx.com, the corresponding username will follow this format: github-cloudlabsuser-xxx
+   >**Note :** For the email format github_cloudlabsuser_xxx@xxx.com, the corresponding username will follow this format: github-cloudlabsuser-xxx
    
      ```pwsh
      cd C:\Workspaces\lab\aiw-devops-with-github-lab-files
@@ -312,7 +312,7 @@ In this task, you will create an account on [GitHub](https://github.com) and use
 
 1.  After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
    
-   >**Note**: If you encounter any errors as shown below, please follow the steps outlined below.
+   >**Note :** If you encounter any errors as shown below, please follow the steps outlined below.
 
    ![](media/ex_1_g_9.png)
 
@@ -356,7 +356,7 @@ In this exercise, you will build automation in GitHub for updating and republish
     
 1. Under **Actions Secrets/New secret** page, enter the below-mentioned details.
 
-   >**Note**: Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
+   >**Note :** Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
    
    ![](media/ex-1-22.png)   
 
@@ -396,7 +396,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 1. Select **New repository secret** and under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** **(3)**.
 
    - **Name** : Enter **ENVIRONMENT (1)**
-   - **Secret** : **<inject key="DeploymentID" enableCopy="false" /> (2)**
+   - **Secret**  :**<inject key="DeploymentID" enableCopy="false" /> (2)**
    
       ![](media/2dgn33.png)
    
@@ -410,7 +410,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    
    ![](media/2dgn165.png)
    
-   >**Note**: If the workflow **fails** due to **npm install** job, follow from step 13 - step 16. Else, continue from step 17. 
+   >**Note :** If the workflow **fails** due to **npm install** job, follow from step 13 - step 16. Else, continue from step 17. 
    
 1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main (3)**.
 
@@ -471,7 +471,7 @@ The last task automated building and updating only one of the Docker images. In 
 
    ![](media/codespaces_1.jpg)
    
-   >**Note**: In case you had created a  codespace in the  previous task. Click on the **+** button to create a new codespace.
+   >**Note :** In case you had created a  codespace in the  previous task. Click on the **+** button to create a new codespace.
    
 1. You will be redirected to a new Codespace tab in your browser. Click **Continue**.
 
@@ -496,7 +496,7 @@ The last task automated building and updating only one of the Docker images. In 
 
    ![](media/ex-1-33.png) 
    
-   >**Note**: Press **CTRL + S**, to save the changes, if needed.
+   >**Note :** Press **CTRL + S**, to save the changes, if needed.
 
 1. Using the terminal from Codespace, run the following commands to commit this change to your repo and to push the change to GitHub.
 
@@ -507,7 +507,7 @@ The last task automated building and updating only one of the Docker images. In 
    ```
    ![](media/ex-1-34.png)
     
-   > **Note**: This will update the workflow and will **not** run the "Update the ... Docker image" jobs.
+   > **Note :** This will update the workflow and will **not** run the "Update the ... Docker image" jobs.
 
 1. Navigate back to the GitHub browser, select the **Actions (1)** tab, and review the **workflow (2)** in the summary section, created automatically for the changes made. 
 
