@@ -41,13 +41,13 @@ In this hands-on lab, you'll explore the integration of Continuous Integration (
 
 ## Getting Started with the Lab
  
-Welcome to your Implement Dev Box workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
+Welcome to your Implement CI/CD with GitHub Actions workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
  
 ## Accessing Your Lab Environment
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-   ![](media/cd_gs_1-1.png)
+   ![](media/cd_gs_1-5.png)
 
 ### Virtual Machine & Lab Guide
  
@@ -67,7 +67,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
    
 ## Managing Your Virtual Machine
  
-On the **Resources (1)** tab and use the **Action buttons (2)** next to your VM. Feel free to start, stop, or restart your virtual machine as needed.. Your experience is in your hands!
+On the **Resources (1)** tab use the **Action buttons (2)** next to your VM. Feel free to start, stop, or restart your virtual machine as needed.. Your experience is in your hands!
 
    ![](media/GS4.4.png) 
 
@@ -81,7 +81,7 @@ To adjust the zoom level for the environment page, click the **A↕ (1)** icon l
  
 1. On your virtual machine, click on the Azure Portal icon as shown below:
  
-    ![](media/cd_gs_1-5.png)
+    ![](media/cd_gs_1-7.png)
 
 1. If the Docker Desktop service agreement pop-up appears, check the box to **accept the terms(1)** and click **Accept(2)**. Afterward, minimize any remaining Docker Desktop windows.
 
