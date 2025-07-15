@@ -35,7 +35,7 @@ In this hands-on lab, you'll explore the integration of Continuous Integration (
 - **Workflows:** A series of automated steps, written in YAML, that run in response to specific events in your repository. Workflows can include jobs and actions.
 - **Jobs:** Individual units of work within a workflow, consisting of multiple steps that can run sequentially or in parallel.
 - **Actions:** Reusable components within workflows that perform specific tasks, such as building code, running tests, or deploying applications.
-- **Runners:** Virtual machines that execute the workflows defined in your repository.
+- **Runners:** Virtual Machines that execute the workflows defined in your repository.
 - **Secret Scanning:** A feature that scans your codebase for sensitive information (e.g., API keys, passwords) and alerts you if any secrets are detected.
 - **Code Scanning:** A feature that automatically analyzes your code for security vulnerabilities and provides actionable feedback.
 
@@ -45,13 +45,13 @@ Welcome to your Implement CI/CD with GitHub Actions workshop! We've prepared a s
  
 ## Accessing Your Lab Environment
  
-Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
+Once you're ready to dive in, your Virtual Machine and lab guide will be right at your fingertips within your web browser.
 
    ![](media/cd_gs_1-5.png)
 
 ### Virtual Machine & Lab Guide
  
-Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
+Your Virtual Machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
  
 ## Exploring Your Lab Resources
  
@@ -67,19 +67,19 @@ For convenience, you can open the lab guide in a separate window by selecting th
    
 ## Managing Your Virtual Machine
  
-On the **Resources (1)** tab use the **Action buttons (2)** next to your VM. Feel free to start, stop, or restart your virtual machine as needed.. Your experience is in your hands!
+On the **Resources (1)** tab use the **Action buttons (2)** next to your VM. Feel free to start, stop, or restart your Virtual Machine as needed. Your experience is in your hands!
 
    ![](media/GS4.4.png) 
 
 ## Lab Guide Zoom In/Zoom Out
 
-To adjust the zoom level for the environment page, click the **A↕ (1)** icon located next to the timer in the lab environment and **100% (2)** to adjust.
+To adjust the zoom level for the environment page, click the **A↕ (1)** icon located next to the timer and then select **100% (2)** to adjust it.
 
    ![](media/cd_gs_1-6.png)
 
 ## Let's Get Started with Azure Portal
  
-1. On your virtual machine, click on the Azure Portal icon as shown below:
+1. On your Virtual Machine, click on the Azure Portal icon as shown below:
  
     ![](media/cd_gs_1-7.png)
 
