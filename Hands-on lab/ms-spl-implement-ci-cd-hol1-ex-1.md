@@ -444,7 +444,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    
 1. Navigate to **Azure Portal**, click on **Resource groups** from the Navigate panel to see the resource groups.
 
-   ![](media/2dgn9.png) 
+   ![](media/cor_g_1-3.png) 
    
 1. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
