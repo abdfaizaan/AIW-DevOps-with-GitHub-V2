@@ -23,31 +23,31 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
    ![](media/settingsupd.png)  
    
-1. Click on **Set up** **(1)** button to enable CodeQL analysis and select the **Advanced** **(2)** option for creating a CodeQL Analysis YAML file.
+1. Under the Code scanning section, click on **Set up** **(1)** button to enable CodeQL analysis and select the **Advanced** **(2)** option for creating a CodeQL Analysis YAML file.
 
    ![](media/set_up.png)      
 
-1. Update the workflow name to **codeql-analysis.yml (1)** and review the yaml file. Select **Commit changes (2)**, then select **Commit directly to the main branch (3)** and click on **Commit changes (4)**.
+1. Update the workflow name to **codeql-analysis.yml (1)** and review the yaml file. Select **Commit changes (2)**.
   
-   ![](media/code234.png) 
+   ![](media/ex_2_g_4.png) 
 
-   ![](media/code456.png) 
+1. On the Commit changes section, select **Commit directly to the main branch (1)** and click on **Commit changes (2)**.
+
+   ![](media/ex_2_g_5.png) 
   
 1. Navigate to **Actions (1)** tab, You can review the **workflow (2)** run.
     
    ![](media/ex5-codeql-actions.png) 
 
-1. Click on **Security** and under code scanning alerts, click on **Set up code scanning (1)** if it is not enabled.
+1. Navigate t the **Security** tab **(1)** and select **Overview** **(2)**. In the **Code scanning alerts** section, click **View alerts** **(3)** to review vulnerabilities identified by the configured analysis tool.
 
-   ![](media/set_up_code_scanning.png) 
-   
-1. Navigate to **Security (1)** tab and click on **View alerts (2)**.
-   
-   ![](media/ex5-codescanning-viewalerts.png)
+   ![](media/ex_2_g_7.png)
+   > **Note:** If code scanning is not yet enabled, you will see an option to **Set up code scanning** instead. Click **Set up code scanning** to configure it.
   
-1. You will be navigated to **Code scanning (1)** section. You may see **No new code scanning alerts (2)**.
+1. You will be navigated to the **Code scanning** section where you can view alerts related to your workflows.
    
-   ![](media/codescanning.png)
+   ![](media/ex_2_g_8.png)
+   > **Note:** If you don’t see any alerts here, that’s okay! It simply means no issues were detected at this time.
     
 ### Task 2: Repository security advisories  
  
@@ -117,11 +117,9 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
   
  1. After having the temporary fork you can **Request CVE**, it is used for GitHub reviews and published security advisories. Upon review, we may use this advisory to send Dependabot alerts to affected repositories and redistribute the advisory through our API and Atom feed.
 
-    ![](media/cve123.png)
+    ![](media/ex_2_g_12.png)
 
-      >**Note:** Select **Request CVE** again, on the pop-up.
-
-      >**Note**: This process may take up to 3 working days. 
+      >**Note:** Select **Request CVE** again, on the pop-up. and this process may take up to 3 working days. 
  
 ### Task 3: Using Dependabot
 
