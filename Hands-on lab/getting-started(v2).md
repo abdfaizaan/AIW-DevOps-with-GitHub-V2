@@ -67,7 +67,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
    
 ## Managing Your Virtual Machine
  
-On the **Resources (1)** tab use the **Action buttons (2)** next to your VM. Feel free to start, stop, or restart your Virtual Machine as needed. Your experience is in your hands!
+On the **Resources (1)** tab, use the **Action buttons (2)** next to your VM. Feel free to start, stop, or restart your Virtual Machine as needed. Your experience is in your hands!
 
    ![](media/GS4.4.png) 
 
@@ -88,7 +88,7 @@ To adjust the zoom level for the environment page, click the **A↕ (1)** icon l
     ![](media/ddpopup.png)
     > **Note:** After accepting the terms, close the tab to let it run in the background.
  
-1. On the **Sign in to Microsoft Azure** tab you will see the login screen, in that enter the following email/username, and click on **Next**. 
+1. On the **Sign in to Microsoft Azure** tab, you will see the login screen. In that enter the following email/username, and click on **Next**. 
 
    * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
    
