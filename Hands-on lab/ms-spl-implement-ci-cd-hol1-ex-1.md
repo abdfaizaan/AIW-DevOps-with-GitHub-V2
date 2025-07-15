@@ -22,15 +22,15 @@ In this task, you'll access and explore the code repository of the web app using
 
    ![](media/2dg4.png "New Repository Creation Form")
    
-1. In **Visual Studio Code**, go to the **Menu bar (1)**, select **File (2)**, and then click **Open Folder (3)** to browse and open a folder from the file system.
+1. In **Visual Studio Code**, go to the **Menu bar (1)**, select **File (2)**, and then click **Open Folder (3)** to open a folder from the file system.
 
    ![](media/devops1.3.png)
 
-1. In the **Open Folder** tab, navigate to the following path `C:\Workspaces\lab\aiw-devops-with-github-lab-files` (1) to open your local GitHub repository and click on **Select Folder (2)**.
+1. In the **Open Folder** tab, navigate to the following path `C:\Workspaces\lab\aiw-devops-with-github-lab-files` **(1)** to open your local GitHub repository and click on **Select Folder (2)**.
 
    ![](media/ex-1-1.png)
     
-1. You may receive a prompt: Do you trust the authors of the files in this folder? select the **Checkbox** **(1)** the box and click on **Yes, I trust the authors** **(2)**.
+1. If you see the prompt asking, Do you trust the authors of the files in this folder?, check the box labeled **Trust the authors of all files in the parent folder lab** **(1)**, then click the **Yes, I trust the authors** button **(2)** to proceed and enable all features for the folder in Visual Studio Code. 
 
    ![](media/ex-1-2.png)
    
@@ -58,7 +58,7 @@ In this task, you will set up the local infrastructure using NET. You'll be work
    
       ![](media/ex2-t2-3upd1.png)
    
-1. Update the **Application Id (Client Id)**, **Client Secret**, and **Tenant Id** in the command mentioned below. Run it in the terminal.
+1. Update the **Application Id (Client Id)**, **Client Secret**, and **Tenant ID** in the command mentioned below. Run it in the terminal.
 
    ```pwsh
    az login --service-principal -u <clientId> -p=<clientSecret> --tenant <tenantId>
@@ -106,7 +106,7 @@ In this task, you will set up the local infrastructure using NET. You'll be work
        
     ![](media/localhost1.png) 
    
-   * Then click on Continue to localhost(unsafe) to access the application.
+   * Then click on **Continue to localhost (unsafe)** to access the application.
 
       ![](media/localhost2.png)   
    
@@ -186,8 +186,6 @@ In this task, you will set up the local infrastructure using NET. You'll be work
 ## Task 3: Create the Project Repo
 
 In this task, you'll access the GitHub Enterprise account and create a new repository to store the infrastructure.
-
-In this task, you will create an account on [GitHub](https://github.com) and use `git` to add lab files to a new repository.
 
 1. In a new browser tab, go to `https://www.github.com/login`.
 
@@ -273,7 +271,7 @@ In this task, you will create an account on [GitHub](https://github.com) and use
 
    ![](media/ex_1_g_8.png) 
    
-1. Navigate back to the **Visual Studio Code** , ensure the terminal is open. Click on the **drop-down arrow (1)** next to the terminal tab, then select **PowerShell (2)** to open a new PowerShell terminal session.
+1. Navigate back to the **Visual Studio Code**, ensure the terminal is open. Click on the **drop-down arrow (1)** next to the terminal tab, then select **PowerShell (2)** to open a new PowerShell terminal session.
 
    ![](media/ex-1-11.png) 
 
@@ -289,9 +287,9 @@ In this task, you will create an account on [GitHub](https://github.com) and use
      
    ![](media/2dgn72.png) 
    
-1.  Run the below mentioned command in the terminal. Make sure to replace <your_github_repository-url> with the value you copied in step 11 and Unique-ID in step 12
+1.  Run the below mentioned command in the terminal. Make sure to replace <your_github_repository-url> with the value you copied in step 18 and Unique-ID in step 19.
 
-    Note: This step is done to initialize the folder as a git repository, commit, and submit contents to the remote GitHub branch “main” in the lab files repository created in Step 1. 
+    **Note:** This step is done to initialize the folder as a git repository, commit, and submit contents to the remote GitHub branch “main” in the lab files repository created in Step 1. 
 
       ```pwsh
       git init
@@ -306,29 +304,29 @@ In this task, you will create an account on [GitHub](https://github.com) and use
 
        ![](media/ghlogin.png)
 
-1.  You will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize git-ecosystem** to provide access
+1.  You will be prompted with a pop-up window to **Authorize Git Credential Manager**. Click on **Authorize git-ecosystem** to provide access.
 
        ![](media/2dgn158upd.png)
 
 1.  After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
    
-   >**Note:** If you encounter any errors as shown below, please follow the steps outlined below.
+    > **Note:** If you encounter any errors as shown below, please follow the steps outlined below.
 
-   ![](media/ex_1_g_9.png)
+    ![](media/ex_1_g_9.png)
 
-   (i) Scroll up within the terminal to locate the highlighted link. Click on the link.
+    (i) Scroll up within the terminal to locate the highlighted link. Click on the link.
 
-   ![](media/ex_1_g_10.png)
+    ![](media/ex_1_g_10.png)
 
-   (ii) Choose the **It's used in tests (1)** option. Then, select **Allow me to expose this secret (2)** to proceed.
+    (ii) Choose the **It's used in tests (1)** option. Then, select **Allow me to expose this secret (2)** to proceed.
 
-   ![](media/ex_1_g_12.png)   
+    ![](media/ex_1_g_12.png)   
 
-   (iii) After completing the previous step, navigate back to VS Code and rerun step 13 to finish the push process. 
+    (iii) After completing the previous step, navigate back to VS Code and rerun step 22 to finish the push process.
 
 ## Task 4: Build and push using GitHub Actions
 
-In this exercise, you will build automation in GitHub for updating and republishing our Docker images when the code changes. You will create a workflow file using the GitHub interface and its GitHub Actions workflow editor. This will get you familiar with how to create and edit an action through the GitHub website.
+In this task, you will build automation in GitHub for updating and republishing our Docker images when the code changes. You will create a workflow file using the GitHub interface and its GitHub Actions workflow editor. This will get you familiar with how to create and edit an action through the GitHub website.
 
 1. From the Azure Portal dashboard, click on **Resource groups** from the navigation panel to view all available resource groups.
 
@@ -342,9 +340,13 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/upd-2dgn11.png) 
    
-1. In the **productsdb** SQL database page, expand **Settings (1)** from the left-hand menu, then select **Connection strings (2)**.  Under the **ADO.NET (3)** tab, copy the **ADO.NET (SQL authentication)** connection string by clicking the **copy icon (4)**.
+1. On the **productsdb** SQL database page, expand **Settings** from the left-hand menu **(1)**, then select **Connection strings** **(2)**. Under the **ADO.NET** tab **(3)**, click the **copy icon** next to the **ADO.NET (SQL authentication)** connection string **(4)**, and paste it into Notepad for later use.
 
-   ![](media/ex-1-21.png)  
+   ![](media/ex-1-21.png) 
+
+1. Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
+   
+   ![](media/ex-1-22.png)  
  
 1. In your GitHub lab files repository, select the **Settings** tab from the lab files repository.
 
@@ -354,11 +356,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/Ex2-task4-step6.png)
     
-1. Under the **Actions Secrets/New secret** page, enter the below-mentioned details.
-
-   >**Note:** Replace `{your_password}` with the ODL User Azure Password. Go to **Environment Details (1)**, click on **Azure credentials (2)**, and copy **Password (3)**.
-   
-   ![](media/ex-1-22.png)   
+1. Under the **Actions Secrets/New secret** page, enter the below-mentioned details. 
 
    - **Name:** Enter **SQL_PASSWORD (1)**
    - **Secret:** Paste the **ADO.NET (SQL authentication) (2)** which you copied in previous step.
@@ -400,7 +398,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    
       ![](media/2dgn33.png)
    
-1. From your GitHub repository, select the **Actions (1)** tab. Select the **contoso-traders-app-deployment (2)** workflow from the side blade, click on the  **drop-down (3)** next Run workflow button, and select **Run workflow (4)**.
+1. From your GitHub repository, select the **Actions (1)** tab. Select the **contoso-traders-app-deployment (2)** workflow from the side blade, click on the  **drop-down (3)** next run Run workflow button, and select **Run workflow (4)**.
 
    ![](media/2dgn159.png)
 
@@ -410,7 +408,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    
    ![](media/2dgn165.png)
    
-   >**Note:** If the workflow **fails** due to **npm install** job, follow from step 13 - step 16. Else, continue from step 17. 
+   >**Note:** If the workflow **fails** due to **npm install** job, follow from step 14 - step 16. Else, continue from step 17. 
    
 1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main (3)**.
 
@@ -436,7 +434,7 @@ In this exercise, you will build automation in GitHub for updating and republish
    git push
    ```
     
-1. From your GitHub repository, select the **Actions (1)** tab. You'll see an Action named **Updated node version (2)** executing. Please wait until the execution completes
+1. From your GitHub repository, select the **Actions (1)** tab. You'll see an Action named **Updated node version (2)** executing. Please wait until the execution completes.
 
    ![](media/2dgn160.png)
    
@@ -469,15 +467,15 @@ The last task automated building and updating only one of the Docker images. In 
    - Click on **Code (1)**, 
    - Select the **Codespace (2)** tab
 
-   ![](media/codespaces_1.jpg)
+     ![](media/ex2-kc-codespace.png)
    
-   >**Note:** In case you had created a  codespace in the  previous task. Click on the **+** button to create a new codespace.
+     >**Note:** In case you had created a  codespace in the  previous task. Click on the **+** button to create a new codespace.
    
 1. You will be redirected to a new Codespace tab in your browser. Click **Continue**.
 
    ![](media/ex_1_g_19.png)
 
-1. Allow the pop-up window, check the box to **always allow (1)** the link and click **Open (2)** to launch Visual Studio Code
+1. When prompted with a message saying the site is trying to open Visual Studio Code, check the box labeled **Always allow [http://127.0.0.1:56159](http://127.0.0.1:56159) to open links of this type in the associated app** **(1)**, then click the **Open (2)** button to proceed.
 
    ![](media/ex_1_g_20.png)
 
@@ -504,6 +502,7 @@ The last task automated building and updating only one of the Docker images. In 
    git commit -m "Updating app deployment"
    git push
    ```
+
    ![](media/ex-1-34.png)
     
    > **Note:** This will update the workflow and will **not** run the "Update the ... Docker image" jobs.
@@ -514,7 +513,7 @@ The last task automated building and updating only one of the Docker images. In 
 
 ## Summary
 
-In this lab, you hosted the application locally, deployed the application to Azure using GitHub Actions, and explored Codespace.
+In this lab, you have learned how to set up local infrastructure using .NET for a sample application consisting of three components: carts, products, and ui. You deployed this infrastructure to the cloud using GitHub Actions and also implemented automation in GitHub to update and republish workflows automatically when code changes are made.
 
 ### You have successfully completed the Lab. Click on Next >> to proceed with the next Lab.
 

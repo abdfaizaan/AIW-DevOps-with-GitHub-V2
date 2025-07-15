@@ -19,7 +19,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
 **Note:** To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to public.
    
-1. Select the **Settings (1)** tab from the GitHub browser tab. Click on **Advanced security (2)** under the security side blade.
+1. Select the **Settings (1)** tab from the GitHub browser tab. Click on **Advanced security (2)** under the **security** section.
 
    ![](media/settingsupd.png)  
    
@@ -35,11 +35,11 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
    ![](media/ex_2_g_5.png) 
   
-1. Navigate to **Actions (1)** tab, You can review the **workflow (2)** run.
+1. Navigate to the **Actions (1)** tab to review the workflow run **(2)**.
     
    ![](media/ex5-codeql-actions.png) 
 
-1. Navigate t the **Security** tab **(1)** and select **Overview** **(2)**. In the **Code scanning alerts** section, click **View alerts** **(3)** to review vulnerabilities identified by the configured analysis tool.
+1. Navigate to the **Security** **(1)** tab and select **Overview** **(2)**. Under the **Code scanning alerts** section, click **View alerts** **(3)** to review any vulnerabilities identified by the configured code analysis tool.
 
    ![](media/ex_2_g_7.png)
    
@@ -150,11 +150,11 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
    ![The `handlebars` Dependabot alert detail.](media/ex5-t3-reviewsu.png "Dependabot alert detail")
    
-   >**Note:** If you see **Create Dependabot security update** option, click on it. After it is created, select **Review security update**. 
+   > **Note:** If you see the **Create Dependabot security update** option, click on it. Once the update is created, select **Review security update** to proceed.
 
 1. Once **Review security update** is selected, it will redirect to the **Pull request** page.
 
-1. Once all the checks have been passed, click on **Merge pull request** and followed by click on **Confirm merge**. 
+1. Once all checks have passed, click on **Merge pull request**, then click **Confirm merge** to complete the process.
 
    ![The Pull Request Merge Button in the Pull Request detail.](media/ex5-t3-merge-pr.png "Pull Request Merge Button")
     
@@ -164,14 +164,6 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
    ```pwsh
    cd C:\Workspaces\lab\aiw-devops-with-github-lab-files
-   ```
-   
-   >**Note:** Use the above command if not in the "\Workspaces\lab\aiw-devops-with-github-lab-files" on VS code. 
-   
-   If already in the library, use the command below.
-
-   ```pwsh
-   git pull
    ```
   
 ## Task 4: Explore Secret Scanning (READ-ONLY)   
@@ -196,7 +188,7 @@ In this task, you'll explore how secret scanning works and see how it generates 
 
    ![](media/2dg113.png)    
    
-1. Add new file with name **build.docker-compose.yml (1)** name, add the code mentioned below **commit** the file. Here, you'll expose the **Application ID** of a service principal.
+1. Enter file named as **build.docker-compose.yml** **(1)**, add the code provided below into the file **(2)**, and then **commit (3)** it. This file will include the configuration to expose the **Application ID** of a service principal. 
 
    >**Note:** Replace your `<Application ID>` and `<Secret Key>` in the code.
 
@@ -215,12 +207,12 @@ In this task, you'll explore how secret scanning works and see how it generates 
 
    > **Note:** If a pop-up appears, select **It's used in tests** and recommit the changes.
    
-1. Go to the **Security tab (1)** and click on **Secret scanning (2)** in the sidebar. In the filter options, change the status to **Closed (3)**. Here, you'll notice that an alert is generated referring to the same **Application Secret** which was exposed in the `build.docker-compose.yml` file. This is how the Secret scanning feature works and generates alerts to notify you.
+1. Go to the **Security tab (1)** and click on **Secret scanning (2)** under **Vulnerability alerts** in the sidebar. In the filter options, change the status to **Closed (3)**. Here, you'll notice that an alert is generated referring to the same **Application Secret** which was exposed in the `build.docker-compose.yml` file. This is how the Secret scanning feature works and generates alerts to notify you.
 
    ![](media/2dg116a.png) 
    
 ## Summary 
 
-In this lab, you explored and configured different GitHub Advanced Security features.
+In this lab, you explored advanced **GitHub Enterprise security features**. You learned how to configure and work with **Code scanning**, **CodeQL alerts**, **Repository security advisories**, and **GitHub Dependabot** to help identify and address vulnerabilities in your codebase..
 
 ###  You have successfully completed the Hands-on Lab
