@@ -241,7 +241,7 @@ In this task, you will create an account on [GitHub](https://github.com) and use
 
    ![The `New Repository` creation form in GitHub.](media/2dgn91upd.png "New Repository Creation Form")
    
-   >**Note:** If you observe any repository existing with the same name, please make sure you delete the Repo and create a new one. Please follow the step 6 to step 10. Else, skip to step 11.
+   >**Note:** If you observe any repository existing with the same name, please make sure you delete the Repo and create a new one. Please follow the step 13 to step 17. Else, skip to step 18.
 
 1. In the upper-right corner of the GitHub dashboard, click on your **Profile (1)** icon and select **Your repositories (2)** from the dropdown menu.
 
