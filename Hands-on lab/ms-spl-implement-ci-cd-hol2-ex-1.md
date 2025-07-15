@@ -1,6 +1,6 @@
 # Lab 2: Explore GitHub advanced security features
 
-### Estimated Duration: 100 minutes
+### Estimated Duration: 100 Minutes
 
 In this hands-on lab, you'll explore GitHub Enterprise features, which are GitHub's advanced security features. You'll configure and explore Code scanning, CodeQL alerts, Repository security advisories, and GitHub Dependabots.  
 
@@ -13,7 +13,7 @@ You will be able to complete the following tasks:
 - Task 3: Using Dependabot
 - Task 4: Explore Secret Scanning (READ-ONLY)   
 
-### Task 1: Enabling Code scanning and CodeQL alerts 
+## Task 1: Enabling Code scanning and CodeQL alerts 
 
 In this task, you'll configure Code scanning and explore CodeQL alerts. Code scanning is a feature that you use to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown on GitHub.
 
@@ -42,6 +42,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 1. Navigate t the **Security** tab **(1)** and select **Overview** **(2)**. In the **Code scanning alerts** section, click **View alerts** **(3)** to review vulnerabilities identified by the configured analysis tool.
 
    ![](media/ex_2_g_7.png)
+   
    > **Note:** If code scanning is not yet enabled, you will see an option to **Set up code scanning** instead. Click **Set up code scanning** to configure it.
   
 1. You will be navigated to the **Code scanning** section, where you can view alerts related to your workflows.
@@ -49,7 +50,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
    ![](media/ex_2_g_8.png)
    > **Note:** If you don’t see any alerts here, that’s okay! It simply means no issues were detected at this time.
     
-### Task 2: Repository security advisories  
+## Task 2: Repository security advisories  
  
 In this task, you'll enable Repository security advisories. You can use GitHub Security Advisories to privately discuss, fix, and publish information about security vulnerabilities in your repository.  Anyone with admin permissions to a repository can create a security advisory.
  
@@ -100,7 +101,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    
 1. In the Affected products section, provide the following details and click on **Create draft security advisory (7)**   
  
-   - Ecosystem: **Composer(1)**
+   - Ecosystem: **Composer (1)**
    - Package name: **aiw-devops-with-github-lab-files/src/TailwindTraders.Ui.Website/src/App.js (2)**
    - Affected version: **<1.2 (3)**
    - Patched version: **1.2 (4)**
@@ -121,7 +122,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
       >**Note:** Select **Request CVE** again, on the pop-up. And this process may take up to 3 working days. 
  
-### Task 3: Using Dependabot
+## Task 3: Using Dependabot
 
 In this task, you will use Dependabot to track the versions of the packages we use in our GitHub repository and create pull requests to update packages for us.
 
@@ -164,13 +165,16 @@ In this task, you will use Dependabot to track the versions of the packages we u
    ```pwsh
    cd C:\Workspaces\lab\aiw-devops-with-github-lab-files
    ```
+   
    >**Note:** Use the above command if not in the "\Workspaces\lab\aiw-devops-with-github-lab-files" on VS code. 
+   
    If already in the library, use the command below.
+
    ```pwsh
    git pull
    ```
   
-### Task 4: Explore Secret Scanning (READ-ONLY)   
+## Task 4: Explore Secret Scanning (READ-ONLY)   
 
 In this task, you'll explore how secret scanning works and see how it generates alerts. GitHub scans repositories for known types of secrets to prevent fraudulent use of secrets that were committed accidentally.
 
@@ -219,4 +223,4 @@ In this task, you'll explore how secret scanning works and see how it generates 
 
 In this lab, you explored and configured different GitHub Advanced Security features.
 
-###  You have successfully completed the Lab
+###  You have successfully completed the Hands-on Lab
