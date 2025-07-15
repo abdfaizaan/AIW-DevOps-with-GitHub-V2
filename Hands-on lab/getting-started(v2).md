@@ -3,7 +3,7 @@
 ## Overall Estimated Duration: 4 Hours
 
 ## Overview
-In this comprehensive hands-on lab, you will delve into the essentials of Continuous Integration (CI), Continuous Deployment (CD), and advanced security practices using GitHub. You'll learn how to leverage GitHub Actions to automate your development workflows, including building, testing, and deploying your applications. Additionally, you'll explore GitHub's advanced security features, such as secret scanning, code scanning, and Dependabot, to safeguard your codebase against vulnerabilities.
+In this hands-on lab, you will delve into the essentials of Continuous Integration (CI), Continuous Deployment (CD), and advanced security practices using GitHub. You'll learn how to leverage GitHub Actions to automate your development workflows, including building, testing, and deploying your applications. Additionally, you'll explore GitHub's advanced security features, such as secret scanning, code scanning, and Dependabot, to safeguard your codebase against vulnerabilities.
 
 This lab offers a practical understanding of setting up CI/CD pipelines and implementing security measures, ensuring a robust and secure development process.
 
@@ -25,6 +25,7 @@ By the end of this lab, you will be able to:
 
 ## Architecture
 In this hands-on lab, you'll explore the integration of Continuous Integration (CI) and Continuous Deployment (CD) processes using GitHub Actions, along with implementing advanced security features provided by GitHub.
+
 ## Architecture Diagram
 
    ![](media/Newiage_action.png)
@@ -49,7 +50,7 @@ Once you're ready to dive in, your Virtual Machine and lab guide will be right a
 
    ![](media/cd_gs_1-5.png)
 
-### Virtual Machine & Lab Guide
+## Virtual Machine & Lab Guide
  
 Your Virtual Machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
  
@@ -73,7 +74,7 @@ On the **Resources (1)** tab, use the **Action buttons (2)** next to your VM. Fe
 
 ## Lab Guide Zoom In/Zoom Out
 
-To adjust the zoom level for the environment page, click the **A↕ (1)** icon located next to the timer and then select **100% (2)** to adjust it.
+To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
    ![](media/cd_gs_1-6.png)
 
@@ -83,9 +84,10 @@ To adjust the zoom level for the environment page, click the **A↕ (1)** icon l
  
     ![](media/cd_gs_1-7.png)
 
-1. If the Docker Desktop service agreement pop-up appears, check the box to **accept the terms(1)** and click **Accept(2)**. Afterward, minimize any remaining Docker Desktop windows.
+1. If a Docker Desktop service agreement pop-up appears, select the checkbox to **I accept the terms (1)**, then click the **Accept (2)** button. Once done, minimize any remaining Docker Desktop windows.
 
     ![](media/ddpopup.png)
+   
     > **Note:** After accepting the terms, close the tab to let it run in the background.
  
 1. On the **Sign in to Microsoft Azure** tab, you will see the login screen. In that enter the following email/username, and click on **Next**. 
@@ -108,11 +110,7 @@ To adjust the zoom level for the environment page, click the **A↕ (1)** icon l
 
    ![](media/GS9.png)
 
-1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
-
 1. If a **Welcome to Microsoft Azure** popup window appears, select **Cancel** to skip the tour.
-   
-This hands-on lab will help you master the implementation of Continuous Integration and Continuous Deployment (CI/CD) processes using GitHub Actions, along with exploring advanced security features. You'll learn how to automate building, testing, and deploying applications, and implement security measures like secret scanning, code scanning, and dependency monitoring.
 
 ## Support Contact
 
