@@ -56,7 +56,7 @@ In this task, You will set up the local infrastructure using Dotnet . You'll be 
    - **Secret Key (Client Secret)**
    -  **Tenant ID (Directory ID)**  
    
-   ![](media/ex2-t2-3upd1.png)
+      ![](media/ex2-t2-3upd1.png)
    
 1. Update the **Application Id (Client Id)**, **Client Secret**, and **Tenant Id** in the command mentioned below. Run it in the terminal.
 
@@ -302,27 +302,29 @@ In this task, you will create an account in [GitHub](https://github.com) and use
       git push -u <Unique-ID> main
       ```
      
-   - If you are asked authenticate your GitHub account. Select **1. web browserSign in with your browser** and you will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize git-ecosystem** to provide access
+1.  You are asked authenticate your GitHub account. Select **Sign in with your browser**.
 
        ![](media/ghlogin.png)
 
+1.  You will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize git-ecosystem** to provide access
+
        ![](media/2dgn158upd.png)
 
- - After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
+1.  After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
    
->**Note**: If you encounter any errors as shown below, please follow the steps outlined below.
+   >**Note**: If you encounter any errors as shown below, please follow the steps outlined below.
 
    ![](media/ex_1_g_9.png)
 
-(i) Scroll up within the terminal to locate the highlighted link. Click on the link.
+   (i) Scroll up within the terminal to locate the highlighted link. Click on the link.
 
    ![](media/ex_1_g_10.png)
 
-(ii) Choose the **It's used in tests (1)** option. Then, select **Allow me to expose this secret (2)** to proceed.
+   (ii) Choose the **It's used in tests (1)** option. Then, select **Allow me to expose this secret (2)** to proceed.
 
    ![](media/ex_1_g_12.png)   
 
-(iii) After completing the previous step, navigate back to VS Code and rerun step-13 to finish the push process. 
+   (iii) After completing the previous step, navigate back to VS Code and rerun step-13 to finish the push process. 
 
 ### Task 4: Build and push using GitHub Actions
 
