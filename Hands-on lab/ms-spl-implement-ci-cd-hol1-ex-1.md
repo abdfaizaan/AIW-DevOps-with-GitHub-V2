@@ -102,7 +102,7 @@ In this task, you will set up the local infrastructure using NET. You'll be work
 
    ![](media/ex_1_g_1.png)     
    
-   > **Note:** If you are not able to access the application, click on **Advanced** under Your connection isn't private.
+   > **Note :** If you are not able to access the application, click on **Advanced** under Your connection isn't private.
        
 
     ![](media/localhost1.png) 
@@ -223,7 +223,7 @@ In this task, you will create an account on [GitHub](https://github.com) and use
 1. On the **Device verification** pane, enter the **Device Verification Code (1)** that was emailed to you and click **Verify (2)**.
 
    ![](media/ex_1_g_3.png) 
-   > **Note:** If you see **Two-factor authentication (2FA) is required for your GitHub account** page next, click on **Remind me tomorrow**
+   > **Note :** If you see **Two-factor authentication (2FA) is required for your GitHub account** page next, click on **Remind me tomorrow**
       ![The `New Repository` creation form in GitHub.](media/2fagit.png "New Repository Creation Form")
 
 
@@ -396,7 +396,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 1. Select **New repository secret** and under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** **(3)**.
 
    - **Name** : Enter **ENVIRONMENT (1)**
-   - **Secret**  :**<inject key="DeploymentID" enableCopy="false" /> (2)**
+   - **Secret** :**<inject key="DeploymentID" enableCopy="false" /> (2)**
    
       ![](media/2dgn33.png)
    
@@ -419,7 +419,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 
       ![](media/ex2-kc-codespace.png)
  
-      >**Note:** If prompted to **Install** an extension, please proceed with the installation and **Allow** any **Visual Studio** pop-ups that appear.
+      >**Note :** If prompted to **Install** an extension, please proceed with the installation and **Allow** any **Visual Studio** pop-ups that appear.
 
       > It will redirect you to the new tab of the browser. On the **Select user to authorize Visual Studio Code** page, select **Continue**. On the pop-u,p select **Open**.
    
@@ -481,7 +481,7 @@ The last task automated building and updating only one of the Docker images. In 
 
    ![](media/ex_1_g_20.png)
 
-      >**Note:** If prompted to **Install** an extension, please proceed with the installation and **Allow** any **Visual Studio** pop-ups that appear.
+      >**Note :** If prompted to **Install** an extension, please proceed with the installation and **Allow** any **Visual Studio** pop-ups that appear.
 
       > You will be redirected to a new browser tab. On the Select user to authorize Visual Studio Code page, click Continue. When prompted, select Open in the pop-up window. Then, choose your GitHub account and click Continue.
       
