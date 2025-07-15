@@ -24,7 +24,7 @@ By the end of this lab, you will be able to:
 - Basic understanding of security concepts in software development
 
 ## Architecture
-In this hands-on lab, you'll explore the integration of Continuous Integration (CI) and Continuous Deployment (CD) processes using GitHub Actions, along with implementing advanced security features provided by GitHub.
+This architecture illustrates a streamlined deployment process for an ASP.NET application using GitHub Actions and Azure. The developer writes code and commits it to a GitHub repository. Once the code is committed, a GitHub Action is triggered to automatically build the application and install necessary dependencies using NuGet. After the build process is completed, the workflow continues by deploying the web application to an Azure Web App service. This end-to-end automation helps developers quickly and efficiently push updates to the cloud without manual intervention.
 
 ## Architecture Diagram
 
@@ -90,7 +90,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
    
     > **Note:** After accepting the terms, close the tab to let it run in the background.
  
-1. On the **Sign in to Microsoft Azure** tab, you will see the login screen. In that enter the following email/username, and click on **Next**. 
+1. On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter the following Email/Username, and click on **Next**. 
 
    * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
    
@@ -120,7 +120,7 @@ Learner Support Contacts:
 - Email Support: cloudlabs-support@spektrasystems.com
 - Live Chat Support: https://cloudlabs.ai/labs-support
 
-Now, click on Next from the lower right corner to move on to the next page.
+Now, click on **Next** from the lower right corner to move on to the next page.
 
    ![](media/GS4.png)
 
