@@ -63,7 +63,7 @@ To get a better understanding of your lab resources and credentials, navigate to
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
 
-   ![](media/GS3.3.png) 
+   ![](media/gg_3.png) 
    
 ## Managing Your Virtual Machine
  
@@ -86,6 +86,7 @@ To adjust the zoom level for the environment page, click the **A↕ (1)** icon l
 1. If the Docker Desktop service agreement pop-up appears, check the box to **accept the terms(1)** and click **Accept(2)**. Afterward, minimize any remaining Docker Desktop windows.
 
     ![](media/ddpopup.png)
+    > **Note:** After accepting the terms, close the tab to let it run in the background.
  
 1. On the **Sign in to Microsoft Azure** tab you will see the login screen, in that enter the following email/username, and click on **Next**. 
 
@@ -99,7 +100,7 @@ To adjust the zoom level for the environment page, click the **A↕ (1)** icon l
    
       ![](media/sc900-image-2.png "Enter Password")
 
-1. If Action required pop-up window appears, click on **Ask later**.
+1. If **Action required** pop-up window appears, click on **Ask later**.
 
    ![](media/asklater.png)
   
