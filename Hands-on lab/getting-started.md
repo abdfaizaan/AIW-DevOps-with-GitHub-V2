@@ -1,6 +1,6 @@
 # Get started with Azure Load Testing 
 
-### Overall Estimated Duration: 4 Hours
+### Overall Estimated Duration: 8 Hours
 
 ## Overview
 
