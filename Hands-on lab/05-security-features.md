@@ -1,6 +1,6 @@
 # Exercise 3: Explore GitHub's advanced security features
 
-### Estimted Duration: 80 minutes
+### Estimted Duration: 80 Minutes
 
 In this exercise, you'll explore GitHub Enterprise features which are GitHub's advanced security features. You'll configure and explore Code scanning, CodeQL alerts, Repository security advisories, and GitHub Dependabots.
 
@@ -19,31 +19,31 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
 **Note**: To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to public.
 
-1. Select the **settings** **(1)** tab from the GitHub browser tab. Click on **Advance Security** **(2)** under the security side blade.
+1. Select the **settings** **(1)** tab from the GitHub browser tab. Click on **Advanced Security** **(2)** under the security side blade.
 
-   ![](media/gh4.png)
+   ![](media/E3T1S1.png)
 
 1. Click on **Set up** **(1)** button to enable **CodeQL analysis** and select the **Advanced** **(2)** option for creating a CodeQL Analysis YAML file.
 
-   ![](media/2dgn169.png)
+   ![](media/E3T1S2.png)
 
 1. Update the workflow name to **codeql-analysis.yml** **(1)** and review the yaml file. Select **Commit changes** **(2)**, then select **Commit directly to the main branch** **(3)** and click on **Commit changes** **(4)**.
 
-   ![](media/ex5-task1-step3a.png)
+   ![](media/E3T1S3.png)
 
-   ![](media/ex5-task1-step3b.png)
+   ![](media/E3T1S3-1.png)
 
-1. Navigate to **Actions** **(1)** tab, You can review the **workflow** **(2)** run.
+1. Navigate to **Actions (1)** tab, You can review the **workflow (2)** run.
 
-   ![](media/ex5-codeql-actions.png)
+   ![](media/E3T1S4.png)
 
-1. Navigate to **Security** **(1)** tab and click on **View alerts** **(2)**.
+1. Navigate to **Security (1)** tab and click on **View alerts (2)** for Code scanning alerts.
 
-   ![](media/ex5-codescanning-viewalerts.png)
+   ![](media/E3T1S5.png)
 
 1. You will be navigated to **Code scanning** section. You'll be able to visualize that the **No code scanning alerts here!**.
 
-   ![](media/giub1.png)
+   ![](media/E3T1S6.png)
 
 ## Task 2: Repository security advisories
 
@@ -51,7 +51,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
 1. Navigate to **Security** **(1)** tab, select **Advisories** **(2)** from the side blade and click on **New draft security advisory** **(3)**.
 
-   ![](media/ex5-t2-advisories.png)
+   ![](media/E3T2S1.png)
 
 1. In the Open a draft security advisory tab, under the Advisory Details section provide the following details.
 
@@ -92,7 +92,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
       https://codeql.github.com/codeql-query-help/javascript/js-missing-rate-limiting/
       ```
 
-      ![](media/ex5-t2-securityadvisor1.png)
+      ![](media/E3T2S2.png)
 
 1. In the Affected products section, provide the following details and click on **Create draft security advisory** **(7)**
 
@@ -103,13 +103,13 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
    - Severity: **High** **(5)**
    - Common Weakness Enumerator (CWE): **Improper Access Control (CWE-284)** **(6)**
 
-     ![](media/ex5-t2-securityadvisor2.png)
+     ![](media/E3T2S3.png)
 
 1. Once the security advisory is created, scroll-down and click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
 
-   ![](media/ex5-t2-securityadvisor3.png)
+   ![](media/E3T2S4.png)
 
-   ![](media/ex5-t2-securityadvisor4.png)
+   ![](media/E3T2S4-1.png)
 
 1. After having the temporary fork you can request a CVE, it is used for GitHub reviews and published security advisories. Upon review, we may use this advisory to send Dependabot alerts to affected repositories and redistribute the advisory through our API and Atom feed.
 
@@ -119,50 +119,58 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
 In this task, you will use Dependabot to track the versions of the packages we use in our GitHub repository and create pull requests to update packages for us.
 
-1. In your lab files GitHub repository, navigate to the **Settings** **(1)** tab and select the **Advance Security** **(2)** under Security from side blade. Make sure **Dependabot alerts** is **Enabled** **(3)**, if not click on **Enable** to Enable Dependabot alerts. Click on **Enable** **(4)** to Enable Dependabot security updates.
+1. In your lab files GitHub repository, navigate to the **Settings** **(1)** tab and select the **Advanced Security** **(2)** under Security from side blade. Make sure **Dependabot alerts** is enaled, if not click on **Enable (3)** to enable Dependabot alerts. Click on **Enable** **(4)** to enable **Dependabot security updates**.
 
    > **Note**: Enabling the `Dependabot security updates` will also automatically enable `Dependency graph` and `Dependabot alerts`.
 
-   ![The GitHub Repository Security Overview tab.](media/gh4.png "GitHub Repository Security Overview")
+   ![The GitHub Repository Security Overview tab.](media/E3T3S1.png "GitHub Repository Security Overview")
 
-   ![](media/gh6.png)
+   ![](media/E3T3S1-1.png)
    
    > **Note**: The alerts for the repository may take some time to appear. The rest of the steps for this task rely on the alerts to be present. You can continue with the next exercise as this is an independent task and doesn't affect the lab. Please visit this task later and complete the task.
 
 1. To observe Dependabot issues, navigate to the **Security** **(1)** tab and select the **View Dependabot alerts** **(2)** link.
 
-   ![GitHub Dependabot alerts in the Security tab.](media/ex5-t3-viewdb.png "GitHub Dependabot alerts")
+   ![GitHub Dependabot alerts in the Security tab.](media/E3T3S2.png "GitHub Dependabot alerts")
 
 1. You should arrive at the `Dependabot alerts` blade in the `Security` tab.
 
-   ![GitHub Dependabot alerts in the Security tab.](media/ex5-t3-dependabot.png "GitHub Dependabot alerts")
+   ![GitHub Dependabot alerts in the Security tab.](media/E3T3S3.png "GitHub Dependabot alerts")
 
 1. Sort the Dependabot alerts by `Package name`. Under the **Package** **(1)** dropdown menu, search for **node-forge** **(2)** by typing in the search box and select **node-forge** **(3)** vulnerability.
 
-   ![Summary of the `handlebars` Dependabot alert in the list of Dependabot alerts.](media/ex5-t3-node-forge.png "`handlebars` Dependabot alert")
+   ![Summary of the `handlebars` Dependabot alert in the list of Dependabot alerts.](media/E3T3S4.png "`handlebars` Dependabot alert")
 
-1. Select any of the `node-forge` Dependabot alert entries to see the alert detail. Click on **Create Dependabot Security Update** After the creation, click on **Review security update** to review.
+1. Select any of the `node-forge` Dependabot alert entries to see the alert detail. Click on **Create Dependabot Security Update (1)** After the creation, click on **Review security update (2)** to review.
 
-   ![The `handlebars` Dependabot alert detail.](media/ex5-t3-reviewsu.png "Dependabot alert detail")
+   ![The `handlebars` Dependabot alert detail.](media/E3T3S5.png "Dependabot alert detail")
+
+   ![The `handlebars` Dependabot alert detail.](media/E3T3S5-1.png "Dependabot alert detail")
 
 1. You will be navigate to the **Pull Requests** **(1)** tab, find the Dependabot security patch pull request **(2)** and merge it to your main branch.
 
-   ![List of Pull Requests.](media/ex5-t3-open-nfpr.png "Pull Requests")
+   ![List of Pull Requests.](media/E3T3S6.png "Pull Requests")
 
-1. Click on **Merge pull request** and followed by click on **Confirm merge**.
+1. Click on **Merge pull request (1)** and followed by click on **Confirm merge (2)**.
 
-   ![The Pull Request Merge Button in the Pull Request detail.](media/ex5-t3-merge-pr.png "Pull Request Merge Button")
+   ![The Pull Request Merge Button in the Pull Request detail.](media/E3T3S7.png "Pull Request Merge Button")
+
+   ![The Pull Request Merge Button in the Pull Request detail.](media/E3T3S7-1.png "Pull Request Merge Button")
 
    > **Note**: In case you see any errors with the merge request. Retry steps 4 to 6 by selecting any other Dependabot alert.
 
 1. Open **Command Promopt** and pull the latest changes from your GitHub repository to your local GitHub folder.
 
    ```pwsh
-   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files  
-   # This path may vary depending on how
-   # you set up your lab files repository
+   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files 
+   ``` 
+   >**Note:** The above path may vary depending on how you set up your lab files repository.
+   
+   ```
    git pull
    ```
+   
+   ![](media/E3T3S8.png)
 
 ## Task 4: Explore Secret Scanning (READ-ONLY)
 
@@ -170,23 +178,23 @@ In this task, you'll explore how secret scanning works and see how it generates 
 
 **Note**: This is a **READ-ONLY** task. Please do not perform the steps in the lab environment.
 
-1. From your GitHub repository, click on the **Settings** tab.
+1. From your GitHub repository, click on the **Settings (1)** tab. Then **Advanced Security (2)**.
 
-   ![](media/2dg110.png)
+   ![](media/E3T4S1.png)
 
-1. Select **Code Security** from the sidebar and make sure **Secret scanning is enabled (2)**.
+1. Make sure **Secret Protection** is enabled.
 
-   ![](media/giub2.png)
+   ![](media/E3T4S2.png)
 
 1. Navigate back to **Code (1)** and click on **src (2)** folder.
 
-   ![](media/2dg112.png)
+   ![](media/E3T4S3.png)
 
-1. Click on **Add file** and select **create new file** option.
+1. Click on **Add file (1)** and select **create new file (2)** option.
 
-   ![](media/2dg113.png)
+   ![](media/E3T4S4.png)
 
-1. Add new file with name **build.docker-compose.yml (1)** name, add the code mentioned below, and click on **commit changes** to commit the file. Here, you'll expose the **application ID** of a service principal.
+1. Add new file with name **build.docker-compose.yml (1)** name, add the **code (2)** mentioned below, and click on **Commit changes (3)**. On the pop-up appeared, select **Commit changes (4)** to commit the file. Here, you'll expose the **application ID** of a service principal.
 
    ```
    version: "3.4"
@@ -198,15 +206,18 @@ In this task, you'll explore how secret scanning works and see how it generates 
    web:
       build: ./ContosoTraders.Api.Products
    ```
+   ![](media/E3T4S4-2.png)
 
-   ![](media/E4T4S5-2901.png)
+   ![](media/E3T4S4-1.png)
 
 1. Select **Security (1)** tab and click on **Secret scanning (2)** from the sidebar. Here, you'll notice that an alert is generated referring to the same **Application ID** which was exposed in `build.docker-compose.yml` file. This is how the Secret scanning feature works and generates alerts to notify you.
 
-   ![](media/2dg116.png)
+   ![](media/E3T4S6.png)
 
 ## Summary
 
 In this exercise, you explored and configured different GitHub Advance Security features.
 
 ### You have successfully completed the lab. Click on **Next >>** to procced with next exercise.
+
+![](media/lab-06.png)
