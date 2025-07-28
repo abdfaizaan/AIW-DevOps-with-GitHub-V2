@@ -116,7 +116,7 @@ To adjust the zoom level for the environment page, click the **A↕: 100%** icon
 
 1. Confirm that you have all the resource groups present as shown below.
 
-   ![](media/GSS8.png)
+   ![](media/E1T4S17.png)
 
 ## Support Contact
 
