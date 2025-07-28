@@ -1,4 +1,4 @@
-# Get started with Azure Load Testing 
+# Get started with Devops with GitHub 
 
 ### Overall Estimated Duration: 4 Hours
 
