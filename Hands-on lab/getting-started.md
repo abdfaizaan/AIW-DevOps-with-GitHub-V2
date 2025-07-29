@@ -1,4 +1,4 @@
-# Get started with Azure Load Testing 
+# Get started with Devops with GitHub 
 
 ### Overall Estimated Duration: 8 Hours
 
@@ -50,7 +50,7 @@ Welcome to your Get Started with Azure Load Testing Workshop! We've prepared a s
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-   ![](media/gg_1.png)
+   ![](media/GSS1.png)
 
 ## Exploring Your Lab Resources
  
@@ -86,7 +86,7 @@ To adjust the zoom level for the environment page, click the **A↕: 100%** icon
 
 1. In the JumpVM, click on the Azure portal shortcut of the Microsoft Edge browser, which is created on the desktop.
 
-      ![](media/gg_5.png)
+      ![](media/GSS1.png)
 
 1. On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter the following email/username and click **Next**.
 
@@ -112,11 +112,11 @@ To adjust the zoom level for the environment page, click the **A↕: 100%** icon
 
 1. Now you will see the Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
 
-   ![](media/gg_7.png)
+   ![](media/GSS7.png)
 
 1. Confirm that you have all the resource groups present as shown below.
 
-   ![](media/gg_6.png)
+   ![](media/E1T4S17.png)
 
 ## Support Contact
 
