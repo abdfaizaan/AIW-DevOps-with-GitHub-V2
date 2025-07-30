@@ -507,9 +507,10 @@ The last task automated building and updating only one of the Docker images. In 
     
    > **Note:** This will update the workflow and will **not** run the "Update the ... Docker image" jobs.
 
-1. Navigate back to the GitHub browser, select the **Actions (1)** tab, and review the **workflow (2)** in the summary section, created automatically for the changes made. 
+1. Navigate back to the GitHub browser, select the **Actions (1)** tab, and review the **workflow (2)** in the **All workflows** section, created automatically for the changes made. Please wait until the execution completes.
 
-   ![](media/cor_g_1-1.png)
+   ![](media/lab1-laststepA.png)
+   ![](media/lab1-laststepB.png)
 
 ## Summary
 
@@ -517,4 +518,4 @@ In this lab, you have learned how to set up local infrastructure using .NET for 
 
 ### You have successfully completed the Lab. Click on Next >> to proceed with the next Lab.
 
-![](media/GS4.png)
+![](media/CICD---NEXT-PAGE.png)
