@@ -164,7 +164,6 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
    ```pwsh
    cd C:\Workspaces\lab\aiw-devops-with-github-lab-files
-   git fetch origin; git reset --hard origin/main; git clean -fd
    ```
   
 ## Task 4: Explore Secret Scanning (READ-ONLY)   
