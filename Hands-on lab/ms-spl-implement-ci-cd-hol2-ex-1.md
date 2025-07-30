@@ -56,7 +56,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
  
 1. Navigate to **Security (1)** tab, select **Advisories (2)** from the side blade and click on **New draft security advisory (3)**.
 
-   ![](media/ex5-t2-advisories.png)  
+   ![](media/step1-task2new1.png)  
      
 1. In the Open a draft security advisory tab, under the Advisory Details section, provide the following details.
 
@@ -126,17 +126,17 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
 In this task, you will use Dependabot to track the versions of the packages we use in our GitHub repository and create pull requests to update packages for us.
 
-1. In your lab files GitHub repository, navigate to the **Settings** tab and select the **Advanced security (2)** under Security from the side blade. Make sure **Dependabot alerts** is **Enabled (3)**, if not click on **Enable** to enable Dependabot alerts. Click on **Enable (4)** to enable Dependabot security updates.
+1. In your lab files GitHub repository, navigate to the **Settings (1)** tab and select the **Advanced security (2)** under Security from the side blade. Make sure **Dependabot alerts** is **Enabled**, if not click on **Enable (3)** to enable Dependabot alerts. Click on **Enable (4)** to enable Dependabot security updates.
 
    > **Note:** Enabling the `Dependabot security updates` will also automatically enable `Dependency graph` and `Dependabot alerts`.
 
-   ![The GitHub Repository Security Overview tab.](media/deploy-01upd1.png "GitHub Repository Security Overview")
+   ![The GitHub Repository Security Overview tab.](media/task3-s1new.png "GitHub Repository Security Overview")
 
    > **Note:** The alerts for the repository may take some time to appear. The rest of the steps for this task rely on the alerts being present.
 
 1. To observe Dependabot issues, navigate to the **Security (1)** tab and select the **View Dependabot alerts (2)** link.
 
-   ![GitHub Dependabot alerts in the Security tab.](media/ex5-t3-viewdb.png "GitHub Dependabot alerts")
+   ![GitHub Dependabot alerts in the Security tab.](media/s2task3new.png "GitHub Dependabot alerts")
 
 1. You should arrive at the `Dependabot alerts` blade in the `Security` tab.
 
@@ -144,7 +144,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
 1. Sort the Dependabot alerts by `Package name`. Under the **Package (1)** dropdown menu, search for **node-forge (2)** by typing in the search box and select **node-forge (3)** vulnerability.
 
-   ![Summary of the `handlebars` Dependabot alert in the list of Dependabot alerts.](media/ex5-t3-node-forge.png "`handlebars` Dependabot alert")
+   ![Summary of the `handlebars` Dependabot alert in the list of Dependabot alerts.](media/s4task3new.png "`handlebars` Dependabot alert")
 
 1. Select any of the `node-forge` Dependabot alert entries to see the alert detail. After reviewing the alert, select **Review security update**.
 
@@ -164,6 +164,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
    ```pwsh
    cd C:\Workspaces\lab\aiw-devops-with-github-lab-files
+   git fetch origin; git reset --hard origin/main; git clean -fd
    ```
   
 ## Task 4: Explore Secret Scanning (READ-ONLY)   
