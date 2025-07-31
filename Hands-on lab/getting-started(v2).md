@@ -120,7 +120,7 @@ Learner Support Contacts:
 - Email Support: cloudlabs-support@spektrasystems.com
 - Live Chat Support: https://cloudlabs.ai/labs-support
 
-Now, click on **Next** from the lower right corner to move on to the next page.
+Now, click on **Next >>** from the lower right corner to move on to the next page.
 
    ![](media/CICD---NEXT-PAGE.png)
 
