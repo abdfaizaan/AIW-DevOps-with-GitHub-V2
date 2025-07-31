@@ -159,12 +159,6 @@ In this task, you will use Dependabot to track the versions of the packages we u
    ![The Pull Request Merge Button in the Pull Request detail.](media/ex5-t3-merge-pr.png "Pull Request Merge Button")
     
    >**Note:** In case you see any errors with the merge request. Retry steps 4 to 6 by selecting any other Dependabot alert.
-
-1. Pull the latest changes from your GitHub repository to your local GitHub folder. Navigate back to Visual Studio Code, and in the terminal, run the following commands:
-
-   ```pwsh
-   cd C:\Workspaces\lab\aiw-devops-with-github-lab-files
-   ```
   
 ## Task 4: Explore Secret Scanning (READ-ONLY)   
 
