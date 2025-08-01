@@ -61,7 +61,7 @@ In this task, you will set up the local infrastructure using NET. You'll be work
 1. Update the **Application Id (Client Id)**, **Client Secret**, and **Tenant ID** in the command mentioned below. Run it in the terminal.
 
    ```pwsh
-   az login --service-principal -u <clientId> -p=<clientSecret> --tenant <tenantId>
+   az login --service-principal -u <clientId> -p <clientSecret> --tenant <tenantId>
    ```
 
    ![](media/2dgn47.png)
@@ -124,7 +124,7 @@ In this task, you will set up the local infrastructure using NET. You'll be work
    dotnet user-secrets set "KeyVaultEndpoint" "https://contosotraderskv<inject key="DeploymentID" />.vault.azure.net/
    ```
 
-   ![](media/upd-2dgn53.png)
+   ![](media/image101.png)
    
 1. Run the below-mentioned command to build and host the carts locally.
 
@@ -277,7 +277,7 @@ In this task, you'll access the GitHub Enterprise account and create a new repos
 
 1. In Visual Studio Code, run the following commands in the terminal to set your **Username** and **Email**, which Git uses for commits. Make sure to replace the GitHub account email and username.
 
-   >**Note:** For the email format github_cloudlabsuser_xxx@xxx.com, the corresponding username will follow this format: github-cloudlabsuser-xxx
+   >**Note:** For the email format github_cloudlabsuser_xxx@xxx.com, the corresponding username will follow this format: github-cloudlabsuser-xxx or cloudlabsuser-xxx
    
      ```pwsh
      cd C:\Workspaces\lab\aiw-devops-with-github-lab-files
@@ -302,11 +302,11 @@ In this task, you'll access the GitHub Enterprise account and create a new repos
      
 1.  You are asked to authenticate your GitHub account. Select **Sign in with your browser**.
 
-       ![](media/ghlogin.png)
+    ![](media/ghlogin.png)
 
 1.  You will be prompted with a pop-up window to **Authorize Git Credential Manager**. Click on **Authorize git-ecosystem** to provide access.
 
-       ![](media/2dgn158upd.png)
+    ![](media/2dgn158upd.png)
 
 1.  After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
    
@@ -336,9 +336,9 @@ In this task, you will build automation in GitHub for updating and republishing 
 
    ![](media/2dgn135.png)  
    
-1. Select **productsdb** SQL database from the list of resources.
+1. In the **contoso-traders** resource group, use the search bar to type **productsdb (1)**. From the filtered results, click **productsdb (2)** to open the SQL database resource.
 
-   ![](media/upd-2dgn11.png) 
+   ![](media/image102.png) 
    
 1. On the **productsdb** SQL database page, expand **Settings** from the left-hand menu **(1)**, then select **Connection strings** **(2)**. Under the **ADO.NET** tab **(3)**, click the **copy icon** next to the **ADO.NET (SQL authentication)** connection string **(4)**, and paste it into Notepad for later use.
 
@@ -446,11 +446,11 @@ In this task, you will build automation in GitHub for updating and republishing 
    
 1. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
-   ![](media/2dgn135.png) 
+    ![](media/2dgn135.png) 
    
-1. Select **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
+1. In the **search bar**, find the web app resource named **contoso-traders-ui2 (1)**. Click on the **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" /> resource (2)** from the filtered results.
 
-   ![](media/2dgn127.png) 
+   ![](media/image104.png) 
    
 1. Click on **Endpoint hostname**. It'll open a browser tab where you will see that the Contoso Traders app has been hosted successfully.
 
@@ -467,7 +467,7 @@ The last task automated building and updating only one of the Docker images. In 
    - Click on **Code (1)**, 
    - Select the **Codespace (2)** tab
 
-     ![](media/ex2-kc-codespace.png)
+     ![](media/ex_1_g_13.png)
    
      >**Note:** In case you had created a  codespace in the  previous task. Click on the **+** button to create a new codespace.
    
@@ -507,9 +507,10 @@ The last task automated building and updating only one of the Docker images. In 
     
    > **Note:** This will update the workflow and will **not** run the "Update the ... Docker image" jobs.
 
-1. Navigate back to the GitHub browser, select the **Actions (1)** tab, and review the **workflow (2)** in the summary section, created automatically for the changes made. 
+1. Navigate back to the GitHub browser, select the **Actions (1)** tab, and review the **workflow (2)** in the **All workflows** section, created automatically for the changes made. Please wait until the execution completes.
 
-   ![](media/cor_g_1-1.png)
+   ![](media/lab1-laststepA.png)
+   ![](media/lab1-laststepB.png)
 
 ## Summary
 
@@ -517,4 +518,4 @@ In this lab, you have learned how to set up local infrastructure using .NET for 
 
 ### You have successfully completed the Lab. Click on Next >> to proceed with the next Lab.
 
-![](media/GS4.png)
+![](media/CICD---NEXT-PAGE.png)
