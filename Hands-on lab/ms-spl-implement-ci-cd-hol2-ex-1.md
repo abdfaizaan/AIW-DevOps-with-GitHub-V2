@@ -205,8 +205,12 @@ In this task, you'll explore how secret scanning works and see how it generates 
 
    ![](media/2dg116a.png) 
    
-## Summary 
+## Review
 
-In this lab, you explored advanced **GitHub Enterprise security features**. You learned how to configure and work with **Code scanning**, **CodeQL alerts**, **Repository security advisories**, and **GitHub Dependabot** to help identify and address vulnerabilities in your codebase..
+In this exercise you have completed the following:
+ - Configured and utilized advanced GitHub Enterprise security features.
+ - Set up and analyzed Code Scanning and CodeQL alerts.
+ - Managed Repository Security Advisories to identify potential vulnerabilities.
+ - Enabled and reviewed GitHub Dependabot to automate dependency updates and security fixes.
 
 ###  You have successfully completed the Hands-on Lab
