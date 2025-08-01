@@ -512,9 +512,11 @@ The last task automated building and updating only one of the Docker images. In 
    ![](media/lab1-laststepA.png)
    ![](media/lab1-laststepB.png)
 
-## Summary
-
-In this lab, you have learned how to set up local infrastructure using .NET for a sample application consisting of three components: carts, products, and ui. You deployed this infrastructure to the cloud using GitHub Actions and also implemented automation in GitHub to update and republish workflows automatically when code changes are made.
+## Review
+In this exercise you have completed the following:
+ - Set up local infrastructure using .NET for a sample application with carts, products, and UI components.
+ - Deployed the infrastructure to the cloud using GitHub Actions.
+ - Implemented automation in GitHub to update and republish workflows upon code changes.
 
 ### You have successfully completed the Lab. Click on Next >> to proceed with the next Lab.
 
