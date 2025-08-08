@@ -18,7 +18,7 @@ In this lab, you will perform:
 
 In this task, you'll access and explore the code repository of the web app using Visual Studio Code. Visual Studio Code is a cross-platform, lightweight but powerful source code editor.
 
-1. From the VM desktop, double-click on the **Visual Studio Code** desktop icon to open the application.
+1. From the LabVM desktop, double-click on the **Visual Studio Code** desktop icon to open the application.
 
    ![](media/2dg4.png "New Repository Creation Form")
 
@@ -40,7 +40,7 @@ In this task, you'll access and explore the code repository of the web app using
 
 ## Task 2: Set up Local Infrastructure
 
-In this task, you will set up the local infrastructure using DOTNET. You'll be working with three docker images: fabrikam-init, fabrikam-api, and fabrikam-web.
+In this task, you will set up the local infrastructure using .NET. You'll be working with three Docker images: fabrikam-init, fabrikam-api, and fabrikam-web.
 
 1. Open a **New Terminal** in the Visual Studio Code by selecting click on **menu (1)**, click on **Terminal (2)** and then on **New Terminal (3)**.
 
@@ -76,7 +76,7 @@ In this task, you will set up the local infrastructure using DOTNET. You'll be w
    dotnet user-secrets set "KeyVaultEndpoint" "https://contosotraderskv<SUFFIX>.vault.azure.net/"
    ```
 
-   > **Note**: Replace `<SUFFIX>` with **<inject key="DeploymentID" />** before running the command.
+   > **Note:** Replace `<SUFFIX>` with **<inject key="DeploymentID" />** before running the command.
 
    ![](media/E1T2S6.png)
 
@@ -88,7 +88,7 @@ In this task, you will set up the local infrastructure using DOTNET. You'll be w
    ```
    ![](media/E1T2S7.png)
 
-   > **Note**: Please wait for 2 - 3 minutes for the build to complete.
+   > **Note:** Please wait for 2 - 3 minutes for the build to complete.
 
 1. Keep the terminal running. Open a new browser tab and try accessing the application using localhost port. You'll be able to see the output similar to the screenshot mentioned below.
 
@@ -120,7 +120,7 @@ In this task, you will set up the local infrastructure using DOTNET. You'll be w
    dotnet user-secrets set "KeyVaultEndpoint" "https://contosotraderskv<SUFFIX>.vault.azure.net/"
    ```
 
-   > **Note**: Replace `<SUUFIX>` with **<inject key="DeploymentID" />** before running the command.
+   > **Note:** Replace `<SUUFIX>` with **<inject key="DeploymentID" />** before running the command.
 
    ![](media/upd-2dgn53.png)
 
@@ -132,7 +132,7 @@ In this task, you will set up the local infrastructure using DOTNET. You'll be w
 
    ![](media/2dg123.jpg)
 
-   > **Note**: Please wait for 2 - 3 minutes for the build to complete.
+   > **Note:** Please wait for 2 - 3 minutes for the build to complete.
 
 1. Keep the terminal running. Open a new browser tab and try accessing the application using localhost port. You'll be able to see the output similar to the screenshot mentioned below.
 
@@ -165,7 +165,7 @@ In this task, you will set up the local infrastructure using DOTNET. You'll be w
 
    ![](media/E1T2S17-2.png)
 
-   > **Note**: Please wait until the installation completes. It will take around 10 - 15 minutes when you run npm install for the first time. In case the execution is stuck, please use **ctrl + C** to stop the execution and retry the step.
+   > **Note:** Please wait until the installation completes. It will take around 10 - 15 minutes when you run npm install for the first time. In case the execution is stuck, please use **ctrl + C** to stop the execution and retry the step.
 
 1. Now run the following command to run the UI of the application. This will automatically open a browser tab where you'll see the complete application running
 
@@ -175,7 +175,7 @@ In this task, you will set up the local infrastructure using DOTNET. You'll be w
 
    ![](media/2dgn156.png)
 
-   > **Note**: It can take 5 - 10 minutes when you execute the command for the first time. You can continue with the next task and check on this step later.
+   > **Note:** It can take 5 - 10 minutes when you execute the command for the first time. You can continue with the next task and check on this step later.
 
 ## Task 3: Create the Project Repo
 
@@ -183,7 +183,7 @@ In this task, you'll access the GitHub Enterprise account and create a new repos
 
 In this task, you will create an account in [GitHub](https://github.com) and use `git` to add lab files to a new repository.
 
-1. In a new browser tab open `https://www.github.com/login`. From **Environment** page **(1)**, navigate to **License** **(2)** tab and **copy** **(3)** the credentials. Use the same username and password to login into GitHub.
+1. In a new browser tab, open `https://www.github.com/login`. From **Environment** page **(1)**, navigate to **License** **(2)** tab and **copy** **(3)** the credentials. Use the same username and password to login into GitHub.
 
    ![](media/E1T3S1.png)
 
@@ -207,7 +207,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![The `New Repository` creation form in GitHub.](media/new-devops-github-lab02-5.png "New Repository Creation Form")
 
-   > **Note**: If you observe any repository existing with the same name, please make sure you delete the Repo and create a new one. Please follow the steps given below. Else, skip to step 6.
+   > **Note:** If you observe any repository existing with the same name, please make sure you delete the Repo and create a new one. Please follow the steps given below. Else, skip to step 6.
       
       i. In the upper-right corner, expand the user **drop-down menu** **(1)** and select **Your repositories** **(2)**.
       
@@ -249,7 +249,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![Quick setup screen is displayed with the copy button next to the GitHub URL textbox selected.](media/2dg4.png "Quick setup screen")
 
-1. In the Visual Studio Code, run the below commands in the terminal to set your **username** and **email**, which Git uses for commits. **Make sure to replace GitHub account email and username.** 
+1. In the Visual Studio Code, run the below commands in the terminal to set your **username** and **email**, which Git uses for commits. **Make sure to replace the GitHub account email and username.** 
 
    ```pwsh
    cd C:\Workspaces\lab\aiw-devops-with-github-lab-files
@@ -259,7 +259,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![](media/2dgn72.png)
 
-   Run the below mentioned command in the terminal. Make sure to replace your_github_repository-url with the value you copied in step 11 and Unique-ID in step 12.
+   Run the below-mentioned command in the terminal. Make sure to replace your_github_repository-url with the value you copied in step 11 and Unique-ID in step 12.
 
    **Note:** This step is done to Initialize the folder as a git repository, commit, and submit contents to the remote GitHub branch “main” in the lab files repository created in Step 1.
 
@@ -272,7 +272,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
    git push -u origin<Unique-ID> main
    ```
 
-   - If you are asked authenticate your GitHub account. Select **Sign in with your browser** and you might be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize git-ecosystem** to provide access.
+   - If you are asked to authenticate your GitHub account. Select **Sign in with your browser** and you might be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize git-ecosystem** to provide access.
    
      ![](media/new-devops-github-lab02-6.png)
 
@@ -300,7 +300,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
 In this exercise, you will build automation in GitHub for updating and republishing our Docker images when the code changes. You will create a workflow file using the GitHub interface and its GitHub Actions workflow editor. This will get you familiar with how to create and edit an action through the GitHub website.
 
-1. From the Azure Portal Dashboard, click on Resource Groups from the navigate panel to see the resource groups.
+1. From the Azure Portal Dashboard, click on Resource Groups from the navigation panel to see the resource groups.
 
    ![](media/GSS7.png)
 
@@ -327,12 +327,12 @@ In this exercise, you will build automation in GitHub for updating and republish
 
 1. Under **Secrets and Variables/Actions** page, enter the below mentioned details and Click on **Add secret** **(3)**.
 
-   - **Name** : Enter **SQL_PASSWORD** **(1)**
-   - **Value** : Paste the **ADO.NET (SQL authentication)** **(2)** which you copied in previous step.
+   - **Name:** Enter **SQL_PASSWORD** **(1)**
+   - **Value:** Paste the **ADO.NET (SQL authentication)** **(2)** which you copied in previous step.
 
      ![](media/2dgn123.png)
 
-     > **Note**: Replace `{your_password}` with the ODL User Azure Password: **<inject key="AzureAdUserPassword"></inject>**
+     > **Note:** Replace `{your_password}` with the ODL User Azure Password: **<inject key="AzureAdUserPassword"></inject>**
 
      ![](media/E1T4S7-2.png)
 
@@ -351,17 +351,17 @@ In this exercise, you will build automation in GitHub for updating and republish
       }
       ```
 
-1. Select the **New repository secret** button. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** **(3)**.
+1. Select the **New repository secret** button. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** **(3)**.
 
-   - **Name** : Enter **SERVICEPRINCIPAL** **(1)**
-   - **Value** : Paste the service principal details in json format **(2)**
+   - **Name:** Enter **SERVICEPRINCIPAL** **(1)**
+   - **Value:** Paste the service principal details in json format **(2)**
 
      ![](media/2dgn36.png)
 
-1. Select the **New repository secret** button. Under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** **(3)**.
+1. Select the **New repository secret** button. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** **(3)**.
 
-   - **Name** : Enter **ENVIRONMENT** **(1)**
-   - **Value** : **<inject key="DeploymentID" enableCopy="false" />** **(2)**
+   - **Name:** Enter **ENVIRONMENT** **(1)**
+   - **Value:** **<inject key="DeploymentID" enableCopy="false" />** **(2)**
 
      ![](media/2dgn33.png)
 
@@ -369,15 +369,15 @@ In this exercise, you will build automation in GitHub for updating and republish
 
     ![](media/E1T4S11.png)
 
-   > **Note:** If you can’t find the **contoso-traders-app-deployment** workflow, try closing and reopening Visual Studio Code to perform the  step 14 of Task 3 again. 
+   > **Note:** If you can’t find the **contoso-traders-app-deployment** workflow, try closing and reopening Visual Studio Code to perform step 14 of Task 3 again. 
 
-1. Navigate back to Actions tab and select the **contoso-traders-app-deployment** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to Azure container application.
+1. Navigate back to the Actions tab and select the **contoso-traders-app-deployment** workflow. This workflow builds the Docker image, which is pushed to the container registry. The same image is pushed to the Azure container application.
 
     ![](media/E1T4S12.png)
 
     ![](media/E1T4S12-1.png)
 
-    >**Note**: If the workflow **fails** due to **npm install** job, follow from step 13 - step 15. Else, continue from step 16.
+    >**Note:** If the workflow **fails** due to **npm install** job, follow from step 13 - step 15. Otherwise, continue from step 16.
 
 1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** **(3)**.
 
@@ -442,17 +442,17 @@ The last task automated building and updating only one of the Docker images. In 
 
      ![](media/E1T5S1.png)
  
-     > **Note**: In case you had created a codespace in the previous task. Click on the **+** button to create a new codespace.
+     > **Note:** In case you had created a codespace in the previous task. Click on the **+** button to create a new codespace.
 
 2. You'll be redirected to a new codespace tab in the browser. Please wait until the codespace is configured.
 
    ![](media/2dg33.png)
 
-3. In the Visual Studio Code tab, select **Open** to allow GitHub Codespaces extension to open the URL.
+3. In the Visual Studio Code tab, select **Open** to allow the GitHub Codespaces extension to open the URL.
 
    ![](media/2dg33at.png)
 
-   > **Note**: In case you recieve a pop-up, click on **Allow** then click on **Continue** and then **Open** to authorize Github login.
+   > **Note:** In case you recieve a pop-up, click on **Allow** then click on **Continue** and then **Open** to authorize Github login.
 
 4. From the explorer side blade, navigate to **.github (1)** > **workflows** **(2)** and select **contoso-traders-provisioning-deployment.yml** **(3)** file.
 
@@ -472,7 +472,7 @@ The last task automated building and updating only one of the Docker images. In 
 
     ![](media/E1T5S6.png)
 
-   > **Note**: This will update the workflow and will **not** run the "Update the ... Docker image" jobs.
+   > **Note:** This will update the workflow and will **not** run the "Update the ... Docker image" jobs.
 
 7. Navigate back to the GitHub browser, select the **Actions** **(1)** tab, and review the **workflow** **(2)** created automatically for the changes made.
 
