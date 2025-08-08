@@ -22,7 +22,7 @@ In this task, you'll access and explore the code repository of the web app using
 
    ![](media/2dg4.png "New Repository Creation Form")
 
-1. In **Visual Studio Code**, click on **File** **(1)** and select **Open Folder** **(2)**.
+1. In **Visual Studio Code**, click on **File** **(1)** and select **Open Folder...** **(2)**.
 
    ![](media/new-devops-github-lab02-1.png)
 
@@ -42,7 +42,7 @@ In this task, you'll access and explore the code repository of the web app using
 
 In this task, you will set up the local infrastructure using .NET. You'll be working with three Docker images: fabrikam-init, fabrikam-api, and fabrikam-web.
 
-1. Open a **New Terminal** in the Visual Studio Code by selecting click on **menu (1)**, click on **Terminal (2)** and then on **New Terminal (3)**.
+1. Open a **New Terminal** in the Visual Studio Code by selecting click on **ellipsis (...) (1)**, click on **Terminal (2)** and then on **New Terminal (3)**.
 
    ![](media/E1T2S1.png "New Repository Creation Form")
 
@@ -50,11 +50,11 @@ In this task, you will set up the local infrastructure using .NET. You'll be wor
 
    ![](media/2dgn45.png)
 
-1. Navigate to **Environment** **(1)**, click on **Service Principal Details** **(2)** to get the **Application Id(Client Id)**, **Secret Key (Client Secret)**, and **Tenant Id (Directory ID)**.
+1. Navigate to **Environment** **(1)**, click on **Service Principal Details** **(2)** to get the **Application Id (Client ID)**, **Secret Key (Client Secret)**, and **Tenant ID (Directory ID)**.
 
    ![](media/E1T2S3-new.png)
 
-1. The **Application Id(Client Id)**, **(Secret Key)client Secret**, and **tenant Id** are already injected in the command mentioned below. Verify the values once and run it in the terminal.
+1. The **Application ID (Client ID)**, **Secret Key (Client Secret)**, and **Tenant ID** are already injected in the command mentioned below. Verify the values once and run it in the terminal.
 
    ```pwsh
    az login --service-principal -u <inject key="AppID" enableCopy="false" /> -p <inject key="AppSecret" enableCopy="false" /> --tenant <inject key="TenantID" enableCopy="false" />
@@ -102,9 +102,9 @@ In this task, you will set up the local infrastructure using .NET. You'll be wor
 
    ![](media/localhost1.png)
 
-   - Then click on Continue to localhost(unsafe) to access the application.
+   > **Note:** Then click on **Continue to localhost (unsafe)** to access the application.
 
-   ![](media/localhost2.png)
+     ![](media/localhost2.png)
 
 1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**. Run the below-mentioned command to navigate to `ContosoTraders.Api.Carts` folder.
 
@@ -142,7 +142,7 @@ In this task, you will set up the local infrastructure using .NET. You'll be wor
 
    ![](media/upd-2dgn57.png)
 
-1. Navigate back to **VS Code** and stop the terminal by typing **Ctrl + C**.
+1. Navigate back to **VS Code** and stop the terminal by typing **ctrl + C**.
    
 1. From the search bar, search for **Command Prompt** and open the application.
 
@@ -183,7 +183,7 @@ In this task, you'll access the GitHub Enterprise account and create a new repos
 
 In this task, you will create an account in [GitHub](https://github.com) and use `git` to add lab files to a new repository.
 
-1. In a new browser tab, open `https://www.github.com/login`. From **Environment** page **(1)**, navigate to **License** **(2)** tab and **copy** **(3)** the credentials. Use the same username and password to login into GitHub.
+1. In a new browser tab, open `https://www.github.com/login`. From **Environment** page, navigate to **Licenses** tab and **Copy** the credentials. Use the same username and password to login into GitHub.
 
    ![](media/E1T3S1.png)
 
@@ -191,7 +191,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![](media/2dgn154.png)
 
-   >**Note:** If you receive the prompt to enable 2FA then click on **Remind Me Tomorrow**
+   >**Note:** If you receive the prompt to enable 2FA then click on **Remind me tomorrow**
 
    ![](media/gh2.png)
 
@@ -203,7 +203,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![The `New Repository` creation form in GitHub.](media/E1T3S4.png "New Repository Creation Form")
 
-1. On the **Create a new repository** screen, name the repository **aiw-devops-with-github-lab-files**, select **Public** **(2)** and click on **Create repository** **(3)** button.
+1. On the **Create a new repository** screen, name the repository **aiw-devops-with-github-lab-files**, select **Public** and click on **Create repository** button.
 
    ![The `New Repository` creation form in GitHub.](media/new-devops-github-lab02-5.png "New Repository Creation Form")
 
@@ -213,7 +213,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
       
       ![The `New Repository` creation form in GitHub.](media/2dg1.png "New Repository Creation Form")
       
-      ii. Using the search bar, search for `aiw-devops-with-github-lab-files` **(1)** and select to open it.
+      ii. Using the search bar, search for `aiw-devops-with-github-lab-files` **(1)** and select to open it **(2)**.
       
       ![The `New Repository` creation form in GitHub.](media/E1T3S5-2.png "New Repository Creation Form")
       
@@ -245,9 +245,11 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    ![](media/E1T3S7.png)
 
-1. Navigate back to the **Visual Studio Code** application in which the terminal is already open. In the terminal, click on the **drop-down** button and select **PowerShell** to open a fresh PowerShell terminal tab.
+1. Navigate back to the **Visual Studio Code** application in which the terminal is already open.
 
    ![Quick setup screen is displayed with the copy button next to the GitHub URL textbox selected.](media/2dg4.png "Quick setup screen")
+
+1. In the terminal, click on the **drop-down** button and select **PowerShell** to open a fresh PowerShell terminal tab.
 
 1. In the Visual Studio Code, run the below commands in the terminal to set your **username** and **email**, which Git uses for commits. **Make sure to replace the GitHub account email and username.** 
 
@@ -280,27 +282,27 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
    - After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
 
-   > **Note:** If you get any error like push is blocked as secret is not allowed, do these steps.
+     > **Note:** If you get any error like push is blocked as secret is not allowed, do these steps.
 
-   ![](media/rulevoilation.png)
+     ![](media/rulevoilation.png)
 
-   -  Navigate up in the error message and click on the given link for ( To Push, remove secret from commits(s) or follow this URL to allow the secret).
+   -  Navigate up in the error message and click on the given link for ( To Push, remove secret from commits or follow this URL to allow the secret).
 
-   ![](media/rulevoilation4.png)
+      ![](media/rulevoilation4.png)
 
-   - Select **It's used in tests**, click on the **Allow me to expose this secret**.
+   - Select **It's used in tests** and click on the **Allow me to expose this secret**.
 
-   ![](media/rulevoilation1.png)
+     ![](media/rulevoilation1.png)
 
    - Navigate back to the **Visual Studio Code** application, run the command again.
 
-   ![](media/rulevoilation2.png)
+     ![](media/rulevoilation2.png)
 
 ## Task 4: Build and push using GitHub Actions
 
 In this exercise, you will build automation in GitHub for updating and republishing our Docker images when the code changes. You will create a workflow file using the GitHub interface and its GitHub Actions workflow editor. This will get you familiar with how to create and edit an action through the GitHub website.
 
-1. From the Azure Portal Dashboard, click on Resource Groups from the navigation panel to see the resource groups.
+1. From the Azure Portal Dashboard, click on **Resource groups** from the navigation panel to see the resource groups.
 
    ![](media/GSS7.png)
 
@@ -312,7 +314,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/E1T4S3.png)
 
-1. Under Settings side blade, select **Connection strings** **_(1)_** under Setting and copy the **ADO.NET (SQL authentication)** **_(2)_** connection string from 
+1. Under Settings side blade, select **Connection strings** **(1)** under Setting and copy the **ADO.NET (SQL authentication)** **(2)** connection string from 
    ADO.NET tab.
 
    ![](media/E1T4S4.png)
@@ -321,14 +323,14 @@ In this exercise, you will build automation in GitHub for updating and republish
 
    ![](media/E1T3S5-3.png)
 
-1. Under **Security**, expand **Secrets and variables** **(1)** by clicking the drop-down and select **Actions** **(2)** blade from the left navigation bar. Select the **New repository secret** **(3)** button.
+1. Under **Security**, expand **Secrets and variables** **(1)** by clicking the drop-down, then select **Actions** **(2)** from the left navigation bar, and click the **New repository secret** **(3)** button.
 
    ![](media/E1T4S6.png)
 
-1. Under **Secrets and Variables/Actions** page, enter the below mentioned details and Click on **Add secret** **(3)**.
+1. Under **Actions secrets/ New secret** page, enter the below mentioned details and Click on **Add secret** **(3)**.
 
    - **Name:** Enter **SQL_PASSWORD** **(1)**
-   - **Value:** Paste the **ADO.NET (SQL authentication)** **(2)** which you copied in previous step.
+   - **Secret:** Paste the **ADO.NET (SQL authentication)** **(2)** which you copied in previous step.
 
      ![](media/2dgn123.png)
 
@@ -336,7 +338,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 
      ![](media/E1T4S7-2.png)
 
-1. Navigate to **Environment** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id(Client Id)** and **Secret Key (Client Secret)**.
+1. Navigate to **Environment** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id (Client Id)** and **Secret Key (Client Secret)**.
 
    ![](media/E1T4S8.png)
 
@@ -351,17 +353,17 @@ In this exercise, you will build automation in GitHub for updating and republish
       }
       ```
 
-1. Select the **New repository secret** button. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** **(3)**.
+1. Select the **New repository secret** button. Under the **Actions secrets/ New secret** page, enter the below-mentioned details and click on **Add secret** **(3)**.
 
    - **Name:** Enter **SERVICEPRINCIPAL** **(1)**
-   - **Value:** Paste the service principal details in json format **(2)**
+   - **Secret:** Paste the service principal details in json format **(2)**
 
      ![](media/2dgn36.png)
 
-1. Select the **New repository secret** button. Under the **Actions Secrets/New secret** page, enter the below-mentioned details and click on **Add secret** **(3)**.
+1. Select the **New repository secret** button. Under the **Actions secrets/ New secret** page, enter the below-mentioned details and click on **Add secret** **(3)**.
 
    - **Name:** Enter **ENVIRONMENT** **(1)**
-   - **Value:** **<inject key="DeploymentID" enableCopy="false" />** **(2)**
+   - **Secret:** **<inject key="DeploymentID" enableCopy="false" />** **(2)**
 
      ![](media/2dgn33.png)
 
@@ -381,7 +383,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 
 1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** **(3)**.
 
-   - click on **Code** **(1)**,
+   - Click on **Code** **(1)**,
    - Select the **Codespace** **(2)** tab
 
      ![](media/E1T4S13.png)
@@ -405,7 +407,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 
     ![](media/2dgn161.png)
 
-1. Navigate to the Azure Portal, click on Resource groups from the Navigate panel to see the resource groups.
+1. Navigate to the Azure Portal, click on **Resource groups** from the Navigate panel to see the resource groups.
 
     ![](media/GSS7.png)
 
@@ -417,7 +419,7 @@ In this exercise, you will build automation in GitHub for updating and republish
 
     ![](media/E1T4S18.png)
 
-1. On the storage account page, go to **Static website (1)** under Data Management, enable the feature by selecting **Enabled (2)**, set **index.html (3)** as the index document name, and click **Save (4)** to apply the changes.
+1. On the storage account page, navigate to **Static website** **(1)** under **Data Management**, enable it by selecting **Enabled** **(2)**, enter **index.html** **(3)** as the index document name, and click **Save** **(4)** to apply the changes.
 
      ![](media/E1T4S19.png)
 
@@ -477,8 +479,6 @@ The last task automated building and updating only one of the Docker images. In 
 7. Navigate back to the GitHub browser, select the **Actions** **(1)** tab, and review the **workflow** **(2)** created automatically for the changes made.
 
     ![](media/E1T5S7.png)
-
-8. Click on the **Next** button present in the bottom-right corner of this lab guide.
 
 ## Summary
 
