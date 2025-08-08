@@ -300,7 +300,7 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
 ## Task 4: Build and push using GitHub Actions
 
-In this exercise, you will build automation in GitHub for updating and republishing our Docker images when the code changes. You will create a workflow file using the GitHub interface and its GitHub Actions workflow editor. This will get you familiar with how to create and edit an action through the GitHub website.
+In this task, you will build automation in GitHub for updating and republishing our Docker images when the code changes. You will create a workflow file using the GitHub interface and its GitHub Actions workflow editor. This will get you familiar with how to create and edit an action through the GitHub website.
 
 1. From the Azure Portal Dashboard, click on **Resource groups** from the navigation panel to see the resource groups.
 
