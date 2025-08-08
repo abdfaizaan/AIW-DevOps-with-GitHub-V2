@@ -4,18 +4,17 @@
 
 ## Overview
 
-In this lab, you will set up local infrastructure using .NET and work with the application's carts, products, and UI components. The infrastructure will be deployed to the cloud using GitHub Actions, with automation for updating and republishing workflows. You’ll explore Azure Boards, Test Plans, and GitHub Enterprise security features such as Code scanning, CodeQL alerts, and Dependabots. Additionally, the lab covers implementing monitoring, logging, Azure load testing, and Azure Chaos Studio to improve application resilience and performance.
+In this Hands-on lab, you will set up local infrastructure using .NET and work with the application's carts, products, and UI components. The infrastructure will be deployed to the cloud using GitHub Actions, with automation for updating and republishing workflows. You’ll explore Azure Boards, Test Plans, and GitHub Enterprise security features such as Code scanning, CodeQL alerts, and Dependabots. Additionally, the lab covers implementing monitoring, logging, Azure load testing, and Azure Chaos Studio to improve application resilience and performance.
 
 ## Objectives
 
 Set up CI/CD with GitHub, integrate Azure Boards, enable GitHub security, run load tests, explore Chaos Studio and monitor performance.
 
-- **Continuous Integration and Continuous Deployment**: You will be able to access the lab files, set up the local infrastructure, create a project repository, build and push the code using GitHub Actions, and edit the GitHub workflow file within Codespaces.
-- **Azure Boards and Test Plans**: Connect Azure Boards with GitHub to enhance project tracking, and link GitHub pull requests to Boards items, enabling seamless integration between code development and project management workflows.
-- **Explore GitHub's advanced security features**: Enable code scanning with CodeQL alerts, configure repository security advisories, utilize Dependabot for dependency management, and explore secret scanning to enhance repository security.
-- **Monitoring and Load Testing**: Monitor application performance using Application Insights, set up load testing to evaluate system scalability, and explore Chaos Studio to simulate real-world failures for improving system resilience.
+- **Continuous Integration and Continuous Deployment:** You will be able to access the lab files, set up the local infrastructure, create a project repository, build and push the code using GitHub Actions, and edit the GitHub workflow file within Codespaces.
+- **Azure Boards and Test Plans:** Connect Azure Boards with GitHub to enhance project tracking, and link GitHub pull requests to Boards items, enabling seamless integration between code development and project management workflows.
+- **Explore GitHub's advanced security features:** Enable code scanning with CodeQL alerts, configure repository security advisories, utilize Dependabot for dependency management, and explore secret scanning to enhance repository security.
+- **Monitoring and Load Testing:** Monitor application performance using Application Insights, set up load testing to evaluate system scalability, and explore Chaos Studio to simulate real-world failures for improving system resilience.
 
-  
 ## Prerequisites
 
 Participants should have basic knowledge and understanding of the following:
@@ -84,7 +83,7 @@ To adjust the zoom level for the environment page, click the **A↕: 100%** icon
 
 ## Let's Get Started with Azure Portal
 
-1. In the JumpVM, click on the Azure portal shortcut of the Microsoft Edge browser, which is created on the desktop.
+1. In the LabVM, click on the **Azure Portal** shortcut of the Microsoft Edge browser, which is created on the desktop.
 
       ![](media/gg_5upd.png)
 
@@ -110,7 +109,7 @@ To adjust the zoom level for the environment page, click the **A↕: 100%** icon
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
-1. Now you will see the Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
+1. Now you will see the Azure Portal Dashboard. Click on **Resource groups** from the Navigate panel to see the resource groups.
 
    ![](media/gg_7.png)
 
