@@ -19,11 +19,11 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
 **Note:** To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to public.
 
-1. Select the **Settings** **(1)** tab from the GitHub browser tab. Click on **Advanced Security** **(2)** under the security side blade.
+1. Select the **Settings** **(1)** tab from the GitHub browser tab. Click on **Advanced Security** **(2)** under the **Security** side blade.
 
    ![](media/E3T1S1.png)
 
-1. Click on **Set up** **(1)** button to enable **CodeQL analysis** and select the **Advanced** **(2)** option for creating a CodeQL Analysis YAML file.
+1. Click on the **Set up** **(1)** button to enable **CodeQL analysis**, then select the **Advanced** **(2)** option to create a CodeQL Analysis YAML file.
 
    ![](media/E3T1S2.png)
 
@@ -33,7 +33,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
    ![](media/E3T1S3-1.png)
 
-1. Navigate to **Actions (1)** tab, You can review the **workflow (2)** run.
+1. On the top left corner, navigate to the **Actions** **(1)** tab, where you can review the **workflow** **(2)** run.
 
    ![](media/E3T1S4.png)
 
@@ -96,12 +96,12 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
 1. In the Affected products section, provide the following details and click on **Create draft security advisory** **(7)**
 
-   - Ecosystem: **composer** **(1)**
+   - Ecosystem: **Composer** **(1)**
    - Package name: **aiw-devops-with-github-lab-files/src/TailwindTraders.Ui.Website/src/App.js** **(2)**
-   - Affected version: **<1.2** **(3)**
-   - Patched version: **1.2** **(4)**
+   - Affected versions: **<1.2** **(3)**
+   - Patched versions: **1.2** **(4)**
    - Severity: **High** **(5)**
-   - Common Weakness Enumerator (CWE): **Improper Access Control (CWE-284)** **(6)**
+   - Common Weakness enumerator (CWE): **Improper Access Control (CWE-284)** **(6)**
 
      ![](media/E3T2S3.png)
 
@@ -119,7 +119,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
 In this task, you will use Dependabot to track the versions of the packages we use in our GitHub repository and create pull requests to update packages for us.
 
-1. In your lab files GitHub repository, navigate to the **Settings** **(1)** tab and select the **Advanced Security** **(2)** under Security from the side blade. Make sure **Dependabot alerts** are enabled; if not, click on **Enable (3)** to enable Dependabot alerts. Click on **Enable** **(4)** to enable **Dependabot security updates**.
+1. In your lab files GitHub repository, navigate to the **Settings** **(1)** tab and select the **Advanced Security** **(2)** under **Security** from the left side blade. Make sure **Dependabot alerts** are enabled; if not, click on **Enable (3)** to enable Dependabot alerts. Click on **Enable** **(4)** to enable **Dependabot security updates**.
 
    > **Note:** Enabling the `Dependabot security updates` will also automatically enable `Dependency graph` and `Dependabot alerts`.
 
@@ -141,13 +141,13 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
    ![Summary of the `handlebars` Dependabot alert in the list of Dependabot alerts.](media/E3T3S4.png "`handlebars` Dependabot alert")
 
-1. Select any of the `node-forge` Dependabot alert entries to see the alert detail. Click on **Create Dependabot Security Update (1)**. After the creation, click on **Review security update (2)** to review.
+1. Select any of the `node-forge` Dependabot alert entries to see the alert detail. Click on **Create Dependabot security update (1)**. After the creation, click on **Review security update (2)** to review.
 
    ![The `handlebars` Dependabot alert detail.](media/E3T3S5.png "Dependabot alert detail")
 
    ![The `handlebars` Dependabot alert detail.](media/E3T3S5-1.png "Dependabot alert detail")
 
-1. You will be navigate to the **Pull Requests** **(1)** tab, find the Dependabot security patch pull request **(2)** and merge it to your main branch.
+1. You will be navigate to the **Pull requests** **(1)** tab, find the Dependabot security patch pull request **(2)** and merge it to your main branch.
 
    ![List of Pull Requests.](media/E3T3S6.png "Pull Requests")
 
@@ -177,9 +177,9 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
 In this task, you'll explore how secret scanning works and see how it generates alerts. GitHub scans repositories for known types of secrets to prevent fraudulent use of secrets that were committed accidentally.
 
-**Note:** This is a **READ-ONLY** task. Please do not perform the steps in the lab environment.
+>**Note:** This is a **READ-ONLY** task. Please do not perform the steps in the lab environment.
 
-1. From your GitHub repository, click on the **Settings (1)** tab. Then **Advanced Security (2)**.
+1. From your GitHub repository, click on the **Settings** **(1)** tab, then select **Advanced Security** **(2)** under the **Security** section.
 
    ![](media/E3T4S1.png)
 
@@ -187,7 +187,7 @@ In this task, you'll explore how secret scanning works and see how it generates 
 
    ![](media/E3T4S2.png)
 
-1. Navigate back to **Code (1)** and click on **src (2)** folder.
+1. Navigate back to the **Code** **(1)** tab and click on the **src** **(2)** folder.
 
    ![](media/E3T4S3.png)
 
