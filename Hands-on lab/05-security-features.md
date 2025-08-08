@@ -1,8 +1,8 @@
 # Exercise 3: Explore GitHub's advanced security features
 
-### Estimted Duration: 80 Minutes
+### Estimated Duration: 80 Minutes
 
-In this exercise, you'll explore GitHub Enterprise features which are GitHub's advanced security features. You'll configure and explore Code scanning, CodeQL alerts, Repository security advisories, and GitHub Dependabots.
+In this exercise, you'll explore GitHub Enterprise features, which are GitHub's advanced security features. You'll configure and explore Code scanning, CodeQL alerts, Repository security advisories, and GitHub Dependabots.
 
 ## Lab Objectives
 
@@ -17,7 +17,7 @@ In this lab, you will perform:
 
 In this task, you'll configure Code scanning and explore CodeQL alerts. Code scanning is a feature that you use to analyze the code in a GitHub repository to find security vulnerabilities and coding errors. Any problems identified by the analysis are shown on GitHub.
 
-**Note**: To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to public.
+**Note:** To perform this task, the GitHub repository should be public. If the repository visibility is private, please go to the settings of the repository and change the visibility to public.
 
 1. Select the **settings** **(1)** tab from the GitHub browser tab. Click on **Advanced Security** **(2)** under the security side blade.
 
@@ -41,7 +41,7 @@ In this task, you'll configure Code scanning and explore CodeQL alerts. Code sca
 
    ![](media/E3T1S5.png)
 
-1. You will be navigated to **Code scanning** section. You'll be able to visualize that the **No code scanning alerts here!**.
+1. You will be navigated to the **Code scanning** section. You'll be able to visualize that the **No code scanning alerts here!**.
 
    ![](media/E3T1S6.png)
 
@@ -53,7 +53,7 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
    ![](media/E3T2S1.png)
 
-1. In the Open a draft security advisory tab, under the Advisory Details section provide the following details.
+1. In the Open a draft security advisory tab, under the Advisory Details section, provide the following details.
 
    - Title: **Improper Access Control in aiw-devops-with-github-lab-files/src/TailwindTraders.Ui.Website/src/App.js** **(1)**
    - CVE identifier: **Request CVE ID later** **(2)**
@@ -105,29 +105,29 @@ In this task, you'll enable Repository security advisories. You can use GitHub S
 
      ![](media/E3T2S3.png)
 
-1. Once the security advisory is created, scroll-down and click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
+1. Once the security advisory is created, scroll down and click on **start a temporary private fork**. It is used to collaborate on a patch for this advisory.
 
    ![](media/E3T2S4.png)
 
    ![](media/E3T2S4-1.png)
 
-1. After having the temporary fork you can request a CVE, it is used for GitHub reviews and published security advisories. Upon review, we may use this advisory to send Dependabot alerts to affected repositories and redistribute the advisory through our API and Atom feed.
+1. After having the temporary fork, you can request a CVE, which is used for GitHub reviews and published security advisories. Upon review, we may use this advisory to send Dependabot alerts to affected repositories and redistribute the advisory through our API and Atom feed.
 
-   **Note**: This process may take up to 3 working days. Please do not close the security repository.
+   **Note:** This process may take up to 3 working days. Please do not close the security repository.
 
 ## Task 3: Using Dependabot
 
 In this task, you will use Dependabot to track the versions of the packages we use in our GitHub repository and create pull requests to update packages for us.
 
-1. In your lab files GitHub repository, navigate to the **Settings** **(1)** tab and select the **Advanced Security** **(2)** under Security from side blade. Make sure **Dependabot alerts** is enaled, if not click on **Enable (3)** to enable Dependabot alerts. Click on **Enable** **(4)** to enable **Dependabot security updates**.
+1. In your lab files GitHub repository, navigate to the **Settings** **(1)** tab and select the **Advanced Security** **(2)** under Security from the side blade. Make sure **Dependabot alerts** are enabled; if not, click on **Enable (3)** to enable Dependabot alerts. Click on **Enable** **(4)** to enable **Dependabot security updates**.
 
-   > **Note**: Enabling the `Dependabot security updates` will also automatically enable `Dependency graph` and `Dependabot alerts`.
+   > **Note:** Enabling the `Dependabot security updates` will also automatically enable `Dependency graph` and `Dependabot alerts`.
 
    ![The GitHub Repository Security Overview tab.](media/E3T3S1.png "GitHub Repository Security Overview")
 
    ![](media/E3T3S1-1.png)
    
-   > **Note**: The alerts for the repository may take some time to appear. The rest of the steps for this task rely on the alerts to be present. You can continue with the next exercise as this is an independent task and doesn't affect the lab. Please visit this task later and complete the task.
+   > **Note:** The alerts for the repository may take some time to appear. The rest of the steps for this task rely on the alerts being present. You can continue with the next exercise, as this is an independent task and doesn't affect the lab. Please visit this task later and complete the task.
 
 1. To observe Dependabot issues, navigate to the **Security** **(1)** tab and select the **View Dependabot alerts** **(2)** link.
 
@@ -141,7 +141,7 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
    ![Summary of the `handlebars` Dependabot alert in the list of Dependabot alerts.](media/E3T3S4.png "`handlebars` Dependabot alert")
 
-1. Select any of the `node-forge` Dependabot alert entries to see the alert detail. Click on **Create Dependabot Security Update (1)** After the creation, click on **Review security update (2)** to review.
+1. Select any of the `node-forge` Dependabot alert entries to see the alert detail. Click on **Create Dependabot Security Update (1)**. After the creation, click on **Review security update (2)** to review.
 
    ![The `handlebars` Dependabot alert detail.](media/E3T3S5.png "Dependabot alert detail")
 
@@ -157,13 +157,14 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
    ![The Pull Request Merge Button in the Pull Request detail.](media/E3T3S7-1.png "Pull Request Merge Button")
 
-   > **Note**: In case you see any errors with the merge request. Retry steps 4 to 6 by selecting any other Dependabot alert.
+   > **Note:** In case you see any errors with the merge request. Retry steps 4 to 6 by selecting any other Dependabot alert.
 
-1. Open **Command Promopt** and pull the latest changes from your GitHub repository to your local GitHub folder.
+1. Open **Command Prompt** and pull the latest changes from your GitHub repository to your local GitHub folder.
 
    ```pwsh
    cd C:\Workspaces\lab\aiw-devops-with-github-lab-files 
-   ``` 
+   ```
+
    >**Note:** The above path may vary depending on how you set up your lab files repository.
    
    ```
@@ -174,9 +175,9 @@ In this task, you will use Dependabot to track the versions of the packages we u
 
 ## Task 4: Explore Secret Scanning (READ-ONLY)
 
-In this task, you'll explore how secret scanning works and see how it generates alerts. GitHub scans repositories for known types of secrets, to prevent fraudulent use of secrets that were committed accidentally.
+In this task, you'll explore how secret scanning works and see how it generates alerts. GitHub scans repositories for known types of secrets to prevent fraudulent use of secrets that were committed accidentally.
 
-**Note**: This is a **READ-ONLY** task. Please do not perform the steps in the lab environment.
+**Note:** This is a **READ-ONLY** task. Please do not perform the steps in the lab environment.
 
 1. From your GitHub repository, click on the **Settings (1)** tab. Then **Advanced Security (2)**.
 
@@ -216,8 +217,8 @@ In this task, you'll explore how secret scanning works and see how it generates 
 
 ## Summary
 
-In this exercise, you explored and configured different GitHub Advance Security features.
+In this exercise, you explored and configured different GitHub Advanced Security features.
 
-### You have successfully completed the lab. Click on **Next >>** to procced with next exercise.
+### You have successfully completed the lab. Click on **Next >>** to proceed with the next exercise.
 
 ![](media/lab-06.png)
