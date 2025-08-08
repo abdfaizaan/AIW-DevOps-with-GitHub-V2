@@ -16,7 +16,7 @@ In this lab, you will perform:
 
 In this task, you will connect your Azure DevOps project's board to your GitHub repository using the Azure Boards app for GitHub to support the integration between Azure Boards and GitHub. This app is free for both public and private repositories. You'll also explore work items.
 
-1. In your browser, open GitHub Marketplace by navigating to the URL below:
+1. In your browser, open a new tab and navigate to the GitHub Marketplace using the following URL:
 
    ```
    https://github.com/marketplace/azure-boards
@@ -24,31 +24,27 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
    ![The Azure Boards Integration App on GitHub Marketplace that will provide a link between Azure DevOps Boards and GitHub issues.](media/E2T1S1.png "Azure Boards Integration App on GitHub Marketplace")
 
-1. Scroll to the bottom of the page and select `Install it for Free.`
+1. Scroll to the bottom of the page and select **Install it for Free**.
 
    ![](media/E2T1S2.png)
 
-1. In review, your order page, enter the billing information and click on **Save**
+1. In review, your order page, enter the billing information and click on **Save**.
 
    > **Note:** If the **Install it for free** button is greyed out  with the message **You’ve already purchased this on all of your GitHub accounts**, this indicates Azure Boards integration is already used in your account. Follow the steps below, and please proceed from step number 4.
 
-     - Scroll to the top of the Azure Boards Marketplace page and click on the ellipsis and select the github user.
+     - Scroll to the top of the Azure Boards Marketplace page and click on the **ellipsis (...)** and select the github user.
 
          ![](media/E2T1S3.png)
 
-     - Click on **grant this app access**.
+     - On the **Edit your plan** page, click on **grant this app access**.
 
          ![](media/giub15.png)
 
-     - Select the lab files repository `aiw-devops-with-github-lab-files` which you created earlier and click on **Install & Authorize**.
+     - On the **Install & Authorize Azure Boards** page, choose **Only select repositories**, click **Select repositories**, and select the repository you have created earlier. Once it appears in the list, check the permissions, then click **Install & Authorize** to finish the setup.
 
          ![](media/E2T1S3-3.png)
 
-     - Copy the URL of the Azure DevOps URL and navigate to the **IN-PRIVATE** window.
-
-   - Select the cloudlabs **Email** <inject key="AzureAdUserEmail"></inject>
-   
-   - Now enter the password and **click** on **Sign in**.
+   - Copy the Azure DevOps URL and open it in an **In-Private** browser window. Select the ODL **Email** <inject key="AzureAdUserEmail"></inject>, then enter the password and click on **Sign in**.
 
         ![](media/img10.png)
 
@@ -56,7 +52,7 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
    >**Note:** If Azure Boards is already installed, follow the steps below to uninstall it.
 
-   - Click on the **... (ellipse) (1)** from top right corner and select **Configure account access (2)**
+   - Click on the **ellipsis (...) (1)** from top right corner and select **Configure account access (2)**
 
      ![](media/E2T1S4.png)
    
@@ -64,21 +60,21 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
      ![](media/E2T1S4-2.png)
 
-   - Scroll down and click on **Uninstall** for **Uninstall 'Azure Boards'** under Danger zone.
+   - Scroll down to the **Danger zone** section and click on **Uninstall** to remove **Azure Boards** from your GitHub account.
 
      ![](media/E2T1S4-3.png)
 
-   - On GitHub.com says pop-up click on **OK**
+   - On the GitHub.com pop-up, simply click **OK** to proceed.
 
      ![](media/ap2.png)
 
-   - Now navigate back to `https://github.com/marketplace/azure-boards` and click on **Install** under **Plans and pricing**
+   - Now, go back to `https://github.com/marketplace/azure-boards` and click **Install** under the **Plans and pricing** section.
 
-1. Select the lab files repository `aiw-devops-with-github-lab-files` which you created earlier and click on **Install & Authorize**.
+1. On the **Install & Authorize Azure Boards** page, choose **Only select repositories**, click **Select repositories**, and select the repository you have created earlier. Once it appears in the list, check the permissions, then click **Install & Authorize** to finish the setup.
 
    ![](media/E2T1S3-3.png)
 
-1. Select the **aiw-devops (1)** Azure DevOps organization and select the **Contosotraders-<inject key="DeploymentID" enableCopy="false" /> (2)** project then click  on **Continue (3)**.
+1. On the **Setup your Azure Boards project** page, select the **aiw-devops** **(1)** Azure DevOps organization, enter or select the project name **Contosotraders-<inject key="DeploymentID" enableCopy="false" />** **(2)**, and then click **Continue** **(3)** to proceed.
 
    ![](media/E2T1S6.png)
 
@@ -86,7 +82,7 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
 In this task, you'll make changes in GitHub link a PR to Azure boards using syntax, and monitor the work item.
 
-1. In the Azure Boards tab, click on **New Item** **_(1)_**, provide **Update carts** **(2)** as a description and create a new work item by hitting **enter**.
+1. In the Azure Boards tab, click on **+ New Item** **(1)**, provide **Update carts** **(2)** as a description and create a new work item by hitting **enter**.
 
    ![](media/E2T2S1.png)
 
@@ -102,7 +98,7 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
 
    ![](media/E2T2S4.png)
 
-1. Click on **Commit Changes** **(1)**, provide the details mentioned below and click on **Propose changes** **(5)**.
+1. Click on **Commit Changes...** **(1)**, provide the details mentioned below and click on **Propose changes** **(5)**.
 
    - Provide `workitem ID Updated` **(2)** as title. Make sure to provide the same **Work item ID** that was created in the earlier step in Azure DevOps.
    - Select **Create a new branch for this commit and start a pull request** **(3)** and name the new branch as **Update carts** **(4)**.
@@ -113,15 +109,15 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
 
    ![](media/E2T2S6.png)
 
-1. Navigate to **Azure Boards**. **Open (1)** the work item  created in the earlier step.
+1. Navigate to **Azure Boards**, click on the **ellipsis** **(...)**, and then **Open** **(1)** the work item that was created in the earlier step.
 
    ![](media/E2T2S7.png)
 
-1. Under the **Development**, select the **Add link**.
+1. Under the **Development** page, select the **Add link**.
 
    ![](media/E2T2S8.png)
 
-1. On the Add Link window select your **GitHub Repository (2)**, **GitHub Pull Request(1)** and **GitHub pull request (3)** then click on **Add Link (4)**.
+1. On the **Add Link** window, select your **GitHub Repository** **(2)**, choose **GitHub Pull Request** **(1)** as the link type, select the specific **GitHub pull request** **(3)**, and then click on **Add link** **(4)** to complete the process.
 
    ![](media/E2T2S9.png)
 
@@ -157,7 +153,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
      ![](media/E2T3S2.png)
 
-1. From contosotraders-<inject key="DeploymentID" enableCopy="false" /> test plan tab, select **more options** **(1)** button, hover over **New Suite** **(2)**, and select **Static suite** **(3)**.
+1. From contosotraders-<inject key="DeploymentID" enableCopy="false" /> test plan tab, select **More options (...)** **(1)** button, hover over **New Suite** **(2)**, and select **Static suite** **(3)**.
 
    ![](media/E2T3S3.png)
 
@@ -165,7 +161,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/E2T3S4.png)
 
-1. From the Test plans tab, click on **New Test case**.
+1. From the Test plans tab, click on **New Test Case**.
 
    ![](media/E2T3S5.png)
 
@@ -184,7 +180,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/E2T3S8.png)
 
-1. Navigate to Azure Portal, and click on Resource groups from the Navigate panel to see the resource groups.
+1. Navigate to **Azure Portal**, and click on **Resource groups** from the Navigate panel to see the resource groups.
 
    ![](media/GSS7.png)
 
@@ -200,7 +196,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/E1T4S22.png)
 
-1. Verify the availability of the web app. Simultaneously using the runner page, perform the testing by marking the steps according to the availability of the web app and click on **Save & close** **(1)**.
+1. Verify the availability of the web app. Simultaneously using the runner page, perform the testing by marking the steps according to the availability of the web app and click on **Save & close**.
 
    ![](media/2dgn162.png)
 
@@ -210,11 +206,11 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/E2T3S14.png)
 
-1. Navigate to **chart** **(1)**, click on **+ New** **(2)** and select **+ New test case chart** **(3)**.
+1. Navigate to **Chart** **(1)**, click on **+ New** **(2)** and select **+ New test case chart** **(3)**.
 
    ![](media/E2T3S15.png)
 
-1. In the Configure chart pop up, select **Bar** **(1)** as chart type, **Activated By** **(2)** for Group by option, and click on **OK** **(3)**.
+1. In the **Configure chart** pop-up, select **Bar** **(1)** as the chart type, choose **Activated By** **(2)** for the *Group by* option, and then click on **OK** **(3)** to create the chart.
 
    ![](media/E2T3S16.png)
 
