@@ -2,7 +2,7 @@
 
 ### Estimated Duration: 100 Minutes
 
-In this exercise, you'll explore Azure boards and Azure test plans. Azure Boards provides software development teams with the interactive and customizable tools they need to manage their software projects. Azure Test Plans provides rich and powerful tools everyone in the team can use to drive quality and collaboration throughout the development process. The easy-to-use, browser-based test management solution provides all the capabilities required for planned manual testing.
+In this exercise, you'll explore Azure boards and Azure test plans. Azure Boards provides software development teams with the interactive and customizable tools they need to manage their software projects. Azure Test Plans provides rich and powerful tools that everyone in the team can use to drive quality and collaboration throughout the development process. The easy-to-use, browser-based test management solution provides all the capabilities required for planned manual testing.
 
 ## Lab Objectives
 
@@ -16,7 +16,7 @@ In this lab, you will perform:
 
 In this task, you will connect your Azure DevOps project's board to your GitHub repository using the Azure Boards app for GitHub to support the integration between Azure Boards and GitHub. This app is free for both public and private repositories. You'll also explore work items.
 
-1. In your browser open GitHub Marketplace by navigating to the below URL:
+1. In your browser, open GitHub Marketplace by navigating to the URL below:
 
    ```
    https://github.com/marketplace/azure-boards
@@ -28,11 +28,11 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
    ![](media/E2T1S2.png)
 
-1. In review your order page enter the billing information and click on **save**
+1. In review, your order page, enter the billing information and click on **Save**
 
-   > **Note:** If the **Install it for free** button is greyed out  with the message **You’ve already purchased this on all of your GitHub accounts** this indicates Azure Boards integration is already used in your account, follow the below steps and please proceed from step number 4.
+   > **Note:** If the **Install it for free** button is greyed out  with the message **You’ve already purchased this on all of your GitHub accounts**, this indicates Azure Boards integration is already used in your account. Follow the steps below, and please proceed from step number 4.
 
-     - Scroll to the top of the Azure Boards Marketplace page and click on the elipsis and select the github user.
+     - Scroll to the top of the Azure Boards Marketplace page and click on the ellipsis and select the github user.
 
          ![](media/E2T1S3.png)
 
@@ -44,22 +44,23 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
          ![](media/E2T1S3-3.png)
 
-     - Copy the URL of the Azure Devops URL and navigate to the **IN-PRIVATE** window.
+     - Copy the URL of the Azure DevOps URL and navigate to the **IN-PRIVATE** window.
 
    - Select the cloudlabs **Email** <inject key="AzureAdUserEmail"></inject>
+   
    - Now enter the password and **click** on **Sign in**.
 
         ![](media/img10.png)
 
 1. On the next page, select **Complete order and begin installation**.
 
-   >**Note :** If Azure Boards is already installed, follow the below steps to uninstall it.
+   >**Note:** If Azure Boards is already installed, follow the steps below to uninstall it.
 
    - Click on the **... (ellipse) (1)** from top right corner and select **Configure account access (2)**
 
      ![](media/E2T1S4.png)
    
-   - On the Applications pane in the Installed Github Apps tab click on **Configure** for Azure Boards.
+   - On the Applications pane in the Installed Github Apps tab, click on **Configure** for Azure Boards.
 
      ![](media/E2T1S4-2.png)
 
@@ -67,7 +68,7 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
      ![](media/E2T1S4-3.png)
 
-   - On the github.com says pop-up click on **OK**
+   - On GitHub.com says pop-up click on **OK**
 
      ![](media/ap2.png)
 
@@ -89,7 +90,7 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
 
    ![](media/E2T2S1.png)
 
-1. After creating a work item, Please note down the Work item ID which will be used in the further steps.
+1. After creating a work item, please note down the Work item ID, which will be used in the further steps.
 
    ![](media/E2T2S2.png)
 
@@ -108,7 +109,7 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
 
      ![](media/E2T2S5.png)
 
-1. On Open a pull request tab, Click on **Create pull request**
+1. On the Open pull request tab, click on **Create pull request**
 
    ![](media/E2T2S6.png)
 
@@ -124,7 +125,7 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
 
    ![](media/E2T2S9.png)
 
-1. Navigate back to the GitHub browser tab and select **Pull requests** tab.
+1. Navigate back to the GitHub browser tab and select the **Pull requests** tab.
 
    ![](media/E2T2S10.png)
 
@@ -144,7 +145,7 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
 
 In this task, you'll set up an Azure test plan and perform manual testing for the application.
 
-1. From the Azure DevOps tab, select **Test plans (1)** from the side blade, From the Test plans tab, click on **+ New Test Plan (2)**
+1. From the Azure DevOps tab, select **Test plans (1)** from the side blade. From the Test plans tab, click on **+ New Test Plan (2)**
 
    ![](media/E2T3S1.png)
 
@@ -179,7 +180,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/E2T3S7.png)
 
-1. A web-based runner will be opened. Manual testing of the web app can be performed. Keep this page open, we will use the runner in upcoming steps.
+1. A web-based runner will be opened. Manual testing of the web app can be performed. Keep this page open, we will use the runner in the upcoming steps.
 
    ![](media/E2T3S8.png)
 
@@ -195,7 +196,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/E1T4S21.png)
 
-1. Click on **Endpoint hostname**. It'll open a browser tab where you will be visual that the contoso traders app has been hosted successfully.
+1. Click on **Endpoint hostname**. It'll open a browser tab where you will see that the Contoso Traders app has been hosted successfully.
 
    ![](media/E1T4S22.png)
 
@@ -205,7 +206,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/E2T3S13i.png)
 
-1. From the execute tab, Verify the **outcome** of the manual testing. The outcome will be in a **Passed** state if the web app worked as expected and vice versa.
+1. From the execute tab, verify the **outcome** of the manual testing. The outcome will be in a **Passed** state if the web app worked as expected and vice versa.
 
    ![](media/E2T3S14.png)
 
@@ -217,7 +218,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/E2T3S16.png)
 
-1. You'll be able to visualize the chart. You can explore more by making changes in the chart, and by running multiple test cycles.
+1. You'll be able to visualize the chart. You can explore more by making changes in the chart and by running multiple test cycles.
 
    ![](media/E2T3S17.png)
 
