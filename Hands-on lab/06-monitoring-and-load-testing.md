@@ -68,18 +68,17 @@ In this task, you'll create an Azure Load Testing instance and run a test using 
 
 1. Click on **Review + create** and click on **Create**.
 
-1. The test run will start running and once the test run is completed, you will be able to see **Client-side metrics**. Explore the given metrics output.
+1. The test run will start running, and once the test run is completed, you will be able to see **Client-side metrics**. Explore the given metrics output.
 
    ![](media/E4T2S8.png)
 
    ![](media/E4T2S8-1.png)
 
-   **Note**: In case, the test fails due to `The test was stopped due to a high error rate. Check your script and try again. In case the issue persists, raise a ticket with a support error`. This is expected as sometimes the load on the application exceeds the defined throughput.
-
+   **Note**: In case the test fails due to `The test was stopped due to a high error rate. Check your script and try again. In case the issue persists, raise a ticket with a support error`. This is expected as sometimes the load on the application exceeds the defined throughput.
 
 ## Task 3: Explore Chaos Studio
 
-In this task you will add **Targets** and create an **Experiment** on **Azure Chaos Studio** to check the resilience of the web application that we created by adding real faults and observe how our applications respond to real-world disruptions.
+In this task, you will add **Targets** and create an **Experiment** on **Azure Chaos Studio** to check the resilience of the web application that we created by adding real faults and observe how our applications respond to real-world disruptions.
 
 1. In the Azure Portal search for **Azure Chaos Studio (1)** and then click on it from the search results **(2)**.
 
@@ -97,17 +96,17 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
    ![](media/E4T3S4.png)
 
-1. Then click on **Enable** to Enable service direct targets.
+1. Then click on **Enable** to enable service direct targets.
 
    ![](media/E4T3S5.png)
 
 1. Wait for the deployment to be completed.
 
-1. In the Azure Portal search for **Azure Chaos Studio** **_(1)_** and then click on it from the search results **_(2)_**.
+1. In the Azure Portal search for **Azure Chaos Studio** **(1)** and then click on it from the search results **(2)**.
 
    ![](media/Ex6-T2-S1.1.png)
 
-1. Once the target is enabled, select **Experiments** **_(1)_** from the Experiments management dropdown on the left, click **+ Create** **_(2)_** drop-down, and select **New experiment** **(3)** .
+1. Once the target is enabled, select **Experiments** **(1)** from the Experiments management dropdown on the left, click **+ Create** **(2)** drop-down, and select **New experiment** **(3)** .
 
    ![](media/E4T3S8.png)
 
@@ -132,7 +131,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
    - Faults: **AKS Chaos Mesh Pod Chaos (deprecated)** **(1)**
    - Duration (minutes): **5** **(2)**
-   - jsonSpec: Leave it to default 
+   - jsonSpec: Leave it to the default 
 
       ![](media/E4T3S12.png)
 
@@ -144,7 +143,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
    ![](media/E4T3S14.png)
 
-1. On the **Review + create** click on **Create**.
+1. On the **Review + create** page, review the configuration and click on **Create**.
 
    ![](media/E4T3S15.png)
 
@@ -168,7 +167,7 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
    ![](media/E4T3S20.png)
 
-1. On the Azure portal navigate back to the Chaos experiment you created **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** and click on **Start**.
+1. On the Azure portal, navigate back to the Chaos experiment you created **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** and click on **Start**.
 
    ![](media/E4T3S21.png)
 
@@ -188,4 +187,4 @@ In this task you will add **Targets** and create an **Experiment** on **Azure Ch
 
 In this exercise, you explored monitoring using Application Insights. You also configured Load testing and Chaos experiments for the application.
 
-### You have successfully completed the lab
+### You have successfully completed the lab!
