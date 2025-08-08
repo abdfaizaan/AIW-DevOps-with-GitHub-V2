@@ -200,7 +200,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/E1T4S22.png)
 
-1. Verify the availability of the web app, Simultaneously using the runner page, perform the testing by marking the steps according to the availability of the web app and click on **Save & close** **(1)**.
+1. Verify the availability of the web app. Simultaneously using the runner page, perform the testing by marking the steps according to the availability of the web app and click on **Save & close** **(1)**.
 
    ![](media/2dgn162.png)
 
@@ -226,6 +226,6 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
 In this exercise, you explored the features of Azure boards and configured Azure Test plans for the application.
 
-### You have successfully completed the lab!
+### You have successfully completed the lab. Click on **Next >>** to proceed with the next exercise.
 
 ![](media/lab-06.png)
