@@ -32,7 +32,7 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
    > **Note:** If the **Install it for free** button is greyed out  with the message **You’ve already purchased this on all of your GitHub accounts**, this indicates Azure Boards integration is already used in your account. Follow the steps below, and please proceed from step number 4.
 
-     - Scroll to the top of the Azure Boards Marketplace page and click on the **ellipsis (...)** and select the github user.
+     - Scroll to the top of the Azure Boards Marketplace page and click on the **ellipsis (...) (1)** and select the **github user (2)**.
 
          ![](media/E2T1S3.png)
 
@@ -217,6 +217,14 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 1. You'll be able to visualize the chart. You can explore more by making changes in the chart and by running multiple test cycles.
 
    ![](media/E2T3S17.png)
+
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+ 
+> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+
+  <validation step="dd7cf1fd-17af-495f-affa-9affe5b1e9de" />
 
 ## Summary
 

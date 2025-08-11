@@ -14,6 +14,8 @@ In this lab, you will perform:
 
 ## Task 1: Monitoring using Application Insights
 
+This task focuses on using Azure Application Insights to monitor the health and performance of the Contoso Traders application. You will review various monitoring metrics over a chosen time range.
+
 1. In the Azure Portal, navigate to **contoso-traders-<inject key="Deploymentid" enableCopy="false" />** **(1)** resource group and select the **Application Insights** resource with the name **contoso-traders-ai<inject key="Deploymentid" />** **(2)**.
 
    ![](media/E4T1S1.png)
@@ -75,6 +77,14 @@ In this task, you'll create an Azure Load Testing instance and run a test using 
    ![](media/E4T2S8-1.png)
 
    **Note**: In case the test fails due to `The test was stopped due to a high error rate. Check your script and try again. In case the issue persists, raise a ticket with a support error`. This is expected as sometimes the load on the application exceeds the defined throughput.
+
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+ 
+> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+
+   <validation step="d553ecad-c385-4148-ba65-fbce5cb985ad" />
 
 ## Task 3: Explore Chaos Studio
 
@@ -182,6 +192,14 @@ In this task, you will add **Targets** and create an **Experiment** on **Azure C
 1. On the **Details** preview page, review the **Completed Status** of the run to verify its outcome and view all relevant details.
 
    ![](media/E4T3S24.png)
+
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+ 
+> - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+
+   <validation step="7042c8dd-d5f9-4300-92a9-6d1e0ae9a1c4" />
    
 ## Summary
 
