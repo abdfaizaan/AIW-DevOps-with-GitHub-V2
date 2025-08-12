@@ -251,6 +251,8 @@ In this task, you will create an account in [GitHub](https://github.com) and use
 
 1. In the terminal, click on the **drop-down** button and select **PowerShell** to open a fresh PowerShell terminal tab.
 
+   ![](media/E1T3S9.png)
+
 1. In the Visual Studio Code, run the below commands in the terminal to set your **username** and **email**, which Git uses for commits. **Make sure to replace the GitHub account email and username.** 
 
    ```pwsh
@@ -432,6 +434,14 @@ In this task, you will build automation in GitHub for updating and republishing 
     ![](media/E1T4S22.png)
 
     ![](media/E1T4S22-1.png)
+
+>**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
+ > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab.
+ > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+ > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+ > - **Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your GitHub User Name. Provide your **GitHub User Name** which looks like **github-cloudlabsuser-xxxx**.
+
+   <validation step="4f20a33d-35ef-40a7-b9df-f4072265acaa" />
 
 ## Task 5: Editing the GitHub Workflow File using Codespace
 
