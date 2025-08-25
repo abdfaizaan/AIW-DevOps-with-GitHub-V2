@@ -206,3 +206,20 @@ In this task, you will add **Targets** and create an **Experiment** on **Azure C
 In this exercise, you explored monitoring using Application Insights. You also configured Load testing and Chaos experiments for the application.
 
 ### You have successfully completed the lab!
+
+
+Congratulations on completing **Devops with GitHub**. 
+
+This lab offered a practical experience and covered:
+
+   - Setting up infrastructure and CI/CD pipelines using GitHub and Azure.
+
+   - Integrating GitHub with Azure Boards and Test Plans for project tracking.
+
+   - Enabling GitHub security features such as CodeQL, Dependabot, and secret scanning.
+
+   - Monitoring applications with Azure Application Insights.
+
+   - Running load tests to validate performance and scalability.
+
+   - Using Azure Chaos Studio to test application resilience.
