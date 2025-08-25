@@ -179,9 +179,7 @@ In this task, you will set up the local infrastructure using .NET. You'll be wor
 
 ## Task 3: Create the Project Repo
 
-In this task, you'll access the GitHub Enterprise account and create a new repository to store the infrastructure.
-
-In this task, you will create an account in [GitHub](https://github.com) and use `git` to add lab files to a new repository.
+In this task, access the GitHub Enterprise account), create a new repository to store the infrastructure, and use git to add the lab files to it.
 
 1. In a new browser tab, open `https://www.github.com/login`. From **Environment** page, navigate to **Licenses** tab and **Copy** the credentials. Use the same username and password to login into GitHub.
 
