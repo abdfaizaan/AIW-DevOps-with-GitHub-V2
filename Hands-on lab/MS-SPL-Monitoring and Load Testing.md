@@ -18,27 +18,27 @@ In this task, you will explore telemetry data captured by Application Insights. 
 
 1. On the **Azure Portal**, navigate to the **contoso-traders-<inject key="DeploymentID" />** **(1)** resource group and select the Application Insights resource named **contoso-traders-ai<inject key="DeploymentID" />** **(2)**.
 
-   ![](media/ld-ex3-1-1.png)
+   ![](media/E4T1S1.png)
    
 1. On the **Application Insights** page, click **Overview (1)** from the left menu. Then, under **Show data for last:**, click **6 hours** **(2)** to see data from the last six hours.
 
-   ![](media/ld-ex3-1-2.png)
+   ![](media/E4T1S2.png)
    
 1. In the first graph, you can see the number of failed requests for the Application access.
 
-   ![](media/upd-ex6-t1-failedrequests.png)
+   ![](media/E4T1S3.png)
    
 1. In the next graph, you can see the average server response time.
 
-   ![](media/upd-ex6-t1-server-response-time.png)
+   ![](media/E4T1S4.png)
    
 1. In the next graph, you can see the number of server requests.
 
-   ![](media/upd-ex6-t1-server-requests.png)
+   ![](media/E4T1S5.png)
    
 1. In the last graph, you can see the average availability.
 
-   ![](media/upd-ex6-t1-availability.png)
+   ![](media/E4T1S6.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
@@ -52,19 +52,19 @@ In this task, you will create an Azure Load Testing instance and run a quick URL
 
 1. On the **Azure Portal**, navigate to the **contoso-traders-<inject key="DeploymentID" />** **(1)** resource group  and select the **Endpoint** resource named **contoso-traders-ui2<inject key="DeploymentID" />** **(2)**.
 
-   ![](media/ld-ex3-2-1.png)
+   ![](media/E1T4S21.png)
 
 1. On the **Overview** pane of the **contoso-traders-ui2<inject key="DeploymentID" />** endpoint **(1)**, copy the **Endpoint hostname** **(2)** value and save it in Notepad for later use in this task.
 
-   ![](media/ld-ex3-2-2.png)
+   ![](media/E1T4S22.png)
 
 1. On the **Azure Portal**, navigate to the **contoso-traders-<inject key="DeploymentID" />** **(1)** resource group and select the **Azure Load Testing** resource named **contoso-traders-loadtest<inject key="DeploymentID" />** **(2)**.
 
-   ![](media/upd-2dgn117.png)
+   ![](media/E4T2S3.png)
    
 1. On the **Azure Load Testing** resource page, go to the left-hand menu and select **Tests** **(1)** under the Tests section. Then, click **+ Create** **(2)** and choose **Create a quick test** **(3)**.
 
-   ![](media/2dgn96.png)
+   ![](media/E4T2S4.png)
 
 1. On the **Create a URL-based test** page, under the **Basics** tab, configure the following settings:
 
@@ -79,7 +79,7 @@ In this task, you will create an Azure Load Testing instance and run a quick URL
 
 1. The test run will start running, and once the test run is completed, you will be able to see **Client-side metrics**. Explore the given metrics output.
 
-   ![](media/dglt4.jpg)
+   ![](media/E4T2S8.png)
    
    >**Note:** In case the test fails due to `The test was stopped due to a high error rate. Check your script and try again. In case the issue persists, raise a ticket with the support team. This is expected as sometimes the load on the application exceeds the defined throughput.
 
@@ -107,11 +107,11 @@ In this task, you will add **Targets** and create an **Experiment** on **Azure C
 
 1. Select the checkbox for **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** **(1)** and click **Review + Enable** **(2)**.
 
-   ![](media/ld-ex3-3-4.png)
+   ![](media/E4T3S4.png)
 
 1. Then click on **Enable** to enable service direct targets.
 
-   ![](media/ld-ex3-3-5.png)
+   ![](media/E4T3S5.png)
 
 1. Wait for the deployment to be completed.
 
@@ -121,7 +121,7 @@ In this task, you will add **Targets** and create an **Experiment** on **Azure C
 
 1. Once the target is enabled, select **Experiments** **(1)** under **Experiment management** section from the left-hand menu. Click on **+ Create** **(2)** and select **New experiment** **(3)**.
 
-   ![](media/giub10.png)
+   ![](media/E4T3S8.png)
 
 1. On the **Create an experiment** page, under the **Basics** tab, provide the following values and click **Next : Permissions (5) >>**:
 
@@ -130,18 +130,18 @@ In this task, you will add **Targets** and create an **Experiment** on **Azure C
    - **Name:** contoso-chaos-<inject key="DeploymentID" enableCopy="false" /> **(3)**
    - **Region:** Leave it to default **(4)**
 
-     ![](media/ld-ex3-3-9.png)
+     ![](media/E4T3S9.png)
 
 1. On the **Permissions** tab:
    - Select **System assigned identity** **(1)** under Managed identities.
    - Choose **Assign experiment permissions manually** **(2)** under Experiment permissions
    - Click on **Next : Experiment designer >** **(3)**
 
-      ![](media/ld-ex3-3-10.png)
+      ![](media/E4T3S10.png)
 
 1. On the **Experiment designer** page select **+ Add action (1)** and choose **Add fault (2)**.
 
-   ![](media/Ex6-T2-S7.3.png)
+   ![](media/E4T3S11.png)
 
 1. On the **Add fault** page:
 
@@ -149,22 +149,22 @@ In this task, you will add **Targets** and create an **Experiment** on **Azure C
    - Set the **Duration (minutes)** to `5` **(2)**
    - Click **Next : Target resources >>** **(3)**
 
-      ![](media/ld-ex3-3-12.png)
+      ![](media/E4T3S12.png)
 
 1. On the **Target resources** tab:
    - Select **Manually select from a list** **(1)** under Select target resources.
    - Check the box for **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** **(2)** resource
    - Click on **Add** **(3)**
 
-      ![](media/ld-ex3-3-13.png)
+      ![](media/E4T3S13.png)
 
 1. Click on **Review + create**.
 
-   ![](media/ld-ex3-3-14.png)
+   ![](media/E4T3S14.png)
 
 1. On the **Review + create** page, click on **Create**.
 
-   ![](media/2dgn104.png)
+   ![](media/E4T3S15.png)
 
 1. Navigate back to the **contoso-traders-aks<inject key="DeploymentID" enableCopy="false" />** Kubernetes service.
 
@@ -172,7 +172,7 @@ In this task, you will add **Targets** and create an **Experiment** on **Azure C
 
 1. Select **Access control (IAM) (1)** from the left navigation pane, click on **+ Add (2)** and select **Add role assignment (3)**.
 
-   ![](media/giub9.png)
+   ![](media/E4T3S16.png)
 
 1. On the **Add role assignment** page:
 
@@ -181,11 +181,11 @@ In this task, you will add **Targets** and create an **Experiment** on **Azure C
    - Choose the **Owner** role from the list **(3)**
    - Click on **Next** **(4)**
 
-      ![](media/ld-ex3-3-17.png)
+      ![](media/E4T3S17.png)
 
 1. On the **Members** tab, select **Managed identity** **(1)** for **Assign access to**, then click **+ Select members** **(2)** under **Members**. In the **Select managed identities** pane, choose **Chaos Experiment** **(3)**, select the experiment **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** **(4)**, click **Select** **(5)**, and then click **Next** **(6)** to continue.
 
-   ![](media/giub7.png)
+   ![](media/E4T3S18.png)
 
 1. Next on the **Conditions** tab select **Allow user to assign all roles (highly privileged)** **(1)** and click on **Review + assign** **(2)**.
 
@@ -193,7 +193,7 @@ In this task, you will add **Targets** and create an **Experiment** on **Azure C
 
 1. Click on **Review + assign**.
 
-   ![](media/giub5.png)
+   ![](media/E4T3S20.png)
 
 1. On the Azure portal, navigate back to the Chaos experiment you created **contoso-chaos-<inject key="DeploymentID" enableCopy="false" />** and click on **Start**.
 
