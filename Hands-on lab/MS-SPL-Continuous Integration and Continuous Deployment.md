@@ -230,29 +230,38 @@ In this task, you'll log in to GitHub and create a new repository to store the l
 
 1. On the **Create a new repository** tab, name the repository **aiw-devops-with-github-lab-files (1)**, select **Public (2)**, and click the **Create repository (3)** button.
 
-   ![](media/g_cor_3.png)
+   ![](media/E1T3S12.png)
    
-   > **Note:** If a repository with the same name already exists, please delete it and create a new one by following steps **13 to 17**. If no such repository exists, you may skip directly to **Step 17**.
+   > **Note:** If a repository with the same name already exists, please delete it and create a new one by following steps. If no such repository exists, you may skip directly to **Step 13**.
+   
+   i. In the upper-right corner, expand the user **drop-down menu** **(1)** and select **Your repositories** **(2)**.
+      
+      ![The `New Repository` creation form in GitHub.](media/2dg1.png "New Repository Creation Form")
+      
+   ii. Using the search bar, search for `aiw-devops-with-github-lab-files` **(1)** and select to open it **(2)**.
+      
+      ![The `New Repository` creation form in GitHub.](media/E1T3S5-2.png "New Repository Creation Form")
+      
+   iii. From the GitHub repository, click on the **Settings** tab.
+      
+      ![The `New Repository` creation form in GitHub.](media/E1T3S5-3.png "New Repository Creation Form")
+      
+   iv. In the settings page, scroll to the bottom of the page and select **Delete this repository**.
+      
+      ![The `New Repository` creation form in GitHub.](media/E1T3S-4.png "New Repository Creation Form")
+      
+   v. On the pop-up, select **I want to delete this repository**.
 
-1. In the upper-right corner, expand the user **drop-down menu** **(1)** and select **Your repositories** **(2)**.
+      ![The `New Repository` creation form in GitHub.](media/E1T3S5-5.png "New Repository Creation Form")
 
-   ![The `New Repository` creation form in GitHub.](media/2dg1.png "New Repository Creation Form")
+   vi. Then, select **I have read and understand these effects**.
 
-1. Using the search bar, search for ```aiw-devops-with-github-lab-files``` **(1)** and select **aiw-devops-with-github-lab-files (2)**.
+      ![The `New Repository` creation form in GitHub.](media/E1T3S5-6.png "New Repository Creation Form")
 
-   ![The `New Repository` creation form in GitHub.](media/E1T3S5-2.png "New Repository Creation Form")
+   vii. Copy the repository name **(1)** and paste it in the text box **(2)**.  Then click on **Delete this repository (3)**.
 
-1. From the GitHub repository, click on the **Settings** tab.
+      ![The `New Repository` creation form in GitHub.](media/E1T3S5-7.png "New Repository Creation Form")
 
-   ![The `New Repository` creation form in GitHub.](media/E1T3S5-3.png "New Repository Creation Form")
-
-1. In the settings page, scroll to the bottom of the page and select **Delete this repository**.
-
-   ![The `New Repository` creation form in GitHub.](media/E1T3S-4.png "New Repository Creation Form")
-
-1. Are you absolutely sure? pop up window, Copy the **repository name** **(1)**, paste it in the **box** **(2)**, and cick on **I understand the consequences, delete this repository** **(3)**.
-
-   ![The `New Repository` creation form in GitHub.](media/2dg121.png "New Repository Creation Form")
 
 1. On the **Quick setup** screen, copy the **HTTPS** GitHub URL for your new repository, and **save it** in a notepad for future use.
 
@@ -291,12 +300,30 @@ In this task, you'll log in to GitHub and create a new repository to store the l
    git remote add origin<Unique-ID> <your_github_repository-url>
    git push -u origin<Unique-ID> main
    ```
+   - If you are asked to authenticate your GitHub account. Select **Sign in with your browser** and you might be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize git-ecosystem** to provide access.
+   
+      ![](media/new-devops-github-lab02-6.png)
 
-1. If you are asked to authenticate your GitHub account. Select **1. web browser**, and you will be prompted with a pop-up window to authorize Git Credential Manager. Click on **Authorize GitCredentialManager** to provide access.
+      ![](media/ex2-t3.png)
 
-   ![](media/2dgn158.png)
+   - After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
 
-   > **Note:** After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
+     > **Note:** If you get any error like push is blocked as secret is not allowed, do these steps.
+
+     ![](media/rulevoilation.png)
+
+   -  Navigate up in the error message and click on the given link for ( To Push, remove secret from commits or follow this URL to allow the secret).
+
+      ![](media/rulevoilation4.png)
+
+   - Select **It's used in tests** and click on the **Allow me to expose this secret**.
+
+     ![](media/rulevoilation1.png)
+
+   - Navigate back to the **Visual Studio Code** application, run the command again.
+
+     ![](media/rulevoilation2.png)
+
      
 ## Task 4: Build and push using GitHub Actions
 
