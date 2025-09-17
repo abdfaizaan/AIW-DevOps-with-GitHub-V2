@@ -44,8 +44,9 @@ In this task, you will explore telemetry data captured by Application Insights. 
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 <validation step="1706630b-9fc0-4c4d-880b-633d75befef6" />
-   
+
 ## Task 2: Set up Load Testing
 
 In this task, you will create an Azure Load Testing instance and run a quick URL-based test using your application’s endpoint. This will help evaluate how your application performs under simulated load conditions.
