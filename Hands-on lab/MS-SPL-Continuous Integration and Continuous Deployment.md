@@ -443,14 +443,16 @@ In this task, you will configure GitHub Codespaces to work with your project rep
 1. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
    ![](media/E1T4S2.png) 
-   
-1. Select **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
 
-   ![](media/E1T4S21.png) 
-   
-1. Click on **Endpoint hostname**. It'll open a browser tab where you will see that the Contoso Traders app has been hosted successfully.
+1. Select the **contoso-traders-cdn<inject key="DeploymentID" enableCopy="false" />** Front door service. 
 
-   ![](media/E1T4S22.png) 
+   ![](media/E1T4S18-1809.png) 
+   
+1. Click on the copy icon next to **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint. 
+
+   ![](media/E1T4S19-1809.png) 
+   
+1. Paste the  **Endpoint hostname** in a new browser tab. You will see that the Contoso Traders app has been hosted successfully.
     
    ![](media/E1T4S22-1.png) 
     
@@ -500,4 +502,4 @@ In this exercise, you configured a local development environment, created a GitH
 
 ### You have successfully completed the Exercise. Click on Next >> to proceed with the next Exercise.
 
-![](media/lab-06.png)
+![](media/nextpage-1809.png)
