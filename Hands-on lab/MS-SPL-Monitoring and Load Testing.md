@@ -87,7 +87,7 @@ In this task, you will create an Azure Load Testing instance and run a quick URL
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 <validation step="f438e274-8872-461d-85c7-4aa4a9a261e6" />
-     
+
 ## Task 3: Explore Chaos Studio
 
 In this task, you will add **Targets** and create an **Experiment** on **Azure Chaos Studio** to check the resilience of the web application that we created by adding real faults and observe how our applications respond to real-world disruptions.
