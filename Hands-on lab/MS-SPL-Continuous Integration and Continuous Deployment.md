@@ -232,36 +232,35 @@ In this task, you'll log in to GitHub and create a new repository to store the l
 
    ![](media/E1T3S12.png)
    
-      > **Note:** If a repository with the same name already exists, please delete it and create a new one by following steps. If no such repository exists, you may skip directly to **Step 13**.
+1. If a repository with the same name already exists, please delete it and create a new one by following steps. If no such repository exists, you may skip directly to **Step 14**.
    
-      > i. In the upper-right corner, expand the user **drop-down menu** **(1)** and select **Your repositories** **(2)**.
+   - In the upper-right corner, expand the user **drop-down menu** **(1)** and select **Your repositories** **(2)**.
       
-      > ![The `New Repository` creation form in GitHub.](media/2dg1.png "New Repository Creation Form")
+      ![The `New Repository` creation form in GitHub.](media/2dg1.png "New Repository Creation Form")
       
-      > ii. Using the search bar, search for `aiw-devops-with-github-lab-files` **(1)** and select to open it **(2)**.
+   - Using the search bar, search for `aiw-devops-with-github-lab-files` **(1)** and select to open it **(2)**.
       
-      > ![The `New Repository` creation form in GitHub.](media/E1T3S5-2.png "New Repository Creation Form")
+      ![The `New Repository` creation form in GitHub.](media/E1T3S5-2.png "New Repository Creation Form")
       
-      > iii. From the GitHub repository, click on the **Settings** tab.
+   - From the GitHub repository, click on the **Settings** tab.
       
-      > ![The `New Repository` creation form in GitHub.](media/E1T3S5-3.png "New Repository Creation Form")
+      ![The `New Repository` creation form in GitHub.](media/E1T3S5-3.png "New Repository Creation Form")
       
-      > iv. In the settings page, scroll to the bottom of the page and select **Delete this repository**.
+   - In the settings page, scroll to the bottom of the page and select **Delete this repository**.
       
-      > ![The `New Repository` creation form in GitHub.](media/E1T3S-4.png "New Repository Creation Form")
-      
-      > v. On the pop-up, select **I want to delete this repository**.
+      ![The `New Repository` creation form in GitHub.](media/E1T3S-4.png "New Repository Creation Form")
 
-      > ![The `New Repository` creation form in GitHub.](media/E1T3S5-5.png "New Repository Creation Form")
+   - On the pop-up, select **I want to delete this repository**.
 
-      > vi. Then, select **I have read and understand these effects**.
+      ![The `New Repository` creation form in GitHub.](media/E1T3S5-5.png "New Repository Creation Form")
 
-      > ![The `New Repository` creation form in GitHub.](media/E1T3S5-6.png "New Repository Creation Form")
+   - Then, select **I have read and understand these effects**.
 
-      > vii. Copy the repository name **(1)** and paste it in the text box **(2)**.  Then click on **Delete this repository (3)**.
+      ![The `New Repository` creation form in GitHub.](media/E1T3S5-6.png "New Repository Creation Form")
 
-      > ![The `New Repository` creation form in GitHub.](media/E1T3S5-7.png "New Repository Creation Form")
+   - Copy the repository name **(1)** and paste it in the text box **(2)**.  Then click on **Delete this repository (3)**.
 
+      ![The `New Repository` creation form in GitHub.](media/E1T3S5-7.png "New Repository Creation Form")
 
 1. On the **Quick setup** screen, copy the **HTTPS** GitHub URL for your new repository, and **save it** in a notepad for future use.
 
