@@ -84,7 +84,7 @@ In this task, you will create an Azure Load Testing instance and run a quick URL
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="f438e274-8872-461d-85c7-4aa4a9a261e6" />
