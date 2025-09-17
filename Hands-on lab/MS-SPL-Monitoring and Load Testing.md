@@ -130,14 +130,14 @@ In this task, you will add **Targets** and create an **Experiment** on **Azure C
    - **Name:** contoso-chaos-<inject key="DeploymentID" enableCopy="false" /> **(3)**
    - **Region:** Leave it to default **(4)**
 
-     ![](media/E4T3S9.png)
+     ![](media/E2T3S9-1809.png)
 
 1. On the **Permissions** tab:
    - Select **System assigned identity** **(1)** under Managed identities.
    - Choose **Assign experiment permissions manually** **(2)** under Experiment permissions
    - Click on **Next : Experiment designer >** **(3)**
 
-      ![](media/E4T3S10.png)
+      ![](media/E2T3S10-1809.png)
 
 1. On the **Experiment designer** page select **+ Add action (1)** and choose **Add fault (2)**.
 
@@ -174,12 +174,11 @@ In this task, you will add **Targets** and create an **Experiment** on **Azure C
 
    ![](media/E4T3S16.png)
 
-1. On the **Add role assignment** page:
+1. On the **Add role assignment** page under the **Role** tab, select the following:
 
-   - Make sure the **Role** tab is selected **(1)**
-   - Select **Privileged administrator roles** **(2)**
-   - Choose the **Owner** role from the list **(3)**
-   - Click on **Next** **(4)**
+   - Select **Privileged administrator roles** **(1)**
+   - Choose the **Owner** role from the list **(2)**
+   - Click on **Next** **(3)**
 
       ![](media/E4T3S17.png)
 
@@ -223,3 +222,5 @@ In this task, you will add **Targets** and create an **Experiment** on **Azure C
 In this exercise, you monitored application performance using Application Insights, simulated traffic using Azure Load Testing, and used Chaos Studio to evaluate the resilience of your application under real-world fault conditions. These tools help ensure your application is performant, stable, and fault-tolerant under load and disruption.
 
 ## You have successfully completed the Hands-on lab!
+
+By completing this **Get started with Azure Load testing** hands-on lab, you gained practical experience in monitoring, testing, and improving the performance and resilience of cloud-native applications with Azure. You started by configuring Application Insights to track key health metrics and identify performance issues. Using Azure Load Testing, you simulated real-world traffic to evaluate scalability and system behavior under stress. Finally, with Azure Chaos Studio, you introduced controlled disruptions to validate resilience and recovery. Together, these exercises provided a clear understanding of how to build, test, and operate reliable applications on Azure that can handle production workloads with confidence.
