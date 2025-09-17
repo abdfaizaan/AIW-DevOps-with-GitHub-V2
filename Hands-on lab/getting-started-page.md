@@ -3,6 +3,7 @@
 ### Estimated Duration: 4 Hours
 
 ## Overview
+Welcome to your **Get Started with Azure Load Testing Workshop**!
 
 In this lab, you'll get hands-on with Azure Load Testing, a fully managed service that helps you generate high-scale traffic to test the performance and reliability of your applications. You’ll start by enabling monitoring using Application Insights to gain visibility into application health and telemetry. Then, you’ll simulate real-world load scenarios using Azure Load Testing and evaluate how your system performs under stress. Finally, you’ll explore Azure Chaos Studio to inject controlled faults and measure your application’s resilience during disruptions.
 
@@ -10,17 +11,17 @@ In this lab, you'll get hands-on with Azure Load Testing, a fully managed servic
 
 In this lab, you will learn how to monitor, test, and improve the performance and resilience of a cloud-based application using Azure-native tools.
 
-- **Monitor Application Health:** Configure Application Insights to track key metrics like response time, availability, and failed requests.
-- **Simulate Load with Azure Load Testing:** Create and run high-scale load tests to evaluate application performance under pressure.
-- **Improve Resilience with Chaos Studio:** Inject real-world failures using Chaos Studio and observe how your application responds to disruptions.
+  - **Monitor Application Health:** Configure Application Insights to track key metrics like response time, availability, and failed requests.
+  - **Simulate Load with Azure Load Testing:** Create and run high-scale load tests to evaluate application performance under pressure.
+  - **Improve Resilience with Chaos Studio:** Inject real-world failures using Chaos Studio and observe how your application responds to disruptions.
   
 ## Prerequisites
 
 Participants should have basic knowledge and understanding of the following:
 
-- Azure Portal navigation and resource management
-- Fundamental knowledge of web applications and endpoints
-- Basic familiarity with cloud monitoring and performance testing tools
+  - Azure Portal navigation and resource management
+  - Fundamental knowledge of web applications and endpoints
+  - Basic familiarity with cloud monitoring and performance testing tools
 
 ## Architecture
 
@@ -36,15 +37,15 @@ The solution also includes a container registry for image management and Azure C
 
 ## Explanation of the Components
 
-- **Application Insights:** A monitoring tool that provides real-time performance and usage analytics for applications.
-- **Azure Container Apps:** A fully managed service to build and deploy microservices and containerized applications with ease.
-- **Azure Kubernetes Service (AKS):** A managed container orchestration service that simplifies deploying, managing, and scaling Kubernetes clusters.
-- **Azure Cosmos DB:** A globally distributed, fully managed NoSQL database service designed for scalable, high-performance applications.
-- **GitHub:** A cloud-based platform for version control and collaboration, enabling developers to manage, share, and collaborate on code projects using Git.
+  - **Application Insights:** A monitoring tool that provides real-time performance and usage analytics for applications.
+  - **Azure Container Apps:** A fully managed service to build and deploy microservices and containerized applications with ease.
+  - **Azure Kubernetes Service (AKS):** A managed container orchestration service that simplifies deploying, managing, and scaling Kubernetes clusters.
+  - **Azure Cosmos DB:** A globally distributed, fully managed NoSQL database service designed for scalable, high-performance applications.
+  - **GitHub:** A cloud-based platform for version control and collaboration, enabling developers to manage, share, and collaborate on code projects using Git.
 
 ## Getting Started with Lab
 
-Welcome to your Get Started with Azure Load Testing Workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience.
+We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience.
 
 ## Accessing Your Lab Environment
  
@@ -144,8 +145,8 @@ The CloudLabs support team is available 24/7, 365 days a year, via email and liv
 
 Learner Support Contacts:
 
-   - Email Support: cloudlabs-support@spektrasystems.com
-   - Live Chat Support: https://cloudlabs.ai/labs-support
+  - Email Support: cloudlabs-support@spektrasystems.com
+  - Live Chat Support: https://cloudlabs.ai/labs-support
      
 Now, click on **Next** from the lower right corner to move on to the next page.
 
