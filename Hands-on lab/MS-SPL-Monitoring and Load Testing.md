@@ -50,13 +50,11 @@ In this task, you will explore telemetry data captured by Application Insights. 
 
 In this task, you will create an Azure Load Testing instance and run a quick URL-based test using your application’s endpoint. This will help evaluate how your application performs under simulated load conditions.
 
-1. On the **Azure Portal**, navigate to the **contoso-traders-<inject key="DeploymentID" />** **(1)** resource group  and select the **Endpoint** resource named **contoso-traders-ui2<inject key="DeploymentID" />** **(2)**.
+1. On the **Azure Portal**, navigate to the **contoso-traders-<inject key="DeploymentID" />** resource group  and select the Front Door resource named **contoso-traders-cdn<inject key="DeploymentID" />**. Copy the  **Endpoint** resource named **contoso-traders-ui2<inject key="DeploymentID" />** and paste it into Notepad for later use.
 
-    ![](media/E1T4S21.png)
+    ![](media/E1T4S18-1809.png)
 
-1. On the **Overview** pane of the **contoso-traders-ui2<inject key="DeploymentID" />** endpoint **(1)**, copy the **Endpoint hostname** **(2)** value and save it in Notepad for later use in this task.
-    
-    ![](media/E1T4S22.png)
+    ![](media/E1T4S19-1809.png)
 
 1. On the **Azure Portal**, navigate to the **contoso-traders-<inject key="DeploymentID" />** **(1)** resource group and select the **Azure Load Testing** resource named **contoso-traders-loadtest<inject key="DeploymentID" />** **(2)**.
 
@@ -66,14 +64,14 @@ In this task, you will create an Azure Load Testing instance and run a quick URL
 
    ![](media/E4T2S4.png)
 
-1. On the **Create a URL-based test** page, under the **Basics** tab, configure the following settings:
+1. On the **Create a URL-based test** page, under the **Basics** tab, uncheck the option for **Enable advanced settings** and configure the following settings:
 
    - Set **Test name** to a name of your choice **(1)**.
    - Enter the **Test URL** using the copied endpoint hostname **(2)**.
    - Set **Number of virtual users** to `5` **(3)**.
    - Set **Test duration** to `2` minutes **(4)**.
    - Set **Ramp-up time** to `0` minutes **(6)**.
-   - Click on **Review + create** **(7)**.
+   - Click on **Review + create** **(7)** and click on **Create**. 
 
       ![](media/ld-ex3-2-5.png)
 
