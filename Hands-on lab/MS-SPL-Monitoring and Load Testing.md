@@ -52,11 +52,11 @@ In this task, you will create an Azure Load Testing instance and run a quick URL
 
 1. On the **Azure Portal**, navigate to the **contoso-traders-<inject key="DeploymentID" />** **(1)** resource group  and select the **Endpoint** resource named **contoso-traders-ui2<inject key="DeploymentID" />** **(2)**.
 
-   ![](media/E1T4S21.png)
+    ![](media/E1T4S21.png)
 
 1. On the **Overview** pane of the **contoso-traders-ui2<inject key="DeploymentID" />** endpoint **(1)**, copy the **Endpoint hostname** **(2)** value and save it in Notepad for later use in this task.
-
-   ![](media/E1T4S22.png)
+    
+    ![](media/E1T4S22.png)
 
 1. On the **Azure Portal**, navigate to the **contoso-traders-<inject key="DeploymentID" />** **(1)** resource group and select the **Azure Load Testing** resource named **contoso-traders-loadtest<inject key="DeploymentID" />** **(2)**.
 
