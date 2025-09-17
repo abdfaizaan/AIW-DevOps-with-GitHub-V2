@@ -52,17 +52,17 @@ In this task, you will create an Azure Load Testing instance and run a quick URL
 
 1. On the **Azure Portal**, navigate to the **contoso-traders-<inject key="DeploymentID" />** resource group  and select the Front Door resource named **contoso-traders-cdn<inject key="DeploymentID" />**. Copy the  **Endpoint** resource named **contoso-traders-ui2<inject key="DeploymentID" />** and paste it into Notepad for later use.
 
-    ![](media/E1T4S18-1809.png)
+      ![](media/E1T4S18-1809.png)
 
-    ![](media/E1T4S19-1809.png)
+      ![](media/E1T4S19-1809.png)
 
 1. On the **Azure Portal**, navigate to the **contoso-traders-<inject key="DeploymentID" />** **(1)** resource group and select the **Azure Load Testing** resource named **contoso-traders-loadtest<inject key="DeploymentID" />** **(2)**.
 
-   ![](media/E4T2S3.png)
+      ![](media/E4T2S3.png)
    
 1. On the **Azure Load Testing** resource page, go to the left-hand menu and select **Tests** **(1)** under the Tests section. Then, click **+ Create** **(2)** and choose **Create a quick test** **(3)**.
 
-   ![](media/E4T2S4.png)
+      ![](media/E4T2S4.png)
 
 1. On the **Create a URL-based test** page, under the **Basics** tab, uncheck the option for **Enable advanced settings** and configure the following settings:
 
@@ -73,11 +73,11 @@ In this task, you will create an Azure Load Testing instance and run a quick URL
    - Set **Ramp-up time** to `0` minutes **(6)**.
    - Click on **Review + create** **(7)** and click on **Create**. 
 
-      ![](media/ld-ex3-2-5.png)
+        ![](media/ld-ex3-2-5.png)
 
 1. The test run will start running, and once the test run is completed, you will be able to see **Client-side metrics**. Explore the given metrics output.
 
-   ![](media/E4T2S8.png)
+      ![](media/E4T2S8.png)
    
    >**Note:** In case the test fails due to `The test was stopped due to a high error rate. Check your script and try again. In case the issue persists, raise a ticket with the support team. This is expected as sometimes the load on the application exceeds the defined throughput.
 
