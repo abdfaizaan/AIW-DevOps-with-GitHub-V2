@@ -1,6 +1,5 @@
 # Get started with Azure Load Testing
 
-### Welcome to your Get Started with Azure Load Testing Workshop!
 ### Estimated Duration: 4 Hours
 
 ## Overview
