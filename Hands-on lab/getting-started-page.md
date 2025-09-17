@@ -100,23 +100,43 @@ To adjust the zoom level for the environment page, click the **A↕: 100%** icon
 
        ![](media/sc900-image-2.png)
 
-1. If you see the pop-up **Action Required**, keep default and then click on **Ask later**. If you see the pop-up Help us protect your account, click on **Skip for now** (14 days until this is required), and then click on **Next**.
-   
-     ![](media/asklater.png)
+1. If you see the pop-up **Stay Signed in?**, click No
 
-    >**Note:** Do not enable MFA, select **Ask Later**.
-
-1. If you see the pop-up **Stay Signed in?**, select **No**.
+1. If you see a window for **Let's keep your account secure**, click on **Next** and follow the steps to proceed with MFA setup.
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
-1. Now you will see the Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
+1. Now you will see the Azure Portal Dashboard. Click on **Resource groups** from the Navigate panel to see the resource groups.
 
    ![](media/GSS7.png)
 
 1. Confirm that you have all the resource groups present as shown below.
 
    ![](media/E1T4S17.png)
+
+## Steps to Proceed with MFA Setup if "Ask Later" Option is Not Visible
+
+1. At the **"More information required"** prompt, select **Next**.
+
+1. On the **"Keep your account secure"** page, select **Next** twice.
+
+1. **Note:** If you don’t have the Microsoft Authenticator app installed on your mobile device:
+
+   - Open **Google Play Store** (Android) or **App Store** (iOS).
+   - Search for **Microsoft Authenticator** and tap **Install**.
+   - Open the **Microsoft Authenticator** app, select **Add account**, then choose **Work or school account**.
+
+1. A **QR code** will be displayed on your computer screen.
+
+1. In the Authenticator app, select **Scan a QR code** and scan the code displayed on your screen.
+
+1. After scanning, click **Next** to proceed.
+
+1. On your phone, enter the number shown on your computer screen in the Authenticator app and select **Next**.
+       
+1. If prompted to stay signed in, you can click "No."
+ 
+1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click "Maybe Later" to skip the tour.
 
 ## Support Contact
 
@@ -129,6 +149,6 @@ Learner Support Contacts:
      
 Now, click on **Next** from the lower right corner to move on to the next page.
 
-   ![](media/lab-06.png)
+   ![](media/nextpage-1809.png)
 
 ## Happy Learning!!
