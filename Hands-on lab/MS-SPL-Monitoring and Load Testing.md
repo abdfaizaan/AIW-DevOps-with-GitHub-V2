@@ -86,6 +86,7 @@ In this task, you will create an Azure Load Testing instance and run a quick URL
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 <validation step="f438e274-8872-461d-85c7-4aa4a9a261e6" />
 
 ## Task 3: Explore Chaos Studio
@@ -214,6 +215,7 @@ In this task, you will add **Targets** and create an **Experiment** on **Azure C
 > - If you receive a success message, it means you have successfully completed the lab.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 <validation step="f10df9c1-cfa8-4291-b7c0-8e8951e65d13" />
 
 ## Summary
