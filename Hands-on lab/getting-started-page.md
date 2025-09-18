@@ -1,4 +1,4 @@
-# Get started with Azure Load Testing
+# Be Scale Ready With Azure Load Testing
 
 ### Estimated Duration: 4 Hours
 
