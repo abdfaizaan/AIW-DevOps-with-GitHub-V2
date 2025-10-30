@@ -20,7 +20,7 @@ In this task, you'll access and explore the code repository of the web app using
 
 1. From the LabVM desktop, double-click on the **Visual Studio Code** desktop icon to open the application.
 
-   ![](media/2dg4.png "New Repository Creation Form")
+   ![](media/vs.png "New Repository Creation Form")
 
 1. In **Visual Studio Code**, click on **File** **(1)** and select **Open Folder...** **(2)**.
 
@@ -201,7 +201,7 @@ In this task, access the GitHub Enterprise account), create a new repository to 
 
    ![The `New Repository` creation form in GitHub.](media/E1T3S4.png "New Repository Creation Form")
 
-1. On the **Create a new repository** screen, name the repository **aiw-devops-with-github-lab-files**, select **Public** and click on **Create repository** button.
+1. On the **Create a new repository** screen, name the repository **aiw-devops-with-github-lab-files (1)**, select **Public (2)** and click on **Create repository (3)** button.
 
    ![The `New Repository` creation form in GitHub.](media/new-devops-github-lab02-5.png "New Repository Creation Form")
 

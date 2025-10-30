@@ -97,7 +97,7 @@ To adjust the zoom level for the environment page, click the **A↕: 100%** icon
 
    - **Password:** <inject key="AzureAdUserPassword"></inject>
 
-       ![](media/sc900-image-2.png)
+       ![](media/azurepassword.png)
 
 1. If you see the pop-up **Action Required**, keep default and then click on **Ask later**. If you see the pop-up Help us protect your account, click on **Skip for now** (14 days until this is required), and then click on **Next**.
    
