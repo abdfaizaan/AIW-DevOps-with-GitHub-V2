@@ -93,7 +93,7 @@ To adjust the zoom level for the environment page, click the **A↕: 100%** icon
 
         ![](media/sc900-image-1.png)
 
-1. Now enter the following password and click on **Sign in**.
+1. Now enter the following temporary access pass and click on **Sign in**.
 
    - **Password:** <inject key="AzureAdUserPassword"></inject>
 
