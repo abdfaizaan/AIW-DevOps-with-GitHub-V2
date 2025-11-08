@@ -336,8 +336,6 @@ In this task, you will build automation in GitHub for updating and republishing 
 
      > **Note:** Replace `{your_password}` with the ODL User Azure Password: **<inject key="AzureAdUserPassword"></inject>**
 
-     ![](media/E1T4S7-2.png)
-
 1. Navigate to **Environment** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id (Client Id)** and **Secret Key (Client Secret)**.
 
    ![](media/E1T4S8.png)
