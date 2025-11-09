@@ -141,9 +141,23 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
 
 In this task, you'll set up an Azure test plan and perform manual testing for the application.
 
-1. From the Azure DevOps tab, select **Test plans (1)** from the side blade. From the Test plans tab, click on **+ New Test Plan (2)**
+1. From the Azure DevOps tab, select **Test plans (1)** from the side blade. From the Test plans tab, click on **+ New Test Plan (2)**.
 
    ![](media/E2T3S1.png)
+
+    >**Note:** If you are unable to See **+ New Test Plan** option then please follow below steps:
+
+    - From the top select **Azure DevOps** then click on **Organization settings (2)**.
+
+      ![](media/org1.png)
+
+    - Select **Users (1)** under general, then select **tree dots (2)** of odl user and select **Change access level (3)**.
+
+      ![](media/org2.png)
+
+    - Then select access level **Basic _ Test Plans (1)** and click on **Save (2)**. and reperform previous step.
+
+      ![](media/org3.png)
 
 1. In the New Test Plan tab, provide the following details and click on **Create** **(4)**.
 
