@@ -50,6 +50,8 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
 1. On the next page, select **Complete order and begin installation**.
 
+   ![](media/install.png)
+
    >**Note:** If Azure Boards is already installed, follow the steps below to uninstall it.
 
    - Click on the **ellipsis (...) (1)** from top right corner and select **Configure account access (2)**
@@ -70,7 +72,7 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
    - Now, go back to `https://github.com/marketplace/azure-boards` and click **Install** under the **Plans and pricing** section.
 
-1. On the **Install & Authorize Azure Boards** page, choose **Only select repositories**, click **Select repositories**, and select the repository you have created earlier. Once it appears in the list, check the permissions, then click **Install & Authorize** to finish the setup.
+1. On the **Install & Authorize Azure Boards** page, choose **Only select repositories (1)**, click **Select repositories (2)**, and select the repository you have created earlier. Once it appears in the list, check the permissions, then click **Install & Authorize (3)** to finish the setup.
 
    ![](media/E2T1S3-3.png)
 
@@ -105,7 +107,7 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
 
      ![](media/E2T2S5.png)
 
-1. On the Open pull request tab, click on **Create pull request**
+1. On the Open pull request tab, click on **Create pull request**.
 
    ![](media/E2T2S6.png)
 
@@ -155,7 +157,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
       ![](media/org2.png)
 
-    - Then select access level **Basic _ Test Plans (1)** and click on **Save (2)**. and reperform previous step.
+    - Then select access level **Basic + Test Plans (1)** and click on **Save (2)**. and reperform previous step.
 
       ![](media/org3.png)
 
