@@ -107,7 +107,7 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
 
      ![](media/E2T2S5.png)
 
-1. On the Open pull request tab, click on **Create pull request**
+1. On the Open pull request tab, click on **Create pull request**.
 
    ![](media/E2T2S6.png)
 
@@ -157,7 +157,7 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
       ![](media/org2.png)
 
-    - Then select access level **Basic _ Test Plans (1)** and click on **Save (2)**. and reperform previous step.
+    - Then select access level **Basic + Test Plans (1)** and click on **Save (2)**. and reperform previous step.
 
       ![](media/org3.png)
 

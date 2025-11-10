@@ -421,23 +421,17 @@ In this task, you will build automation in GitHub for updating and republishing 
 
      ![](media/E1T4S19.png)
 
-1. Navigate back to the **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group and select **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
+1. Navigate back to the **contoso-traders-cdn<inject key="DeploymentID" enableCopy="false" /> (1)** resource group and select **contoso-traders-cdn<inject key="DeploymentID" enableCopy="false" /> (2)** endpoint from the list of resources.
 
-    ![](media/E1T4S21.png)
+    ![](media/fnd1.png)
 
-1. Click on **Endpoint hostname**. It'll open a browser tab where you will be able to verify that the Contoso Traders app has been hosted successfully.
+1. Copy the **Endpoint hostname** for **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** by clicking the **Copy** icon next to it.
 
-    ![](media/E1T4S22.png)
+    ![](media/fnd2.png)
+
+1. Open a new browser tab, paste the **Endpoint hostname**, and verify that the **Contoso Traders** app loads successfully.
 
     ![](media/E1T4S22-1.png)
-
->**Congratulations** on completing the Task! Now, it's time to validate it. Here are the steps:
- > - Hit the Validate button for the corresponding task. If you receive a success message, you have successfully validated the lab.
- > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
- > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
- > - **Note:** Upon clicking the **Validate** button for this exercise, you'll receive a prompt to input your GitHub User Name. Provide your **GitHub User Name** which looks like **github-cloudlabsuser-xxxx**.
-
-   <validation step="4f20a33d-35ef-40a7-b9df-f4072265acaa" />
 
 ## Task 5: Editing the GitHub Workflow File using Codespace
 
@@ -445,7 +439,7 @@ The last task automated building and updating only one of the Docker images. In 
 
 1. From the GitHub browser tab, follow the steps given below and click on **Create codespace on main** **(3)**.
 
-   - Click on **Code** **(1)**,
+   - Click on **Code** **(1)**
    - Select the **Codespace** **(2)** tab
 
      ![](media/E1T5S1.png)
