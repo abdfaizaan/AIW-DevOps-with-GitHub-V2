@@ -28,7 +28,7 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
    ![](media/E2T1S2.png)
 
-1. In review, your order page, enter the billing information and click on **Save**.
+1. In review, your order page, enter the billing information and click on **Save billing information**.
 
    > **Note:** If the **Install it for free** button is greyed out  with the message **You’ve already purchased this on all of your GitHub accounts**, this indicates Azure Boards integration is already used in your account. Follow the steps below, and please proceed from step number 4.
 
