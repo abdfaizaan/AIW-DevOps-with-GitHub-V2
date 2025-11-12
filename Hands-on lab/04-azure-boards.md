@@ -205,13 +205,13 @@ In this task, you'll set up an Azure test plan and perform manual testing for th
 
    ![](media/E1T4S17.png)
 
-1. Select **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** endpoint from the list of resources.
+1. Select **contoso-traders-cdn<inject key="DeploymentID" enableCopy="false" /> (2)** endpoint from the list of resources.
 
-   ![](media/E1T4S21.png)
+    ![](media/fnd1.png)
 
-1. Click on **Endpoint hostname**. It'll open a browser tab where you will see that the Contoso Traders app has been hosted successfully.
+1. Copy the **Endpoint hostname** for **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** by clicking the **Copy** icon next to it and paste it in a new tab.
 
-   ![](media/E1T4S22.png)
+    ![](media/fnd2.png)
 
 1. Verify the availability of the web app. Simultaneously using the runner page, perform the testing by marking the steps according to the availability of the web app and click on **Save & close**.
 
