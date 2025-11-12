@@ -73,10 +73,8 @@ In this task, you will set up the local infrastructure using .NET. You'll be wor
 1. Run the below-mentioned command to set the secret path.
 
    ```
-   dotnet user-secrets set "KeyVaultEndpoint" "https://contosotraderskv<SUFFIX>.vault.azure.net/"
+   dotnet user-secrets set "KeyVaultEndpoint" "https://contosotraderskv<inject key="DeploymentID" />.vault.azure.net/"
    ```
-
-   > **Note:** Replace `<SUFFIX>` with **<inject key="DeploymentID" />** before running the command.
 
    ![](media/E1T2S6.png)
 
@@ -117,10 +115,8 @@ In this task, you will set up the local infrastructure using .NET. You'll be wor
 1. Run the below-mentioned command to set the secret path.
 
    ```
-   dotnet user-secrets set "KeyVaultEndpoint" "https://contosotraderskv<SUFFIX>.vault.azure.net/"
+   dotnet user-secrets set "KeyVaultEndpoint" "https://contosotraderskv<inject key="DeploymentID" />.vault.azure.net/"
    ```
-
-   > **Note:** Replace `<SUUFIX>` with **<inject key="DeploymentID" />** before running the command.
 
    ![](media/upd-2dgn53.png)
 
