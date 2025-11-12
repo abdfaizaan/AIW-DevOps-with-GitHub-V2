@@ -308,7 +308,7 @@ In this task, you will build automation in GitHub for updating and republishing 
 
 1. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
-   ![](media/E1T4S2.png)
+   ![](media/2dgn135upd.png)
 
 1. Select **productsdb** SQL database from the list of resources.
 
@@ -331,10 +331,11 @@ In this task, you will build automation in GitHub for updating and republishing 
 
    - **Name:** Enter **SQL_PASSWORD** **(1)**
    - **Secret:** Paste the **ADO.NET (SQL authentication)** **(2)** which you copied in previous step.
+     > **Note:** Replace `{your_password}` with the ODL User Azure Password.
+     > 1. Navigate to Home screen on your Virtual machine and click on AzureCreds file and copy the AzurePassword value with `{your_password}` value.
+     > ![](media/2dgn123supd.png)
 
      ![](media/2dgn123.png)
-
-     > **Note:** Replace `{your_password}` with the ODL User Azure Password: **<inject key="AzureAdUserPassword"></inject>**
 
 1. Navigate to **Environment** **(1)**, click on **Service Principal Details** **(2)** and copy the **Subscription ID**, **Tenant Id (Directory ID)**, **Application Id (Client Id)** and **Secret Key (Client Secret)**.
 
@@ -367,7 +368,7 @@ In this task, you will build automation in GitHub for updating and republishing 
 
 1. From your GitHub repository, select **Actions** **(1)** tab. Select the **contoso-traders-app-deployment** **(2)** workflow from the side blade, Click on the **drop-down** **(3)** next to **Run workflow** button, and select **Run workflow** **(4)**.
 
-    ![](media/E1T4S11.png)
+    ![](media/E1T4S11upd.png)
 
    > **Note:** If you can’t find the **contoso-traders-app-deployment** workflow, try closing and reopening Visual Studio Code to perform step 14 of Task 3 again. 
 
@@ -456,13 +457,15 @@ The last task automated building and updating only one of the Docker images. In 
 
    > **Note:** In case you recieve a pop-up, click on **Allow** then click on **Continue** and then **Open** to authorize Github login.
 
+   > **Note:** In case the Visula Studio Code pop-up does not show up, you can continue with codespaces in the web page.
+
 4. From the explorer side blade, navigate to **.github (1)** > **workflows** **(2)** and select **contoso-traders-provisioning-deployment.yml** **(3)** file.
 
-    ![](media/E1T5S4.png)
+    ![](media/E1T5S4upd.png)
 
 5. Remove the commands from lines 7 to 14 from the workflow file and save this file by using **Ctrl+S**.
 
-    ![](media/E1T5S5.png)
+    ![](media/E1T5S5upd.png)
 
 6. Using the terminal from Codespace, run the following commands to commit this change to your repo and to push the change to GitHub.
 
@@ -472,11 +475,13 @@ The last task automated building and updating only one of the Docker images. In 
     git push
     ```
 
-    ![](media/E1T5S6.png)
+    ![](media/E1T5S6upd.png)
 
    > **Note:** This will update the workflow and will **not** run the "Update the ... Docker image" jobs.
 
 7. Navigate back to the GitHub browser, select the **Actions** **(1)** tab, and review the **workflow** **(2)** created automatically for the changes made.
+
+    ![](media/E1T5S71.png)
 
     ![](media/E1T5S7.png)
 

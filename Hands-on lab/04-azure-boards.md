@@ -78,7 +78,7 @@ In this task, you will connect your Azure DevOps project's board to your GitHub 
 
 1. On the **Setup your Azure Boards project** page, select the **aiw-devops** **(1)** Azure DevOps organization, enter or select the project name **Contosotraders-<inject key="DeploymentID" enableCopy="false" />** **(2)**, and then click **Continue** **(3)** to proceed.
 
-   ![](media/E2T1S6.png)
+   ![](media/E2T1S6upd.png)
 
 ## Task 2: Link GitHub Pull requests to Boards items
 
@@ -94,7 +94,7 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
 
 1. Select the **Code** **(1)** tab in your GitHub repository, navigate to **aiw-devops-with-github-lab-files/.github/workflows/** **(2)** and select **contoso-traders-provisioning-deployment.yml** **(3)** file.
 
-   ![](media/E2T2S3.png)
+   ![](media/E2T2S3upd.png)
 
 1. Copy `#test azure boards` code and paste it into line number 1 of the file. Make sure there are no indentation errors.
 
@@ -138,6 +138,7 @@ In this task, you'll make changes in GitHub link a PR to Azure boards using synt
 1. Navigate back Azure Boards tab and notice that the **work item** has been marked as **done**.
 
    ![](media/E2T2S13.png)
+   > **Note:** The work item may take a little while to be marked to **Done**. You can proceed to the next task and exercise and come back and check once you have completed the lab.
 
 ## Task 3: Configure Azure Test plan
 
