@@ -439,24 +439,37 @@ In this task, you will build automation in GitHub for updating and republishing 
    ![](media/2dgn160.png)
    
    ![](media/2dgn161.png)      
-   
-1. Navigate to **Azure Portal**, click on **Resource groups** from the Navigate panel to see the resource groups.
 
-   ![](media/cor_g_1-3.png) 
-   
+1. Navigate to the Azure Portal, click on **Resource groups** from the Navigate panel to see the resource groups.
+
+    ![](media/GSS7.png)
+
 1. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
-    ![](media/2dgn135.png) 
-   
-1. In the **search bar**, find the web app resource named **contoso-traders-ui2 (1)**. Click on the **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" /> resource (2)** from the filtered results.
+    ![](media/E1T4S17.png)
 
-   ![](media/image104.png) 
-   
-1. Click on **Endpoint hostname**. It'll open a browser tab where you will see that the Contoso Traders app has been hosted successfully.
+1. Search for **ui2 (1)** and select **contosotradersui2<inject key="DeploymentID" enableCopy="false" /> (2)** storage account from the list.
 
-   ![](media/2dgn128.png) 
-    
-   ![](media/2dgn162.png) 
+    ![](media/E1T4S18.png)
+
+1. On the storage account page, navigate to **Static website** **(1)** under **Data Management**, enable it by selecting **Enabled** **(2)**, enter **index.html** **(3)** as the index document name, and click **Save** **(4)** to apply the changes.
+
+     >**Note:** If the settings are already enabled in the storage account, please proceed with the next steps.
+
+     ![](media/E1T4S19.png)
+
+1. Navigate back to the **contoso-traders-cdn<inject key="DeploymentID" enableCopy="false" /> (1)** resource group and select **contoso-traders-cdn<inject key="DeploymentID" enableCopy="false" /> (2)** endpoint from the list of resources.
+
+    ![](media/fnd1.png)
+
+1. Copy the **Endpoint hostname** for **contoso-traders-ui2<inject key="DeploymentID" enableCopy="false" />** by clicking the **Copy** icon next to it.
+
+    ![](media/fnd2.png)
+
+1. Open a new browser tab, paste the **Endpoint hostname**, and verify that the **Contoso Traders** app loads successfully.
+
+    ![](media/E1T4S22-1.png)
+
     
 ## Task 5: Editing the GitHub Workflow File using Codespace
 
@@ -521,3 +534,4 @@ In this exercise you have completed the following:
 ### You have successfully completed the Lab. Click on Next >> to proceed with the next Lab.
 
 ![](media/CICD---NEXT-PAGE.png)
+
