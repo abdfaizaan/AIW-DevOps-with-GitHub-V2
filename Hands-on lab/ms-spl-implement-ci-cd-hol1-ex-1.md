@@ -2,9 +2,10 @@
 
 ### Estimated Duration: 140 Minutes
 
+## Overview
 In this hands-on lab, you are going to set up the local infrastructure using .NET. There are three parts of the application you will be working with: carts, products, and ui. You will deploy the infrastructure to the cloud using GitHub Actions. You will also build automation in GitHub for updating and republishing our workflows when the code changes.
 
-## Lab Objectives
+## Objectives
 
 You will be able to complete the following tasks:
 
@@ -44,11 +45,11 @@ In this task, you will set up the local infrastructure using NET. You'll be work
    
 1. In **Visual Studio Code**, open a new terminal by clicking on the **Menu bar (1)**, selecting **Terminal (2)**, and then choosing **New Terminal (3)**.
 
-   ![](media/devops1.5.png "New Repository Creation Form")
+   ![](media/L1T2S1-0501.png "New Repository Creation Form")
    
 1. Click on the **Drop-down** **(1)** button next to PowerShell and select **Command Prompt** **(2)**  from the list. A new Command Prompt terminal will be opened.   
 
-   ![](media/2dgn45.png)
+   ![](media/L1T2S2-0501.png)
    
 1. Navigate to the **Environment (1)** details pane, click on **Service Principal Details (2)**, and copy the following values:
 
@@ -56,7 +57,7 @@ In this task, you will set up the local infrastructure using NET. You'll be work
    - **Secret Key (Client Secret)**
    - **Tenant ID (Directory ID)**  
    
-      ![](media/ex2-t2-3upd1.png)
+      ![](media/L1T2S3-0501.png)
    
 1. Update the **Application Id (Client Id)**, **Client Secret**, and **Tenant ID** in the command mentioned below. Run it in the terminal.
 
@@ -64,7 +65,7 @@ In this task, you will set up the local infrastructure using NET. You'll be work
    az login --service-principal -u <clientId> -p <clientSecret> --tenant <tenantId>
    ```
 
-   ![](media/2dgn47.png)
+   ![](media/L1T2S4-0501.png)
 
    >**Note:** Open Notepad, make the necessary updates to the command, then copy and paste the updated command into the terminal for execution.
 
@@ -90,7 +91,7 @@ In this task, you will set up the local infrastructure using NET. You'll be work
    dotnet build && dotnet run --no-build
    ```  
 
-   ![](media/2dg122.jpg) 
+   ![](media/L1T2S7-0501.jpg) 
    
    >**Note:** Please wait for 2 - 3 minutes for the build to complete.
    
@@ -116,7 +117,7 @@ In this task, you will set up the local infrastructure using NET. You'll be work
    cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\ContosoTraders.Api.Carts
    ```
   
-   ![](media/upd-2dgn52.png)     
+   ![](media/L1T2S9-0501.png)     
    
 1. Run the below command to set the secret path.
 
@@ -155,7 +156,7 @@ In this task, you will set up the local infrastructure using NET. You'll be work
    ```pwsh
    cd C:\Workspaces\lab\aiw-devops-with-github-lab-files\src\ContosoTraders.Ui.Website
    ```
-   ![](media/upd-2dgn54.png) 
+   ![](media/L1T2S15-0501.png) 
    
 1. Run the below-mentioned command to install npm.
 
@@ -189,9 +190,9 @@ In this task, you'll access the GitHub Enterprise account and create a new repos
 
 1. In a new browser tab, go to `https://www.github.com/login`.
 
-1. Navigate to the **Environment (1)** tab in the lab environment and click on the **Licenses (2)** button. Copy the **GitHub UserEmail (3)** and **GitHub Password (4)**, then save these credentials in **Notepad**. You will need them later during the GitHub login and device verification steps.
+1. Navigate to the **Environment (1)** tab in the lab environment and click on the **Licenses (2)** button. Copy the **GitHub UserEmail and GitHub Password (3)**, then save these credentials in **Notepad**. You will need them later during the GitHub login and device verification steps.
 
-   ![](media/ex-1-4.png)
+   ![](media/L1T3S2-0501.png)
 
 1. Open a **Private window** in Microsoft Edge by clicking the three-dot menu **(1)** in the top-right and selecting **New InPrivate window (2)**.
 
@@ -225,11 +226,11 @@ In this task, you'll access the GitHub Enterprise account and create a new repos
    
       ![The `New Repository` creation form in GitHub.](media/2fagit.png "New Repository Creation Form")
 
-1. In the upper-right corner of the GitHub dashboard, click on your **Profile (1)** icon and select **Your repositories (2)** from the dropdown menu.
+1. In the upper-right corner of the GitHub dashboard, click on your **Profile (1)** icon and select **Repositories (2)** from the dropdown menu.
 
    ![](media/ex_1_g_4.png)
    
-   ![](media/g_cor_5.png)
+   ![](media/L1T3S10.2-0501.png)
 
 1. Next to the search criteria, locate and select the **New** button.
 
@@ -237,15 +238,15 @@ In this task, you'll access the GitHub Enterprise account and create a new repos
 
 1. On the **Create a new repository** screen, name the repository ```aiw-devops-with-github-lab-files``` **(1)**, select **Public (2)** and click on **Create repository (3)**  button.
 
-   ![The `New Repository` creation form in GitHub.](media/2dgn91upd.png "New Repository Creation Form")
+   ![The `New Repository` creation form in GitHub.](media/L1T3S12-0501.png "New Repository Creation Form")
    
    >**Note:** If you observe any repository existing with the same name, please make sure you delete the Repo and create a new one. Please follow steps 13 to 17. Else, skip to step 18.
 
-1. In the upper-right corner of the GitHub dashboard, click on your **Profile (1)** icon and select **Your repositories (2)** from the dropdown menu.
+1. In the upper-right corner of the GitHub dashboard, click on your **Profile (1)** icon and select **Repositories (2)** from the dropdown menu.
 
    ![](media/ex_1_g_4.png)
    
-   ![](media/g_cor_5.png)
+   ![](media/L1T3S10.2-0501.png)
 
 1. Using the search bar, search for **```aiw-devops-with-github-lab-files``` (1)** and **select (2)** to open it.
 
@@ -269,7 +270,7 @@ In this task, you'll access the GitHub Enterprise account and create a new repos
    
 1. From the GitHub username, note down the **Unique-ID** present in the Username. You'll use this value in upcoming steps.
 
-   ![](media/ex_1_g_8.png) 
+   ![](media/L1T3S19-0501.png) 
    
 1. Navigate back to the **Visual Studio Code**, ensure the terminal is open. Click on the **drop-down arrow (1)** next to the terminal tab, then select **PowerShell (2)** to open a new PowerShell terminal session.
 
@@ -285,7 +286,7 @@ In this task, you'll access the GitHub Enterprise account and create a new repos
      git config --global user.name "Your UserName"
      ```
      
-   ![](media/2dgn72.png) 
+   ![](media/L1T3S21-0501.png) 
    
 1.  Run the below mentioned command in the terminal. Make sure to replace <your_github_repository-url> with the value you copied in step 18 and Unique-ID in step 19.
 
@@ -302,13 +303,13 @@ In this task, you'll access the GitHub Enterprise account and create a new repos
      
 1.  You are asked to authenticate your GitHub account. Select **Sign in with your browser**.
 
-    ![](media/ghlogin.png)
+    ![](media/L1T3S23-0501.png)
 
 1.  You will be prompted with a pop-up window to **Authorize Git Credential Manager**. Click on **Authorize git-ecosystem** to provide access.
 
-    ![](media/2dgn158upd.png)
+    ![](media/L1T3S24-0501.png)
 
-1.  After you are prompted with the message **Authorization Succeeded**, close the tab and continue with the next task.
+1.  After you are prompted with the message **Aythentication Succeeded**, close the tab and continue with the next task.
    
     > **Note:** If you encounter any errors as shown below, please follow the steps outlined below.
 
@@ -334,11 +335,11 @@ In this task, you will build automation in GitHub for updating and republishing 
    
 1. Select **contoso-traders-<inject key="DeploymentID" enableCopy="false" />** resource group from the list.
 
-   ![](media/2dgn135.png)  
+   ![](media/L1TS1-0501.png)  
    
 1. In the **contoso-traders** resource group, use the search bar to type **productsdb (1)**. From the filtered results, click **productsdb (2)** to open the SQL database resource.
 
-   ![](media/image102.png) 
+   ![](media/L1T4S3-0501.png) 
    
 1. On the **productsdb** SQL database page, expand **Settings** from the left-hand menu **(1)**, then select **Connection strings** **(2)**. Under the **ADO.NET** tab **(3)**, click the **copy icon** next to the **ADO.NET (SQL authentication)** connection string **(4)**, and paste it into Notepad for later use.
 
@@ -350,11 +351,11 @@ In this task, you will build automation in GitHub for updating and republishing 
  
 1. In your GitHub lab files repository, select the **Settings** tab from the lab files repository.
 
-   ![](media/2dgn4.png)
+   ![](media/L1T4S6-0501.png)
    
 1. Under **Security**, expand **Secrets and variables (1)** by clicking the drop-down and select **Actions (2)** blade from the left navigation bar. Select the **New repository secret (3)** button.
 
-   ![](media/Ex2-task4-step6.png)
+   ![](media/L1T4S7-0501.png)
     
 1. Under the **Actions Secrets/New secret** page, enter the below-mentioned details. 
 
@@ -389,18 +390,18 @@ In this task, you will build automation in GitHub for updating and republishing 
    - **Name:** Enter **SERVICEPRINCIPAL (1)**
    - **Secret:** Paste the service principal details in json format **(2)**
    
-      ![](media/2dgn36.png)    
+      ![](media/L1T4S10-0501.png)    
    
 1. Select **New repository secret** and under **Actions Secrets/New secret** page, enter the below mentioned details and Click on **Add secret** **(3)**.
 
    - **Name:** Enter **ENVIRONMENT (1)**
    - **Secret**:**<inject key="DeploymentID" enableCopy="false" /> (2)**
    
-      ![](media/2dgn33.png)
+      ![](media/L1T4S11-0501.png)
    
 1. From your GitHub repository, select the **Actions (1)** tab. Select the **contoso-traders-app-deployment (2)** workflow from the side blade, click on the  **drop-down (3)** next run Run workflow button, and select **Run workflow (4)**.
 
-   ![](media/2dgn159.png)
+   ![](media/L1T4S12-0501.png)
 
 1. Navigate back to the Actions tab and select the **contoso-traders-app-deployment** workflow. This workflow builds the docker image, which is pushed to container registry. The same image is pushed to the Azure container application.
 
@@ -415,7 +416,7 @@ In this task, you will build automation in GitHub for updating and republishing 
    - Click on **Code (1)**, 
    - Select the **Codespace (2)** tab
 
-      ![](media/ex2-kc-codespace.png)
+      ![](media/L1T4S14-0501.png)
  
       >**Note:** If prompted to **Install** an extension, please proceed with the installation and **Allow** any **Visual Studio** pop-ups that appear.
 
