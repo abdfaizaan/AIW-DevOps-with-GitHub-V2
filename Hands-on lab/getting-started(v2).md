@@ -7,7 +7,8 @@ In this hands-on lab, you will delve into the essentials of Continuous Integrati
 
 This lab offers a practical understanding of setting up CI/CD pipelines and implementing security measures, ensuring a robust and secure development process.
 
-## Objective
+## Objectives
+
 By the end of this lab, you will be able to:
 
 - **Understand GitHub Actions:** Grasp the fundamentals of GitHub Actions, including workflows, jobs, and actions, to automate CI/CD processes.
@@ -42,7 +43,7 @@ This architecture illustrates a streamlined deployment process for an ASP.NET ap
 
 ## Getting Started with the Lab
  
-Welcome to your Implement CI/CD with GitHub Actions workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
+We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
  
 ## Accessing Your Lab Environment
  
@@ -98,13 +99,9 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
      
 1. Now enter the following password and click on **Sign in**.
    
-   * **Password**: <inject key="AzureAdUserPassword"></inject>
+   * **Temporary Access Pass**: <inject key="AzureAdUserPassword"></inject>
    
-      ![](media/sc900-image-2.png "Enter Password")
-
-1. If **Action required** pop-up window appears, click on **Ask later**.
-
-   ![](media/asklater.png)
+      ![](media/pass-0501.png "Enter Password")
   
 1. If you see the pop-up **Stay Signed in?**, select **No**.
 
