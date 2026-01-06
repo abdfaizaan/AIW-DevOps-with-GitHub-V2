@@ -488,7 +488,7 @@ The last task automated building and updating only one of the Docker images. In 
    
 1. You will be redirected to a new Codespace tab in your browser. This will open VSCode in the new tab of the browser. 
       
-1. From the explorer side blade, navigate to **.github (1)** -> **workflows** **(2)** and select **contoso-traders-provisioning-deployment.yml** **(3)** file.
+1. From the explorer side blade, navigate to **.github (1)** -> **workflows** **(2)** and select **contoso-traders-provisioning-deployment-old.yml** **(3)** file.
 
    ![](media/L1T5S3-0501.png) 
 
@@ -523,4 +523,5 @@ In this lab, you have imaged a sample application with carts, products, and UI c
 ### You have successfully completed the Lab. Click on Next >> to proceed with the next Lab.
 
 ![](media/CICD---NEXT-PAGE.png)
+
 
